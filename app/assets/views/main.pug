@@ -1,0 +1,70 @@
+extends layouts/layout.pug
+
+block title
+  title Main | u.today
+
+block content
+  section.asset.asset-wide.bg-dark-1
+    a.asset_link(target='_blank', href='https://www.cryptodailytrading.com/')
+      img(src='https://u.today/img/datalight.jpg', alt='cryptodailytrading.com')
+  include blocks/breaking.pug
+  .main-container
+    .top-story-block
+      include blocks/top-story.pug
+
+    .news-block
+      include blocks/news.pug
+
+  include blocks/news-featured.pug
+
+  section.asset.adsense-asset.bg-dark-2
+    a.asset_link(target='_blank', href='https://twitter.com/Utoday_en')
+      img(src='https://u.today/img/satoshi_.jpg', alt='u.today')
+  .main-aside-container
+    .main-news-block
+      include blocks/news-category.pug
+
+      +newsCategory(newsCategoryOpinions)
+      +newsCategory(newsCategoryInterviews)
+
+      .something__wrapper
+        .something.something--content
+          .something__content-long
+            img(src="img/something/long.png" width="728" height="90" alt="something-wide")
+
+          .something__content-square
+            img(src="img/something/square.png" width="300" height="250" alt="something-square")
+
+      +newsCategory(newsCategoryPress)
+
+      include blocks/news-feed.pug
+
+      include blocks/news-categories.pug
+
+    .aside-news-block
+      include blocks/crypto-tweets.pug
+      include blocks/aside.pug
+
+  .something--footer
+  .subscribe
+    .error__form
+      .error__text Please enter a valid e-mail
+    .done__form
+      .done__text Successfully completed
+    .subscribe__content.container
+      .subscribe__row
+        .subscribe__left
+          .subscribe__icons 🔥
+          .subscribe__subtitle Get the latest news, tips and good insights to your inbox
+        form#subscribe__form.subscribe__form(onsubmit="javascript:return validate('subscribe__form','subscribe__email');", action='')
+          input#subscribe__email.subscribe__form_input(type='text', name='email', placeholder='E-mail')
+          .checkbox__block
+            .checkbox__block_item
+              input#subscribe__daily(type='checkbox')
+              label(for='subscribe__daily') Daily
+            .checkbox__block_item
+              input#subscribe__weekly(type='checkbox')
+              label(for='subscribe__weekly') Weekly
+          .btn__block
+            input.btn(type='submit', value='Subscribe')
+        .subscribe__close
