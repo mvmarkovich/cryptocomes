@@ -8,7 +8,7 @@ block content
         section.asset.asset-wide.bg-dark-1
             a.banner_link(target='_blank', href='https://www.cryptodailytrading.com/')
                 img(src='https://u.today/img/datalight.jpg', alt='cryptodailytrading.com')
-        .content-container.article_new
+        .content-container
             .main-block
                 include blocks/article-infinite-scroll.pug
                 .article
@@ -19,7 +19,7 @@ block content
                             a.humble.mark(href="#!") &#x2B50; Featured
                             time.author__item-time.humble 27 Oct’18
                             a.humble.humble--views(href='#!') 123k
-                            a.humble.humble--chat(href='#!') 256
+                            a.humble.humble--comments(href='#!') 256
                     .article_main-info.article_main-info_v2
                         .article_main-info__rating
                             button.rating-button.rating-down
@@ -29,7 +29,7 @@ block content
                             a.humble.mark(href="#!") &#x2B50; Featured
                             time.author__item-time.humble 27 Oct’18
                             a.humble.humble--views(href='#!') 123k
-                            a.humble.humble--chat(href='#!') 256
+                            a.humble.humble--comments(href='#!') 256
                     .article__main
                         h1.article__title Women of Crypto at the Crypto Invest Summit: Separate but Hopeful
                             section.author_block
@@ -277,7 +277,7 @@ block content
                                 .article__panel-col
                                     .left
                                         .humble.humble--views 123.5k
-                                        .humble.humble--like 31
+                                        .humble.humble--liked 31
                                         .humble.humble--favorites 17
                         section.about-author
                             .about-author_row

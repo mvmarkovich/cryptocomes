@@ -300,9 +300,9 @@
     if ($(window).width() >= '887'){
       $(window).scroll(function() {
         if ($(this).scrollTop() > 450) {
-          $('.main-page .share-and-up').addClass('show');
+          $('.share-and-up').addClass('show');
         } else{
-          $('.main-page .share-and-up').removeClass('show');
+          $('.share-and-up').removeClass('show');
         }
       });
       return this;
