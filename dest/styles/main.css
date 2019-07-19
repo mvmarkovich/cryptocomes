@@ -8356,10 +8356,6 @@ transition {
   color: #263238;
 }
 
-.card{
-  margin-top: 2rem;
-}
-
 .author-article{
   margin-top: 1rem;
   background-color: #fff;
@@ -11694,9 +11690,9 @@ body .slick-next{
   .event-block{
       padding: 1.5rem 1rem;
   }
-    .table-plan__footer, .table-plan__header, .table-plan__row{
-        padding: 0 1rem;
-    }
+  .table-plan__footer, .table-plan__header, .table-plan__row{
+      padding: 0 1rem;
+  }
   .header__container{
     padding: .5rem 1rem;
   }
