@@ -10239,12 +10239,7 @@ body .slick-next{
 
  .share-and-up{
   left: calc(50% - 560px - 100px);
-  opacity: 0;
   transition: .2s;
-}
-
- .share-and-up.show{
-  opacity: 1;
 }
 
  .news__item-time{
