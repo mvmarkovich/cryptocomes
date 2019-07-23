@@ -328,7 +328,33 @@
   });
 
   //
-  // Slider NEWS-CATEGORIES on MAIN page
+  // Slider CATEGORIES-STORY on MAIN page
+  //
+  $('.slider_categories-story').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 1152,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 580,
+        settings: {
+          slidesToShow: 1,
+          variableWidth: true
+        }
+      }
+    ]
+  });
+
+  //
+  // Slider MEDIUM_CATEGORIES-STORY on MAIN page
   //
   $('.medium_categories-story_list').slick({
     infinite: false,
@@ -409,6 +435,8 @@
       $('.user--login.open').removeClass("open");
     }
   });
+
+
 
 })(jQuery);
 
