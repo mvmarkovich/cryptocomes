@@ -7901,6 +7901,11 @@ transition {
 .article_main-info_v2 .rating-value{
   width: 40px;
   text-align: center;
+  line-height: 2.6rem;
+}
+
+.rating-value{
+  cursor: default;
 }
 
 .article_main-info_v2 .article_main-info__rating:before{
@@ -7968,6 +7973,11 @@ transition {
 
 .rating-button:active{
   background-color: #2C1F63;
+}
+
+.rating-button.voted{
+  background-color: #CFD8DC;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSI4IiB2aWV3Qm94PSIwIDAgMTIgOCIgZmlsbD0ibm9uZSI+Cgk8cGF0aCBkPSJNMTIgMkwxMC41OSAwLjU4OTk5Nkw2IDUuMTdMMS40MSAwLjU4OTk5NkwtNi4xNjMzMWUtMDggMkw2IDhMMTIgMloiIGZpbGw9IiM5MEE0QUUiLz4KPC9zdmc+");
 }
 
 .rating-up{
@@ -8079,6 +8089,21 @@ transition {
 
   text-decoration: none;
   color: #263238;
+}
+
+.timeout__item{
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  line-height: 80px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #CFD8DC;
+  margin: 2.5rem auto 0;
+
+  font-size: 1.94rem;
+  color: #CFD8DC;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 1152px){
@@ -10283,8 +10308,8 @@ body .slick-next{
 }
 
 .modal__successfully-text{
-  line-height: 2rem;
-  font-size: 17px;
+  line-height: 1.5rem;
+  font-size: .8125rem;
   text-align: center;
   font-weight: 500;
 }
