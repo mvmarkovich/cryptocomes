@@ -2684,7 +2684,7 @@ blockquote em {
 }
 
 .header__nav-child-item--active {
-  border-color: #263238;
+  border-color: #433099;
 }
 
 .header__nav-child-item:hover {
@@ -5861,7 +5861,7 @@ transition {
   }
 
   .news-block {
-    max-width: 672px;
+    max-width: 712px;
   }
 
   .main-news-block {
@@ -9670,7 +9670,7 @@ body .slick-next{
 }
 
  .main-news-block{
-  width: 640px;
+  width: 712px;
 }
 
  .aside-block{
@@ -9961,9 +9961,8 @@ body .slick-next{
 }
 
 .new_categories .news-categories__item{
-  min-width: 94px;
   width: auto;
-  margin-right: 1.5rem;
+  margin-right: 2rem;
 }
 
 .new_categories .news-categories__item:last-child{
