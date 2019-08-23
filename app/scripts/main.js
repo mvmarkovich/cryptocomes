@@ -108,7 +108,6 @@
     $("#" + modalId).addClass("modal--open");
 
     $("body").css("overflow", "hidden");
-    $("body").css("padding-right", getScrollBarWidth() + "px");
 
     if (window.innerWidth >= 1152) {
       $(".share-and-up").css("transform", "translateX(-" + (getScrollBarWidth() / 2) + "px)");
@@ -125,7 +124,9 @@
 
     setTimeout(function () {
       $openModal.removeClass("modal--open");
-      $("body").css("overflow", "auto");
+
+      $("body").css("overflow", "");
+
       $("body, .share-and-up").css("padding-right", "0");
       $(".share-and-up").css("transform", "translateX(0)");
     }, 200);
