@@ -7,7 +7,7 @@
     box: center space-between
     flex-wrap: wrap @xl nowrap
     height: @xl 48px
-    padding: 8px 16px @xl 0 32px @md 8px 16px 0px
+    padding: 0 16px
     position: relative
     will-change: transform
     max-width: @xl 1152px @md 768px @md-down 480px
@@ -41,7 +41,7 @@
     &-list
       box: vertical @md horizontal space-between @xl center
       background: @md-down #fff
-      padding-top: @md-down 16px
+      padding-top: @md-down 4px
       padding-bottom: @md-down 24px
       margin: @xl 0 24px
 
@@ -51,6 +51,7 @@
     &-item
       position: @md relative
       font-family: $font
+      margin: 0 0 8px @md 0
 
       &:hover
         &:before
@@ -88,10 +89,8 @@
         ^^&-link:after
           content: ""
           display: block
-          background: resolve("icons/triangle_down.svg") center
+          background: resolve("icons/triangle_right-dark.svg") @md resolve("icons/triangle_down.svg") center
           size: 24px
-          transform: @md-down rotate(-90deg)
-          margin-right: @md-down 16px
 
       ^&-link
         pointer-events: @md-down none
@@ -100,10 +99,10 @@
           right: auto @md 24px
 
     &-link
-      text: $neutral 600 15px 1.4
+      text: $pseudo-neutral-900 600 15px 1.4 @md $neutral
       text-decoration: none
       box: space-between center @md left center
-      padding: 0 0 12px @md-down 0 0 0 16px
+      padding: 0 16px @md 0 0 12px
       height: @md-down 48px
       pointer-events: @md-down none
 
@@ -118,7 +117,7 @@
       &-list
         display: none
         position: absolute
-        top: @md-down 0
+        top: @md-down 54px
         bottom: @md-down 0
         width: @md-down 205px
         overflow: @md-down auto
@@ -155,14 +154,11 @@
   &__panel
     box: center space-between
 
-  &__btn-search
-    margin-right: 16px @md 24px
-
   &__search
     position: absolute
     left: 16px @md 215px @xl 240px
     right: 16px @md 185px @xl 210px
-    top: 8px @md 10px @xl 8px
+    top: 0 @md 4px @xl 0
     display: none
 
     &-form
@@ -170,12 +166,13 @@
 
     &-submit
       position: absolute 0 null 0 0
+      background-image: resolve("icons/search-dark.svg")
 
     &-input
       background: #fff @md $neutral-100
       border-color: #fff @md $neutral-100
-      min-height: 32px
-      padding-left: 32px
+      min-height: 48px
+      padding: 0 48px
 
     &-close
       position: absolute 0 0 0 null
@@ -190,7 +187,10 @@
 
   &__burger
     display: @md none
-    size: 32px
+    margin-left: 8px
+
+    &.btn--cross
+      background-image: resolve("icons/cross-light.svg")
 
   &--mobile-menu
 
@@ -208,7 +208,7 @@
       border-bottom: @md-down $border
 
     ^&__nav
-      position: @md-down absolute 88px 0px null null
+      position: @md-down absolute 37px 0px null null
       width: @md-down 205px
       display: @md-down block
       height: 100vh
@@ -223,17 +223,18 @@
     display: none
 
   &-back
-    text: 13px 1.4 600
+    text: 14px 1.4 600
     line-height: 55px
     padding-left: 44px
     position: absolute 49px 0 null null
     size: 205px 54px
     background-color: #fff
-    background-image: svg-load("icons/arrow_long.svg", fill: $pseudo-neutral-900)
+    background-image: resolve("icons/arrow_long.svg")
     background-repeat: no-repeat
     background-position: 11px center
     cursor: pointer
     display: none
+    border-bottom: 1px solid $pseudo-neutral-800
 
     &.show
       display: @md-down block

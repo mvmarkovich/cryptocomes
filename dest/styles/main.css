@@ -452,6 +452,25 @@ h5 {
   color: #fff;
 }
 
+.btn--burger,.btn--cross,.btn--search {
+  width: 48px;
+  height: 48px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.btn--burger {
+  background-image: url('../img/icons/burger.svg');
+}
+
+.btn--search {
+  background-image: url('../img/icons/search.svg');
+}
+
+.btn--cross {
+  background-image: url('../img/icons/cross.svg');
+}
+
 .something {
   overflow: hidden;
   text-align: center;
@@ -942,7 +961,7 @@ h5 {
 
 .header__container {
   flex-wrap: wrap;
-  padding: 8px 16px;
+  padding: 0 16px;
   position: relative;
   will-change: transform;
   margin: 0 auto;
@@ -983,6 +1002,7 @@ h5 {
 
 .header__nav-item {
   font-family: 'Work Sans', sans-serif;
+  margin: 0 0 8px;
 }
 
 .header__nav-item:hover:before {
@@ -1021,7 +1041,7 @@ h5 {
 .header__nav-item--arrow .header__nav-link:after {
   content: "";
   display: block;
-  background: url('../img/icons/triangle_down.svg') center;
+  background: url('../img/icons/triangle_right-dark.svg');
   width: 24px;
   height: 24px;
 }
@@ -1034,12 +1054,12 @@ h5 {
 }
 
 .header__nav-link {
-  color: #FFFFFF;
+  color: #263238;
   font-weight: 600;
   font-size: 15px;
   line-height: 1.4;
   text-decoration: none;
-  padding: 0 0 12px;
+  padding: 0 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1098,15 +1118,11 @@ h5 {
   justify-content: space-between;
 }
 
-.header__btn-search {
-  margin-right: 16px;
-}
-
 .header__search {
   position: absolute;
   left: 16px;
   right: 16px;
-  top: 8px;
+  top: 0;
   display: none;
 }
 
@@ -1120,13 +1136,14 @@ h5 {
   top: 0;
   bottom: 0;
   left: 0;
+  background-image: url('../img/icons/search-dark.svg');
 }
 
 .header__search-input {
   background: #fff;
   border-color: #fff;
-  min-height: 32px;
-  padding-left: 32px;
+  min-height: 48px;
+  padding: 0 48px;
 }
 
 .header__search-close {
@@ -1146,8 +1163,11 @@ h5 {
 }
 
 .header__burger {
-  width: 32px;
-  height: 32px;
+  margin-left: 8px;
+}
+
+.header__burger.btn--cross {
+  background-image: url('../img/icons/cross-light.svg');
 }
 
 .header--mobile-menu .header__container:after {
@@ -1174,7 +1194,7 @@ h5 {
 }
 
 .mobile-menu-back {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.4;
   font-weight: 600;
   line-height: 55px;
@@ -1185,11 +1205,12 @@ h5 {
   width: 205px;
   height: 54px;
   background-color: #fff;
-  background-image: svg-load("icons/arrow_long.svg", fill: #263238);
+  background-image: url('../img/icons/arrow_long.svg');
   background-repeat: no-repeat;
   background-position: 11px center;
   cursor: pointer;
   display: none;
+  border-bottom: 1px solid #37474F;
 }
 
 .mobile-menu-back.show {
@@ -2006,7 +2027,6 @@ blockquote em {
   }
 
   .header__container {
-    padding: 8px 16px 0px;
     max-width: 768px;
   }
 
@@ -2022,6 +2042,7 @@ blockquote em {
 
   .header__nav-item {
     position: relative;
+    margin: 0;
   }
 
   .header__nav-item:after {
@@ -2050,11 +2071,17 @@ blockquote em {
     transform: scaleY(-1);
   }
 
+  .header__nav-item--arrow .header__nav-link:after {
+    background: url('../img/icons/triangle_down.svg') center;
+  }
+
   .header__nav-item .header__nav-link:after {
     right: 24px;
   }
 
   .header__nav-link {
+    color: #FFFFFF;
+    padding: 0 0 12px;
     display: flex;
     align-items: flex-start;
     align-items: center;
@@ -2071,14 +2098,10 @@ blockquote em {
     background: #F5F5F5;
   }
 
-  .header__btn-search {
-    margin-right: 24px;
-  }
-
   .header__search {
     left: 215px;
     right: 185px;
-    top: 10px;
+    top: 4px;
   }
 
   .header__search-input {
@@ -2264,7 +2287,6 @@ blockquote em {
   .header__container {
     flex-wrap: nowrap;
     height: 48px;
-    padding: 0 32px;
     max-width: 1152px;
   }
 
@@ -2288,7 +2310,7 @@ blockquote em {
   .header__search {
     left: 240px;
     right: 210px;
-    top: 8px;
+    top: 0;
   }
 
   .article__writer-img--wrapper {
@@ -2483,7 +2505,7 @@ blockquote em {
 
   .header__nav-list {
     background: #fff;
-    padding-top: 16px;
+    padding-top: 4px;
     padding-bottom: 24px;
   }
 
@@ -2496,24 +2518,17 @@ blockquote em {
     width: 4px;
   }
 
-  .header__nav-item--arrow .header__nav-link:after {
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    margin-right: 16px;
-  }
-
   .header__nav-item .header__nav-link {
     pointer-events: none;
   }
 
   .header__nav-link {
-    padding: 0 0 0 16px;
     height: 48px;
     pointer-events: none;
   }
 
   .header__nav-child-list {
-    top: 0;
+    top: 54px;
     bottom: 0;
     width: 205px;
     overflow: auto;
@@ -2543,7 +2558,7 @@ blockquote em {
 
   .header--mobile-menu .header__nav {
     position: absolute;
-    top: 88px;
+    top: 37px;
     right: 0px;
     width: 205px;
     display: block;
