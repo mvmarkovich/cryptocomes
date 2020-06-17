@@ -1,0 +1,63 @@
+.social
+  display: inline-flex
+  align-items: center
+  justify-content: space-between
+
+  &--border
+    border: $border
+    border-radius: 2px
+    width: @md-down 100%
+
+    ^&__link
+      width: 100% @md 40px @xl 72px
+      height: 38px
+      border-right: $border
+
+      &:last-child
+        border: none
+
+  &__title
+    text: 13px 16px 600 $pseudo-neutral-900
+    margin-right: 1.5rem
+
+  &__link
+    size: 48px
+    background-position: center
+    background-repeat: no-repeat
+
+    &--name
+      display: block
+      margin-right: 1rem
+      text: $pseudo-neutral-300 500 13px 24px
+
+    &--tiny
+      size: 1rem
+      background-size: contain
+      margin-right: 1rem
+
+    &--fb
+      background-image: resolve("icons/social/facebook.svg")
+
+    &--tg
+      background-image: resolve("icons/social/telegram.svg")
+
+    &--tw
+      background-image: resolve("icons/social/twitter.svg")
+
+    &--em
+      background-image: resolve("icons/social/email.svg")
+
+    &--yt
+      background-image: resolve("icons/social/youtube.svg")
+
+    &--rd
+      background-image: resolve("icons/social/reddit.svg")
+
+    &--rs
+      background-image: resolve("icons/social/rss.svg")
+
+    &--ln
+      background-image: resolve("icons/social/linkedIn.svg")
+
+    &--insta
+      background-image: resolve("icons/social/instagram.svg")

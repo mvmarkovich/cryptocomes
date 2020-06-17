@@ -1,0 +1,118 @@
+.footer
+  margin: 32px 0 0
+  background: #1C143D
+
+  &__container
+    max-width: @xl 1180px @md 768px @md-down 480px
+    margin: 0 auto
+    padding: 0 16px
+
+  &__row
+    box: space-between
+    flex-wrap: wrap @md nowrap
+    padding: 24px * @xl 52px * 64px
+    border-bottom: 1px solid $pseudo-neutral-800
+
+  &__social
+    border: 1px solid $pseudo-neutral-800
+
+    .social__link
+      border-right: 1px solid $pseudo-neutral-800
+
+  &__title
+    text: $neutral 14px 1.2 @sm 17px @xl 22px
+    margin-bottom: 16px @md 24px
+
+  &__follow-us
+    margin-right: 0 @md 24px @xl 56px
+    margin-bottom: @md-down 24px
+    width: @md-down 100%
+
+    .footer__title
+      white-space: nowrap
+
+  &__subscribe
+    width: @md-down 100%
+
+    &-form
+
+      .input
+        height: 40px
+
+        &:first-child
+          margin-right: 16px
+          width: calc(100% - 116px) @md auto
+
+    &-input
+      width: @md 116px @xl 269px
+      background: transparent
+      border: 1px solid $pseudo-neutral-800
+      text: $neutral
+
+      &::placeholder
+        text: $neutral
+
+    .btn--input
+      background: $accent-1-medium
+      text: $neutral
+
+    &-agree
+      text: $pseudo-neutral-400 $body-tiny
+      margin-top: 0 @sm -2px
+
+  &__nav
+    padding: 24px * @md 32px * 40px @xl 52px * 64px
+    border-bottom: 1px solid $pseudo-neutral-800
+    position: relative
+
+    &-list
+      box: wrap @md space-between
+      margin: -16px 0 0 @md -32px 0 0
+
+    &-item
+      width: 60% @sm 33% @md auto
+      margin: 16px 0 0 @md 32px 0 0
+      white-space: nowrap
+
+      &:nth-child(even)
+        width: @sm-down 40%
+
+    &-link
+      text: $neutral 17px 1.2 @md 22px
+
+    &-child
+
+      &-list
+        margin-top: 1rem
+        display: @md-down none
+
+      &-item
+        margin: 0 0 16px
+
+        &:last-child
+          margin: 0
+
+      &-link
+        text: $neutral 14px 1.4
+
+  &__copy
+    box: wrap @md center
+    padding: 16px 0
+
+    &-text
+      text: $body-small
+      text: $pseudo-neutral-400
+      margin-right: 2rem
+      margin-bottom: @sm-down 1rem
+
+    &-link
+      text: $body-small
+      text: $pseudo-neutral-400
+
+  &__disclaimer
+    border-bottom: 1px solid $pseudo-neutral-800
+    padding: 24px 0
+
+    &-text
+      text: $pseudo-neutral-400 14px 1.4
+      margin: 0

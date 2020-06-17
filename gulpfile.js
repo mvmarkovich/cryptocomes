@@ -21,6 +21,7 @@
     stripCssComments = require('gulp-strip-css-comments'),
     cssDeclarationSorter = require('css-declaration-sorter');
 
+
   //write html by pug
   gulp.task('views', function buildHTML() {
     return gulp
@@ -59,18 +60,6 @@
       path: 'app/assets/img/'
     }),
     require('autoprefixer'),
-    require('postcss-pxtorem')({
-      selectorBlackList: [
-        'h1',
-        'h2',
-        'h3',
-        'h4',
-        'h5',
-        '.btn',
-        '.sticky-nav__nav-link',
-        '.hero-blocks__item li'
-      ]
-    }),
     require('postcss-unique-selectors'),
     require('css-mqpacker')({
       sort: true
@@ -82,7 +71,7 @@
   gulp.task('postcss', function () {
     return (
       gulp
-      .src(['app/styles/main.sss'])
+      .src(['app/styles/*.sass'])
       .pipe(sourcemaps.init())
       .pipe(
         postcss(processors, {
@@ -99,7 +88,6 @@
         extname: '.css'
       }))
       //.pipe(sourcemaps.write('/'))
-      //.pipe(uglifycss())
       .pipe(gulp.dest('dest/styles/'))
     );
   });
@@ -108,7 +96,7 @@
   gulp.task('postcssAmp', function () {
     return (
       gulp
-      .src(['app/styles/amp.sss'])
+      .src(['app/styles/*.sss'])
       .pipe(sourcemaps.init())
       .pipe(
         postcss(processors, {
@@ -189,8 +177,8 @@
 
   //watching by all files in dest
   gulp.task('watch', function () {
-    gulp.watch(['app/styles/**/*.*', '!app/styles/amp.sss'], gulp.series('postcss'));
-    gulp.watch('app/styles/amp.sss', gulp.series('postcssAmp'));
+    gulp.watch(['app/styles/**/*.*', '!app/styles/amp-article.sass'], gulp.series('postcss'));
+    gulp.watch('app/styles/amp-article.sass', gulp.series('postcssAmp'));
     gulp.watch('app/scripts/**/*.*', gulp.series('scripts'));
     gulp.watch('app/assets/**/*.*', gulp.series('assets'));
     gulp.watch('app/assets/views/**/*.*', gulp.series('views'));
