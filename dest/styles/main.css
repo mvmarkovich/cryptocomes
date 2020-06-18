@@ -304,7 +304,7 @@ h5 {
   z-index: 99;
 }
 
-.aside-block {
+.aside {
   max-width: 100%;
   width: 100%;
   position: relative;
@@ -317,8 +317,8 @@ h5 {
   line-height: 1.4;
   font-weight: 400;
   line-height: unset;
-  min-height: 2rem;
-  padding: 0 .7rem;
+  min-height: 32px;
+  padding: 0 12px;
   border-radius: 2px;
   text-decoration: none;
   border: none;
@@ -356,6 +356,7 @@ h5 {
   width: 100%;
   min-height: 40px;
   border-radius: 0;
+  font-weight: 600;
 }
 
 .btn--light {
@@ -469,6 +470,15 @@ h5 {
 
 .btn--cross {
   background-image: url('../img/icons/cross.svg');
+}
+
+.btn--arrow-right:after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-image: url('../img/icons/triangle_right-dark.svg');
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .something {
@@ -932,6 +942,80 @@ h5 {
   justify-content: flex-start;
 }
 
+.input-custom {
+  margin: 0 0 24px;
+}
+
+.input-custom__title {
+  color: #78909C;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0 0 16px;
+}
+
+.custom__checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.custom__checkbox-input {
+  display: none;
+}
+
+.custom__checkbox-input + .custom__checkbox-label {
+  outline: 0;
+  display: block;
+  width: 32px;
+  height: 12px;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: #CFD8DC;
+  border-radius: 6px;
+  transition: all .2s ease;
+}
+
+.custom__checkbox-input + .custom__checkbox-label:after,.custom__checkbox-input + .custom__checkbox-label:before {
+  position: relative;
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  top: -2px;
+}
+
+.custom__checkbox-input + .custom__checkbox-label:after {
+  left: 0;
+  border-radius: 50%;
+  background: #90A4AE;
+  transition: all .2s ease;
+}
+
+.custom__checkbox-input + .custom__checkbox-label:before {
+  display: none;
+}
+
+.custom__checkbox-input:checked + .custom__checkbox-label {
+  background: #6044DE;
+}
+
+.custom__checkbox-input:checked + .custom__checkbox-label:after {
+  left: 50%;
+  background: #2C1F63;
+}
+
+.custom__checkbox-text {
+  color: #263238;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0 0 0 8px;
+  cursor: pointer;
+}
+
 .short {
   color: #90A4AE;
   font-weight: 500;
@@ -1218,6 +1302,174 @@ h5 {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.feed {
+  background: #FFFFFF;
+  margin: 0 0 16px;
+  display: none;
+}
+
+.feed__title {
+  color: #263238;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+  border-bottom: 1px solid #CFD8DC;
+  padding: 10px 16px;
+}
+
+.feed__footer {
+  color: #263238;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+  border-top: 1px solid #CFD8DC;
+  padding: 10px 16px;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.feed__footer:hover {
+  border-color: #CFD8DC;
+}
+
+.feed__footer:active {
+  border-color: #CFD8DC;
+}
+
+.feed__item {
+  border-bottom: 1px solid #CFD8DC;
+  padding: 16px 16px 20px;
+  color: #263238;
+  display: block;
+}
+
+.feed__item-row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.feed__item-info {
+  margin: -4px 0 0 16px;
+}
+
+.feed__item-desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.feed__item .short__row {
+  margin: 0 0 4px;
+}
+
+.feed__item .short {
+  font-weight: 400;
+}
+
+.feed__item:last-child {
+  border: none;
+}
+
+.feed__img-wrapper {
+  max-width: 72px;
+  min-width: 72px;
+}
+
+.feed__user {
+  margin: 0 0 8px;
+  display: flex;
+}
+
+.feed__user-img--wrapper {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #CFD8DC;
+}
+
+.feed__user-info {
+  margin: 0 0 0 16px;
+}
+
+.feed__user-name {
+  color: #263238;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.feed__user-date {
+  color: #78909C;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.feed__subscribe-nav {
+  border-bottom: 1px solid #CFD8DC;
+  padding: 16px;
+}
+
+.feed__subscribe-nav-link {
+  color: #263238;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  display: block;
+  margin: 0 0 16px;
+}
+
+.feed__subscribe-nav-link:last-child {
+  margin: 0;
+}
+
+.feed__subscribe-form {
+  padding: 24px 16px;
+}
+
+.feed__subscribe-agree {
+  margin: 16px 0 0;
+  color: #78909C;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.feed__subscribe-agree a {
+  color: #000;
+}
+
+.feed--tweet .feed__item-desc {
+  color: #263238;
+}
+
+.feed__follow {
+  border-top: 1px solid #CFD8DC;
+  padding: 12px 16px;
+}
+
+.feed__follow-title {
+  color: #78909C;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0 0 8px;
+}
+
+.feed__follow .social {
+  margin: 0 0 0 -16px;
+}
+
+.feed--something {
+}
+
+.feed:last-child {
+  margin: 0;
 }
 
 .article__panel {
@@ -1982,7 +2234,7 @@ blockquote em {
     width: 480px;
   }
 
-  .aside-block {
+  .aside {
     max-width: 240px;
   }
 
@@ -2111,6 +2363,10 @@ blockquote em {
 
   .header__burger {
     display: none;
+  }
+
+  .feed {
+    display: block;
   }
 
   .article__main {
@@ -2243,8 +2499,8 @@ blockquote em {
     width: 768px;
   }
 
-  .aside-block {
-    max-width: 336px;
+  .aside {
+    max-width: 360px;
   }
 
   .something--content {
@@ -2284,6 +2540,16 @@ blockquote em {
     margin-right: 16px;
   }
 
+  .input-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .input-custom__title {
+    margin: 0;
+  }
+
   .header__container {
     flex-wrap: nowrap;
     height: 48px;
@@ -2311,6 +2577,32 @@ blockquote em {
     left: 240px;
     right: 210px;
     top: 0;
+  }
+
+  .feed__subscribe-nav {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .feed__subscribe-nav-link {
+    margin: 0;
+  }
+
+  .feed__follow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .feed__follow-title {
+    margin: 0 8px 0 0;
+  }
+
+  .feed__follow .social {
+    margin: 0;
   }
 
   .article__writer-img--wrapper {
@@ -2479,6 +2771,10 @@ blockquote em {
 
   .header__nav-list.visibility-hidden {
     visibility: visible;
+  }
+
+  .feed--something {
+    display: none;
   }
 }
 

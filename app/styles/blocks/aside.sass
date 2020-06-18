@@ -1,0 +1,131 @@
+.feed
+  background: $neutral
+  margin: 0 0 16px
+  display: none @md block
+
+  &__title
+    text: $pseudo-neutral-900 600 14px 1.4
+    border-bottom: 1px solid $pseudo-neutral-100
+    padding: 10px 16px
+
+  &__footer
+    text: $pseudo-neutral-900 600 14px 1.4
+    border-top: 1px solid $pseudo-neutral-100
+    padding: 10px 16px
+    width: 100%
+    justify-content: flex-start
+
+    &:hover
+      border-color: $pseudo-neutral-100
+
+    &:active
+      border-color: $pseudo-neutral-100
+
+  &__item
+    border-bottom: 1px solid $pseudo-neutral-100
+    padding: 16px 16px 20px
+    text: $pseudo-neutral-900
+    display: block
+
+    &-row
+      display: flex
+      align-items: flex-start
+
+    &-info
+      margin: -4px 0 0 16px
+
+    &-desc
+      text: 400 14px 1.4
+      margin: 0
+
+    .short__row
+      margin: 0 0 4px
+
+    .short
+      font-weight: 400
+
+    &:last-child
+      border: none
+
+  &__img
+
+    &-wrapper
+      max-width: 72px
+      min-width: 72px
+
+  &__user
+    box:
+    margin: 0 0 8px
+
+    &-img
+
+      &--wrapper
+        size: 40px
+        min-width: 40px
+        border-radius: 50%
+        overflow: hidden
+        border: 1px solid $pseudo-neutral-100
+
+    &-info
+      margin: 0 0 0 16px
+
+    &-name
+      text: $pseudo-neutral-900 600 14px 1.4
+
+    &-date
+      text: $pseudo-neutral-400 400 14px 1.4
+
+  &__subscribe
+
+    &-nav
+      border-bottom: 1px solid $pseudo-neutral-100
+      padding: 16px @xl 26px *
+      display: @xl flex
+      justify-content: @xl space-between
+      align-items: @xl center
+
+      &-link
+        text: $pseudo-neutral-900 400 14px 1.4
+        display: block
+        margin: 0 0 16px @xl 0
+
+        &:last-child
+          margin: 0
+
+    &-form
+      padding: 24px 16px
+
+    &-agree
+      margin: 16px 0 0
+      text: $pseudo-neutral-400 400 14px 1.4
+
+      a
+        text: #000
+
+  &--tweet
+    ^&__item
+
+      &-desc
+        text: $pseudo-neutral-900
+
+  &__follow
+    border-top: 1px solid $pseudo-neutral-100
+    padding: 12px 16px
+    display: @xl flex
+    justify-content: @xl space-between
+    align-items: @xl center
+
+    &-title
+      text: $pseudo-neutral-400 400 14px 1.4
+      margin: 0 0 8px @xl 0 8px 0 0
+
+    .social
+      margin: 0 0 0 -16px @xl 0
+
+  &--something
+    display: @xl-down none
+
+  &:last-child
+    margin: 0
+
+

@@ -1,8 +1,8 @@
 .btn
   text: $pseudo-neutral-900 14px 1.4 400
   line-height: unset
-  min-height: 2rem
-  padding: 0 .7rem
+  min-height: 32px
+  padding: 0 12px
   border-radius: 2px
   text-decoration: none
   border: none
@@ -32,6 +32,7 @@
     width: 100%
     min-height: 40px
     border-radius: 0
+    font-weight: 600
 
   &--light
     margin: 0
@@ -121,3 +122,12 @@
 
   &--cross
     background-image: resolve("icons/cross.svg")
+
+  &--arrow-right
+    &:after
+      content: ''
+      size: 24px
+      background-image: resolve("icons/triangle_right-dark.svg")
+      background-position: center
+      background-repeat: no-repeat
+
