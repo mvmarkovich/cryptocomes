@@ -1,0 +1,84 @@
+.infoblock
+  background: $neutral
+  padding: 24px 16px @sm 24px 32px 32px
+  margin: 0 0 32px
+
+  &:last-child
+    margin: 0
+
+  & > *
+    margin: 16px 0
+
+    &:first-child
+      margin-top: 0
+
+    &:last-child
+      margin-bottom: 0
+
+  h1, h2
+    text: 24px 1.5
+    margin: 0 0 16px
+
+  a:not([class])
+    text: #512DA8
+
+  ul
+
+    li
+      margin: 0 0 16px
+
+      &:last-child
+        margin: 0
+
+.staff
+  &__item
+    align-items: flex-start
+    position: relative
+    padding: 32px 48px 32px 0 @sm 32px 0
+    display: flex
+    border-bottom: 1px solid #E0E0E0
+
+    &:last-child
+      border: 0
+      padding-bottom: 0
+
+    .social
+      margin: 0 0 0 -16px
+      position: @sm-down absolute
+      top: @sm-down 10px
+      right: @sm-down 0
+      display: @sm-down flex
+      flex-direction: @sm-down column
+
+      &__link
+        size: 48px
+        min-width: 48px
+
+  &__info
+    margin-left: 16px @md 32px
+
+    &-column
+      height: 72px @sm 100px @md auto
+
+    p
+      text: #000 400 17px 1.7
+      margin: 16px 0 0 -132px @sm 16px 0 0 -174px @md 0
+
+  &__name
+    text: #000 500 17px 1.7
+    overflow: hidden
+    text-overflow: ellipsis
+    max-width: 253px
+    display: block
+    white-space: normal
+
+  &__img
+    width: 100%
+
+    &-wrapper
+      min-width: 116px @sm 160px
+      max-width: 116px @sm 160px
+      height: 72px @sm 100px
+      background: svg-load("./img/icons/greeting.svg") no-repeat (center / 44px), linear-gradient(-45deg, #d0d7df 0%, #f2f7f5 100%)
+      border-radius: 2px
+      overflow: hidden

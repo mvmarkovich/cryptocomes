@@ -17,6 +17,10 @@
     &-icon
       max-width: 48px @xl 100%
 
+  &__headline
+    text: #000 400 17px 1.7
+    margin: 16px 0 24px
+
   &__footer
     width: 100%
     margin: 32px 0 0
@@ -33,6 +37,9 @@
 
     &-info
       margin: -2px 0 0 16px
+
+    &-title
+      text: #000 500 17px 1.7
 
     &-desc
       text: 500 14px 1.4
@@ -104,4 +111,19 @@
 
       &:last-child
         margin: 0
+
+  &-bg
+    background: $neutral
+    padding: 24px 24px 0 @xl 24px 32px 0
+
+    ^&__title
+      font-family: $font
+      text: 500 24px 1.5
+      margin: 0 0 16px
+
+    ^&__item
+      border-color: #E0E0E0
+
+      &-link
+        text: #512DA8
 

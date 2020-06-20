@@ -6,51 +6,6 @@ figcaption
   margin: 8px 0 24px
   font-family: $font
 
-ol
-  list-style-type: decimal
-  margin: 28px 0 @md 40px 0
-  padding: 0
-  padding-left: 1.1rem @xl 1rem
-
-  ol
-    margin: 16px 0 @md 24px 0 32px
-
-  li
-    text: 400 18px 1.8
-    font-family: $font-article
-    margin: 0 0 24px
-
-    &:last-child
-      margin: 0
-
-ul:not([class])
-  margin: 28px 0 @md 40px 0
-  padding: 0 0 0 16px
-  list-style: none
-
-  ul
-    margin: 16px 0 @md 24px 0 32px
-
-  li
-    text: 400 18px 1.8
-    font-family: $font-article
-    position: relative
-    margin: 0 0 24px
-
-    &:last-child
-      margin: 0
-
-    &:before
-      content: ""
-      display: block
-      position: absolute
-      left: -16px
-      top: 13px
-      width: 5px
-      height: 5px
-      border-radius: 50%
-      background: $pseudo-neutral-900
-
 p
   text: 15px 1.7 @xl 17px
   margin: 0
@@ -59,7 +14,7 @@ p
 .article
 
   &__content, &__content p
-    text: 400 18px 1.8
+    text: 400 17px 1.8
     font-family: $font-article
     margin: 24px 0
     word-break: break-word
@@ -67,6 +22,51 @@ p
 
     + img
       margin-bottom: 1.7rem @xl 2.5rem
+
+  ol
+    list-style-type: decimal
+    margin: 28px 0 @md 40px 0
+    padding: 0
+    padding-left: 1.1rem @xl 1rem
+
+    ol
+      margin: 16px 0 @md 24px 0 32px
+
+    li
+      text: 400 17px 1.8
+      font-family: $font-article
+      margin: 0 0 24px
+
+      &:last-child
+        margin: 0
+
+  ul:not([class])
+    margin: 28px 0 @md 40px 0
+    padding: 0 0 0 16px
+    list-style: none
+
+    ul
+      margin: 16px 0 @md 24px 0 32px
+
+    li
+      text: 400 18px 1.8
+      font-family: $font-article
+      position: relative
+      margin: 0 0 24px
+
+      &:last-child
+        margin: 0
+
+      &:before
+        content: ""
+        display: block
+        position: absolute
+        left: -16px
+        top: 13px
+        width: 5px
+        height: 5px
+        border-radius: 50%
+        background: #000
 
 p + p, p + ul, p + ol
   margin-top: -0.7rem @xl -1rem
