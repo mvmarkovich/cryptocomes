@@ -1,253 +1,146 @@
 .article
-  padding: 16px 16px 0
-  background: $neutral
-  margin: 0 0 16px
 
-  &__title
-    text: 700 26px 160%
-    margin: 0 0 16px
+  &__panel
+    margin: 0 0 8px
+    background: $neutral
+    box: center
+    padding: 8px 24px
 
-  &__header
-    margin: 24px 0
-
-    &--row
-      display: flex
-      flex-wrap: wrap
-
-  .share__social
-    margin-right: 16px
-
-  &__label
-    text: #263238 14px 1.2 500
-    text-decoration: none
-    display: inline-flex
-    align-items: center
-    margin-bottom: 16px
-    margin-right: 16px
-    position: relative
-    padding-left: 32px
-
-    svg
-      width: 24px
-      height: 24px
-      position: absolute
-      left: 0
-
-    &-sponsored
-      padding-left: 24px
-
-      svg
-        width: 16px
-        height: 16px
+  &__wrapper
+    padding: 24px 16px
+    background: $neutral
 
   &__main
-    &-img
-      &-wrapper
-        margin: 0 0 30px
-        position: relative
+    margin: 20px -16px 16px
 
-        figcaption
-          margin-bottom: 3px
-
-        & > amp-img
-          margin: 0 -16px
-
-  &__contents
-    margin: 0 0 30px
-
-    &-title
-      font-weight: 700
-      font-size: 20px
-
-    &-list
-      margin: 20px 0 0 20px
-      padding: 0
-
-    &-item
-      margin: 0 0 10px
-      padding: 0
-      color: #2979FF
-
-    &-link
-      text: 500 16px 1.6
-
-  &__lead
-    margin: 24px 0
+  &__writer
     display: flex
+    flex-wrap: wrap
+    align-items: flex-start
+    margin: 28px 0 40px
 
     &-img
-      border-radius: 50%
-      min-width: 40px
 
       &--wrapper
-        display: block
-        text-decoration: none
-        margin-right: 16px
+        border-radius: 50%
+        overflow: hidden
+        max-width: 40px
+        min-width: 40px
+        margin: 0 16px 0 0
 
-    &-info
-      background: rgba(196, 196, 196, 0.3)
-      border-radius: 0 4px 8px 8px
-      padding: 8px 16px 12px
-      position: relative
-      width: 100%
-
-      &:before
-        content: ''
-        width: 0
-        height: 0
-        border-top: 16px solid rgba(196, 196, 196, 0.3)
-        border-left: 16px solid transparent
-        position: absolute
-        top: 0
-        left: -16px
+    &-title
+      text: 500 $pseudo-neutral-900 17px 1.4
+      margin: 0 0 8px
 
     &-name
-      text: #263238 700 15px 1.8
-      text-decoration: none
+      text: $pseudo-neutral-900 500 17px 1.4
+      margin: 0 0 16px
+      display: inline-flex
 
-    &-desc
-      text: 500 15px 1.8
-      margin: 0
+    &-info
+      width: calc(100% - 56px)
+
+    &-row
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+
+    &-social
+      margin: 0 0 0 -16px
+
+    p
+      text: $pseudo-neutral-900 400 18px 1.5
+      margin: 12px 0 0
+
+    &-bg
+      background: $neutral-100
+      padding: 32px 16px
+      margin: 28px -16px 40px
+
+      ^&-name
+        margin: 0 24px 0 0
+        text: $accent-1-medium
 
   &__content
     p
-      font-weight: 500
-      line-height: 1.8
-      margin: 0 0 24px
+      margin: 40px 0
 
-    blockquote p
-      margin: 0
+  &__guid
+    background: $neutral-100
+    padding: 16px
 
-    h2
-      font-size: 22px
-      font-weight: 700
-      margin: 0 0 30px
+    &-title
+      text: $pseudo-neutral-300
+      margin: 0 0 16px
 
-      em
-        display: inline-flex
-        align-items: flex-start
-        font-style: normal
-
-    h3 em
-      display: inline-flex
-      align-items: flex-start
-      font-style: normal
-
-    h2 em:after, h3 em:after
-      content: 'Promoted'
-      color: #B0BEC5
-      font-size: 12px
-      line-height: 24px
-      text-align: center
-      white-space: nowrap
-      padding: 0 8px
-      border-radius: 2px
-      border: 1px solid #CFD8DC
-      font-style: normal
-      margin-left: 16px
-
-    img
-      max-width: 100%
-      display: block
-
-    .something
-      margin: 24px * @md 32px *
-
-  &__related
-    margin: 24px * @md 40px 0
-    padding: 16px 0
-    border-top: 1px solid #E0E0E0
-    border-bottom: 1px solid #E0E0E0
-    text-decoration: none
-    display: flex
-    align-items: flex-start
-
-    &-img
-      &--wrapper
-        margin-right: 16px
-
-    &-flame
-      text: #546E7A 700 15px 1.2
-
-    &-blockquote
-      text: #263238 700 13px 1.8 @md 15px
-
-  &__panel
-    margin: 24px 0
-    display: flex
-    flex-wrap: wrap
-
-  .card
-    margin: 0 -16px
-    border-top: 16px solid #f5f5f5
-
-.article ol:not([class]),
-.article ul:not([class])
-  margin: 24px 0
-  list-style: unset
-  padding: 0 0 0 20px
-
-.article ol:not([class]) li,
-.article ul:not([class]) li
-  text: 16px 1.8 500
-
-.about-author
-  position: relative
-  padding: 32px 16px 24px @xl 24px 40px 8px
-  margin: 24px -16px 0 @xl 40px -16px 0
-  border-top: 1px solid #E0E0E0
-
-  &_row
-    display: flex
-
-  &_avatar
-    display: block
-    margin-right: 16px
-    height: 40px
-
-    amp-img
-      border-radius: 50%
-
-  &_title
-    text: #546E7A 500 15px 1.4
-    margin: 0
-
-  &_data
-    display: flex
-    align-items: center
-    flex-wrap: wrap
-    margin-top: 0
-
-  &_name
-    text-decoration: none
-    text: #263238 700 15px 1.8 @xl 17px
-    margin-right: @xl 12px
-
-  .social
-    width: 100% @md auto
-    margin: 0 0 0 -16px @md 0
-    justify-content: flex-start
-
-    .social__link
-      margin-right: 4px
+    &-item
+      margin: 0 0 16px
 
       &:last-child
-        margin-right: 0
+        margin: 0
 
-  p
-    font-size: 15px
-    line-height: 1.6
-    font-weight: 500
-    text: 500 15px 1.6
-    margin: 0 0 0 -52px @xl 0
+    &-link
+      text: $pseudo-neutral-900 500 15px 1.8
 
-.disclaimer, .caption
-  margin: 0 0 30px
-  text: #90A4AE 15px
+  &__disclaimer
+    text: $pseudo-neutral-300 14px 1.2
+    margin: 16px 0 0
 
+  &__card
+    background: $neutral-100
+    padding: 16px
+    display: flex
+    align-items: flex-start
+    margin: 28px -16px
+    font-family: $font
 
-.disclaimer_text
-  text: 500 15px 1.4
+    &-title
+      text: $pseudo-neutral-900 500 15px 1.6
 
-.author__social
-  margin: 16px 0
+    &-img
+
+      &--wrapper
+        border-radius: 2px
+        overflow: hidden
+        margin: 0 0 0 16px
+
+  &__wall
+    display: none @sm block
+    position: relative
+    margin: 64px 0 32px
+
+    &-label
+      background: $accent-1-light
+      text: $neutral 15px 1.1
+      padding: 4px 12px
+      border-radius: 2px
+      position: absolute 16px null null 16px
+      z-index: 1
+
+    &-title
+      background: rgba(38, 50, 56, .65)
+      padding: 12px 16px
+      position: absolute null 0 0 0
+      text: $neutral 15px 1.4
+
+  &__ref
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    justify-content: space-between
+    margin: -32px 0 0
+
+    &-item
+      width: 100%
+      text: $pseudo-neutral-900
+      margin: 32px 0 0
+
+    &-img
+      width: 100%
+
+      &--wrapper
+        margin: 0 -16px 20px
+
+    &-name
+      text: 500 15px 1.4
+      margin: 20px 0 0

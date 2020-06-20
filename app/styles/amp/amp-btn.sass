@@ -1,26 +1,40 @@
 .btn
-  text: #263238 400 13px
-  min-height: 32px
-  padding: 0 11px
-  border-radius: 2px
+  text: #512DA8 500 14px 1.5
+  line-height: unset
+  min-height: 48px
+  border: 2px solid #512DA8
+  padding: 0 12px
   text-decoration: none
-  box-sizing: border-box
-  border: 1px solid #CFD8DC
   background: transparent
   display: inline-flex
   align-items: center
   justify-content: center
-  font-family: 'Montserrat', sans-serif
+  font-family: $font
   outline: 0
   cursor: pointer
+  user-select: none
+  -webkit-tap-highlight-color: transparent
+
+  &:hover
+    border-color: #000
+    text: #000
+
+  &--wide
+    padding: * 36px
 
   &--input
     display: flex
     width: 100%
-    height: 40px
+    min-height: 56px
+    text: #000 17px 1.7
+    border-radius: 0
+    font-weight: 400
+    background: #FFFF00
+    border-color: #FFFF00
 
-  &--small
-    min-height: 24px
+    &:hover
+      border-color: #FFFF00
+      text: #512DA8
 
   &--light
     margin: 0
@@ -30,58 +44,67 @@
     background: transparent
     cursor: pointer
 
-  &--accent
-    background: #2979FF
-    border-color: #2979FF
-    color: #fff
+  &--block
+    display: flex
+    width: 100%
+
+  &--small
+    min-height: 24px
+
+  &--big
+    min-height: 40px
+
+  &--large
+    min-height: 48px
+
+  &--huge
+    min-height: 56px
+
+  &--full
+    width: 100%
+
+  &--show
+
+    &--open
+      display: none
 
   &--hash-tag
-    background: #2979FF
-    border-color: #2979FF
-    border-radius: 0
+    text: $body-small normal none none
+    background: $accent-1-light
     color: #fff
 
-  &--celsius
-    color: #FFF
-    font-weight: 700
-    line-height: 48px
-    font-size: 15px
-    letter-spacing: .01em
-    border-radius: 24px
-    background: #20C589
-    border-color: #20C589
-    white-space: nowrap
-    width: 100% @sm auto
-    margin-top: 16px @sm 0
+    &:hover
+      background: $accent-1-medium
+      color: #fff
 
-  &--accent-2
-    background-color: #F44336
-    border-color: #F44336
-    color: #fff
+  &-aside-space
+    margin: 32px 16px
+    width: auto
 
-  &--accent-3
-    background: #2E7D32
-    border: 0
-    border-radius: 0
-    font-weight: 700
-    letter-spacing: .01em
-    color: #fff
-    padding: 0 5px
-    text-align: center
+  &--accent
+    background: #512DA8
+    text: #fff
 
-  &--subscribe
-    font-weight: 700
-    color: #2962ff
-    height: 48px
+    &:hover
+      background: #FFFF00
+      border-color: #FFFF00
+      text: #000
 
-    svg
-      margin-right: 8px
+  &--black
+    background: #000
+    text: $neutral
+    border: none
 
-  &--yb
-    font-weight: 700
-    vertical-align: middle
-    display: inline-flex
+    &:hover
+      background: #512DA8
+      text: $neutral
+
+  &--icon
+    size: 48px
+    display: flex
     align-items: center
+    justify-content: center
 
-    svg
-      margin-right: 4px
+    &-text
+      width: auto
+      min-width: 48px

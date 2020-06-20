@@ -38,15 +38,18 @@
     width: @md-down 100%
 
     &-form
+      flex-wrap: @xl-down wrap
+
       .input
         height: 56px
+        width: 100% @md auto
 
         &:first-child
-          margin: 0
-          width: calc(100% - 116px) @md auto
+          margin: 0 0 16px @md 0
+          width: 100% @md auto
 
     &-input
-      width: @md 116px @xl 269px
+      width: 100% @md 232px @xl 269px
       background: transparent
       border: 1px solid #EDE7F6
       text: $neutral
@@ -57,6 +60,7 @@
 
     &-agree
       text: $neutral 17px 1.7
+      margin: 16px 0 0 @xl 0 0 0 16px
 
       a
         text: #FFFF00
@@ -74,7 +78,7 @@
       margin: -16px 0 0 @md -32px 0 0
 
     &-item
-      width: 60% @sm 33% @md auto
+      width: 60% @sm 33% @xl auto
       margin: 16px 0 0 @md 32px 0 0
       white-space: nowrap
 
@@ -82,7 +86,7 @@
         width: @sm-down 40%
 
     &-link
-      text: #FFFF00 500 17px 1.7
+      text: $neutral 500 17px 1.7 @md #FFFF00
 
       &:hover
         text: #EDE7F6

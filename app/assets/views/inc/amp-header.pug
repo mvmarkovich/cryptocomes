@@ -1,0 +1,46 @@
+header.header
+    .header__container
+        a.header__logo(href="#!")
+            include ../../img/icons/logo.svg
+
+        .header__panel
+            button.header__btn-search.btn--light.btn--icon.btn--icon-text
+                include ../../img/icons/search.svg
+                | Search
+            button.header__burger.btn--light.btn--icon(on="tap:sidebar.toggle")
+                include ../../img/icons/burger.svg
+
+        .header__search
+            form.header__search-form(action="#" target="_blank" method="get")
+                button.header__search-submit.btn.btn--light.btn--search(type="submit")
+                    include ../../img/icons/search.svg
+                input.input__elem.header__search-input(type="text" name="search" placeholder="Type to search")
+                button.header__search-close.btn.btn--light.btn--cross
+                    include ../../img/icons/cross.svg
+
+amp-sidebar#sidebar.sidebar(layout='nodisplay', side='right')
+    .sidebar__row
+        button.btn.btn--light.btn--icon(role='button' aria-label='close sidebar' on='tap:sidebar.toggle' tabindex='0')
+            include ../../img/icons/cross.svg
+
+    .sidebar__social.social
+        a.social__link.social__link--fb(href="#!")
+            include ../../img/icons/social/facebook.svg
+        a.social__link.social__link--tw(href="#!")
+            include ../../img/icons/social/twitter.svg
+        a.social__link.social__link--tw(href="#!")
+            include ../../img/icons/social/youtube.svg
+        a.social__link.social__link--tg(href="#!")
+            include ../../img/icons/social/telegram.svg
+
+    nav.sidebar__nav
+        ul.sidebar__nav-list
+            each category in navFooter
+                li.sidebar__nav-item
+                    a.sidebar__nav-link(href="#!")= category.name
+
+                    if category.childs
+                        ul.sidebar__nav-child-list
+                            each child in category.childs
+                                li.sidebar__nav-child-item
+                                    a.sidebar__nav-child-link(href="#!")= child.name

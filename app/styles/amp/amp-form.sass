@@ -1,10 +1,6 @@
 .form--row
-  box: wrap
-
-  .input
-    margin-right: @md 8px @xl 16px
-    margin-bottom: @md 0
-    display: @md flex
+  box:
+  flex-wrap: wrap
 
 .input
   position: relative
@@ -12,13 +8,15 @@
 
   &__elem
     border: 1px solid #CFD8DC
-    border-radius: 2px
     padding: 0 10px
     height: 40px
     outline: 0
-    text: 500 13px 1.9
+    text: #000 500 17px 1.7
     font-family: 'Montserrat', sans-serif
     width: 100%
     display: flex
     align-items: center
     justify-content: flex-start
+
+    &::placeholder
+      text: #424242

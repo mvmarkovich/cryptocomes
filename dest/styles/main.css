@@ -253,7 +253,7 @@ h1,h2,h3,h4,h5 {
 
 h1 {
   color: #263238;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 22px;
   line-height: 1.1;
   font-family: 'Rubik', sans-serif;
@@ -262,7 +262,7 @@ h1 {
 
 h2 {
   color: #263238;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 26px;
   line-height: 1.2;
   font-family: 'Rubik', sans-serif;
@@ -271,7 +271,7 @@ h2 {
 
 h3 {
   color: #263238;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 17px;
   line-height: 1.4;
   font-family: 'Rubik', sans-serif;
@@ -286,7 +286,7 @@ h4 {
 
 h5 {
   color: #263238;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 15px;
   line-height: 1.6;
   font-family: 'Rubik', sans-serif;
@@ -301,8 +301,7 @@ h5 {
 }
 
 .page-container {
-  background: transparent;
-  margin-top: .5rem;
+  margin-top: 32px;
 }
 
 .f-container {
@@ -1583,7 +1582,7 @@ h5 {
 }
 
 .article__writer-title {
-  font-weight: 600;
+  font-weight: 500;
   color: #263238;
   font-size: 17px;
   line-height: 1.4;
@@ -1592,7 +1591,7 @@ h5 {
 
 .article__writer-name {
   color: #263238;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 17px;
   line-height: 1.4;
   margin: 0 0 16px;
@@ -1659,7 +1658,7 @@ h5 {
 
 .article__guid-link {
   color: #263238;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 15px;
   line-height: 1.8;
 }
@@ -1682,7 +1681,7 @@ h5 {
 
 .article__card-title {
   color: #263238;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 15px;
   line-height: 1.6;
 }
@@ -1749,7 +1748,7 @@ h5 {
 }
 
 .article__ref-name {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 15px;
   line-height: 1.4;
   margin: 20px 0 0;
@@ -1931,16 +1930,21 @@ h5 {
 .footer__subscribe {
 }
 
+.footer__subscribe-form {
+}
+
 .footer__subscribe-form .input {
   height: 56px;
+  width: 100%;
 }
 
 .footer__subscribe-form .input:first-child {
-  margin: 0;
-  width: calc(100% - 116px);
+  margin: 0 0 16px;
+  width: 100%;
 }
 
 .footer__subscribe-input {
+  width: 100%;
   background: transparent;
   border: 1px solid #EDE7F6;
   color: #FFFFFF;
@@ -1963,6 +1967,7 @@ h5 {
   color: #FFFFFF;
   font-size: 17px;
   line-height: 1.7;
+  margin: 16px 0 0;
 }
 
 .footer__subscribe-agree a {
@@ -1995,7 +2000,7 @@ h5 {
 }
 
 .footer__nav-link {
-  color: #FFFF00;
+  color: #FFFFFF;
   font-weight: 500;
   font-size: 17px;
   line-height: 1.7;
@@ -2261,10 +2266,6 @@ blockquote em {
     display: none;
   }
 
-  .page-container {
-    margin-top: 1rem;
-  }
-
   .something--top {
     height: 90px;
   }
@@ -2527,12 +2528,17 @@ blockquote em {
     margin-right: 24px;
   }
 
+  .footer__subscribe-form .input {
+    width: auto;
+  }
+
   .footer__subscribe-form .input:first-child {
+    margin: 0;
     width: auto;
   }
 
   .footer__subscribe-input {
-    width: 116px;
+    width: 232px;
   }
 
   .footer__nav-list {
@@ -2542,8 +2548,11 @@ blockquote em {
   }
 
   .footer__nav-item {
-    width: auto;
     margin: 32px 0 0;
+  }
+
+  .footer__nav-link {
+    color: #FFFF00;
   }
 
   .footer__copy {
@@ -2761,6 +2770,14 @@ blockquote em {
     width: 269px;
   }
 
+  .footer__subscribe-agree {
+    margin: 0 0 0 16px;
+  }
+
+  .footer__nav-item {
+    width: auto;
+  }
+
   ol {
     padding-left: 1rem;
   }
@@ -2814,10 +2831,6 @@ blockquote em {
     display: none;
   }
 
-  .page-container {
-    padding: 0;
-  }
-
   .something__content-long {
     display: none;
   }
@@ -2841,6 +2854,10 @@ blockquote em {
 
   .feed--something {
     display: none;
+  }
+
+  .footer__subscribe-form {
+    flex-wrap: wrap;
   }
 }
 

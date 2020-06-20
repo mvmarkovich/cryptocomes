@@ -1,109 +1,112 @@
 .footer
-  margin-top: 32px
-  position: relative
-  z-index: 150
-  background: $neutral
+  margin: 32px 0 0
+  background: #512DA8
 
   &__container
+    max-width: $container-sm-px
+    margin: 0 auto
     padding: 0 16px
 
-  &__title
-    text: 600 13px 1.2 @md 15px
-    margin: 0 0 12px
-
-  &:before
-    content: ''
-    display: block
-    border-bottom: 3px solid #263238
 
   &__row
-    flex-wrap: wrap @md nowrap
-    padding-top: 24px @md 40px
-    padding-bottom: 24px @md 40px
-    border-bottom: 1px solid #CFD8DC
-    display: flex
-    justify-content: space-between
+    box: space-between
+    flex-wrap: wrap
+    padding: 32px 0
+    border-bottom: 1px solid #EDE7F6
+
+  &__social
+
+    .social__link
+      background-color:  #FFFF00
+      border-right: 1px solid #512DA8
+
+    &:last-child
+      border: none
+
+  &__title
+    text: $neutral 17px 1.7
+    margin: 0 0 16px
 
   &__follow-us
-    margin-right: 0 @md 16px @xl 40px
-    margin-bottom: @xl-down 24px
-    width: @xl-down 100%
-
-    ^&__title
-      white-space: nowrap
+    margin-right: 0
+    margin-bottom: 24px
+    width: 100%
 
   &__subscribe
-    width: @xl-down 100%
+    width: 100%
 
     &-form
+      flex-wrap: wrap
+
       .input
+        height: 56px
+        width: 100%
+
         &:first-child
-          margin-right: 16px
-          width: calc(100% - 106px) @md auto
+          margin: 0 0 16px
+          width: 100%
 
     &-input
-      width: @md 245px
+      width: 100%
+      background: transparent
+      border: 1px solid #EDE7F6
+      text: $neutral
+      height: 56px
+
+      &::placeholder
+        text: #EDE7F6
 
     &-agree
-      text: #78909C 500 13px 2.1
-      margin-top: 0
+      text: $neutral 17px 1.7
+
+      a
+        text: #FFFF00
+
+        &:hover
+          text: $neutral
 
   &__nav
+    padding: 32px 0
+    border-bottom: 1px solid #EDE7F6
     position: relative
-    padding: 21px 0 16px
-    border-bottom: 1px solid #cfd8dc
 
     &-list
-      margin: -24px 0 0
-      list-style: none
-      padding: 0
-      display: flex
-      flex-wrap: wrap
-      justify-content: space-between
+      box: wrap
+      margin: -16px 0 0
 
     &-item
-      width: 60% @sm 35% @md 33% @xl auto
+      width: 60%
+      margin: 16px 0 0
       white-space: nowrap
-      margin-top: 24px
 
       &:nth-child(even)
-        width: 30% @md 33% @xl auto
+        width: 40%
 
     &-link
-      text: #263238 600 17px 1.4
+      text: $neutral 500 17px 1.7
 
-    &-child
-
-      &-list
-        display: none @sm block
-        margin: 16px 0 0
-        list-style: none
-        padding: 0
-
-      &-item
-
-        & + &
-          margin-top: 10px
-
-      &-link
-        text: #263238 500 13px 2.1 @md 15px
-
-  &__copy
-    padding: 24px 0
-    display: flex
-    flex-wrap: wrap
-
-    &-text
-      text: #546E7A 500 15px 1.9
-      margin-right: 32px
-
-    &-link
-      text: #2962FF 500 13px 1.9 @md 15px
+      &:hover
+        text: #EDE7F6
 
   &__disclaimer
-    border-bottom: 1px solid #cfd8dc
-    padding: 16px 0 12px
+    border-bottom: 1px solid #EDE7F6
+    padding: 16px 0
 
     &-text
-      text: #78909C 500 15px 1.6
+      text: $neutral 14px 1.4
       margin: 0
+
+  &__copy
+    box: wrap
+    padding: 16px 0
+
+    &-text
+      text: $neutral 14px 1.4
+      margin-right: 32px
+      margin-bottom: 16px
+
+    &-link
+      text: #FFFF00 14px 1.4
+
+      &:hover
+        text: $neutral

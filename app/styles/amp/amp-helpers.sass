@@ -5,11 +5,9 @@
   > *
     margin: * 8px 8px *
 
-body
-  text: $pseudo-neutral-900 400 16px 1.5
-  font-family: $font
-  background: $neutral-100
-  overflow-x: hidden
+img
+  display: block
+  max-width: 100%
 
 ul
   list-style: none
@@ -19,21 +17,16 @@ ul
 .visibility-hidden
   visibility: hidden
 
-.hide
-  &-xl-down
-    display: @xl-down none
+.text-mark
+  text: $accent-2-medium
+  text-transform: uppercase
 
-  &-xl-only
-    display: @xl none
-
-  &-md-down
-    display: @md-down none
-
-  &-md-up
-    display: @md none
-
-  &-sm-down
-    display: @sm-down none
-
-  &-sm-only
-    display: @sm none
+.promo
+  background: #FFFF00
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25)
+  border-radius: 12px
+  text: #000 14px 1.4
+  font-family: 'Yellowtail', cursive
+  position: absolute null null 8px 8px
+  text-align: center
+  padding: 3px 7px
