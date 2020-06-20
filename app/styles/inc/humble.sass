@@ -1,9 +1,9 @@
 .short
-  text: $pseudo-neutral-300 500 15px 1.6
+  text: #424242 400 14px 1.6
   white-space: nowrap
   text-decoration: none
   display: inline-flex
-  margin: 0 24px 0 0
+  margin: 0 32px 0 0
   align-items: center
   position: relative
 
@@ -11,4 +11,23 @@
     margin: 0
 
   &--author
-    cursor: pointer
+    display: flex
+    align-items: center
+    text: #000
+    font-weight: 500
+    height: 48px
+
+  &--bold
+    font-weight: 500
+    height: 48px
+
+  &__row
+    display: flex
+    align-items: center
+
+  &--img
+    border-radius: 50%
+    overflow: hidden
+    size: 24px
+    min-width: 24px
+    margin: 0 16px 0 0

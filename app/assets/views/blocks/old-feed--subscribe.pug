@@ -1,0 +1,30 @@
+.feed.feed--subscribe
+    .feed__subscribe-nav
+        a.feed__subscribe-nav-link(href="#!") About us
+        a.feed__subscribe-nav-link(href="#!") Adverstizement
+        a.feed__subscribe-nav-link(href="#!") Press realeases
+
+    form.feed__subscribe-form
+        .input-custom
+            .input-custom__title Subscribtion
+
+            .custom__checkbox
+                input.custom__checkbox-input#feed__subscribe-notice(type="checkbox")
+                label.custom__checkbox-label(for="feed__subscribe-notice")
+                label.custom__checkbox-text(for="feed__subscribe-notice") Push notifications
+
+        .input
+            input.input__elem(type="email" placeholder="Email" required)
+
+        button.btn.btn--accent.btn--big.btn--input(type="submit") Subscribe
+
+        .feed__subscribe-agree By pressing the “Subscribe button” you agree with our <a href="#!">Privacy Policy</a>
+
+    .feed__follow
+        .feed__follow-title Follow & contact
+
+        .social
+            a.social__link.social__link--fb(href="#!")
+            a.social__link.social__link--tg(href="#!")
+            a.social__link.social__link--tw(href="#!")
+            a.social__link.social__link--em(href="#!")

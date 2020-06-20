@@ -1,11 +1,10 @@
 .btn
-  text: $pseudo-neutral-900 14px 1.4 400
+  text: #512DA8 500 14px 1.5
   line-height: unset
-  min-height: 32px
+  min-height: 48px
+  border: 2px solid #512DA8
   padding: 0 12px
-  border-radius: 2px
   text-decoration: none
-  border: none
   background: transparent
   display: inline-flex
   align-items: center
@@ -17,22 +16,25 @@
   -webkit-tap-highlight-color: transparent
 
   &:hover
-    border-color: $accent-1-medium
-    color: $accent-1-medium
-
-  &:active
-    border-color: $accent-1-dark
-    color: $accent-1-dark
+    border-color: #000
+    text: #000
 
   &--wide
-    padding: * 16px
+    padding: * 36px
 
   &--input
     display: flex
     width: 100%
-    min-height: 40px
+    min-height: 56px
+    text: #000 17px 1.7
     border-radius: 0
-    font-weight: 600
+    font-weight: 400
+    background: #FFFF00
+    border-color: #FFFF00
+
+    &:hover
+      border-color: #FFFF00
+      text: #512DA8
 
   &--light
     margin: 0
@@ -75,25 +77,18 @@
       background: $accent-1-medium
       color: #fff
 
-    &:active
-      background: $accent-1-dark
-      color: #fff
-
   &-aside-space
     margin: 32px 16px
     width: auto
 
   &--accent
-    background: $accent-1-light
+    background: #512DA8
     text: #fff
 
     &:hover
-      background: $accent-1-medium
-      text: #fff
-
-    &:active
-      background: $accent-1-dark
-      text: #fff
+      background: #FFFF00
+      border-color: #FFFF00
+      text: #000
 
   &--accent-2
     background: $accent-2-medium
@@ -103,11 +98,25 @@
       background: $accent-2-medium
       text: #fff
 
-    &:active
-      background: $accent-2-medium
-      text: #fff
+  &--black
+    background: #000
+    text: $neutral
+    border: none
 
-  &--search,
+    &:hover
+      background: #512DA8
+      text: $neutral
+
+  &--search
+    height: 48px
+
+    &:before
+      content: ''
+      size: 24px
+      margin: 0 8px 0 0
+      background-position: center
+      background-repeat: no-repeat
+
   &--cross,
   &--burger
     size: 48px
@@ -118,7 +127,16 @@
     background-image: resolve("icons/burger.svg")
 
   &--search
-    background-image: resolve("icons/search.svg")
+    color: $neutral
+
+    &:before
+      background-image: resolve("icons/search.svg")
+
+    &:hover
+      text: #FFFF00
+
+      &:before
+        background-image: svg-load("icons/search.svg" fill: #FFFF00)
 
   &--cross
     background-image: resolve("icons/cross.svg")

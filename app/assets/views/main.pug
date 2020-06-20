@@ -4,70 +4,165 @@ block title
     title Main | CC
 
 block content
-    .big-story
-        .big-story__item
-            .big-story__header
-                a.humble(href="#!") News
-                .humble.big-story__mark Promoted
-
-            a.big-story__img-wrapper(href="#!")
-                img.big-story__img(src="https://u.today/sites/default/files/styles/400/public/2020-04/2020-04-04%2016.14.05.jpg?itok=gtYXCQMM")
-            a.big-story__title.link-plain(href="#!") Bitcoin Cloud Mining Contracts 2019 — Looking for the Best
-
-        .big-story__item
-            .big-story__header
-                a.humble(href="#!") News
-
-            a.big-story__img-wrapper(href="#!")
-                img.big-story__img(src="https://u.today/sites/default/files/styles/400/public/2020-04/2982.jpg?itok=Mc_wAk2l")
-            a.big-story__title.link-plain(href="#!") Bitcoin Cloud Mining Contracts 2019 — Looking for the Best
-
-        .big-story__item
-            .big-story__header
-                a.humble(href="#!") News
-
-            a.big-story__img-wrapper(href="#!")
-                img.big-story__img(src="https://u.today/sites/default/files/styles/400/public/2020-04/2986.jpg.webp")
-            a.big-story__title.link-plain(href="#!") Bitcoin Cloud Mining Contracts 2019 — Looking for the Best
 
     .f-container
+        .main-block
+            .board
+                a.board__info(href="#!")
+                    h1.board__title LEO, LINK, ATOM Price Predictions — Altcoins Are Not Showing Unity Against the Falling Bitcoin
+                    p.board__desc While the leading crypto is going down, some altcoins are rocketing. Which coins can show growth both in short and long-term scenarios?
 
-        .story
-            .story__header
-                .humble__row
-                    a.humble(href="#!") Cryptocurrency trading
-                    .humble.humble--time 1 day 15 hours ago
-                a.story__title-link.link-plain(href="#!")
-                    h2.story__title Tron Surpasses Rival Blockchains
+                a.board__img(href="#!")
+                    img(src="img/content/board/item_1.png")
+                    .promo Sponsored
 
-            a.story__img-wrapper.link-plain(href="#!")
-                img.story__img(src="https://u.today/sites/default/files/styles/736x/public/2019-12/1524.jpg?itok=LN2Ej_tZ")
+                .board__footer.short__row
+                    a.short.short--author(href="#!")
+                        img.short--img(src="img/content/avatars/item_1.png")
+                        | Alex Dovbnya
 
-            .story__footer
-                a.story__desc.link-plain(href="#!") Another 30 mln USDT moved from the Ethereum chain to Tron, reports Misha Lederman, a major Tron supporter as Justin Sun recommends Poloniex for USDT-Tron conversion
-                .humble__row
-                    a.humble.humble--author(href="#!")
-                        img.humble__img(src="https://u.today/sites/default/files/2019-11/geof-big_0.jpg")
-                        | Geoffrey Schwartz
-                    .humble.humble--icon.humble--icon-large 77
+                    a.short.short--bold(href="#!") Price predictions
+                    .short 1 hour ago
 
-        .category-item
-            a.category-item__img-wrapper(href="#!")
-                img.category-item__img(src="https://u.today/sites/default/files/styles/250/public/2020-04/2963.jpg?itok=l2-ezqge")
+            .something.something--content
+                .something__content.something__content-long
+                    img(src="img/something/long.png")
 
-            .category-item__info
-                .humble__row
-                    a.humble(href="#!") Stories
-                    .humble.humble--time 2 hours ago
+                .something__content.something__content-square
+                    img(src="img/something/square.png")
 
-                a.category-item__title-link(href="#!")
-                    h3.category-item__title How to Protect Your Identity and Bitcoin Wallet From Tracking
+        .aside
+            .feed.feed--defaults
+                .feed__title Latest news
 
-                .humble__row.humble--between
-                    a.humble.humble--author(href="#!")
-                        img.humble__img(src="https://u.today/sites/default/files/2019-11/vlad-ava.jpg")
-                        | Vladislav Sopov
+                .feed__content
+                    a.feed__item.feed__item-row.link-accent(href="#!")
+                        .feed__img-wrapper
+                            img.feed__img(src="https://cryptocomes.com/sites/default/files/styles/150/public/node-16857.jpg?itok=vCzXW3Qg")
 
-                    .humble.humble--icon.humble--icon-large 2
+                        .feed__item-info
+                            p.feed__item-desc Altcoin Market in the Red: Bitcoin Cash, EOS, Bitcoin SV Drop 20 Percent
+                            .short 11:05AM
+
+                    a.feed__item.feed__item-row.link-accent(href="#!")
+                        .feed__img-wrapper
+                            img.feed__img(src="https://cryptocomes.com/sites/default/files/styles/150/public/node-17001.jpg?itok=MVlKYrle")
+
+                        .feed__item-info
+                            p.feed__item-desc ConsenSys Chief Joe Lubin to Be Taken to Court by Ex-Staffer for $13 Mln
+                            .short 10:30AM
+
+                    a.feed__item.feed__item-row.link-accent(href="#!")
+                        .feed__img-wrapper
+                            img.feed__img(src="https://cryptocomes.com/sites/default/files/styles/150/public/node-17130.jpg?itok=OZ5jaKts")
+
+                        .feed__item-info
+                            p.feed__item-desc Mastercard Starts Creating Its Own Cryptocurrency Team
+                            .short 31 Oct
+
+                    a.feed__item.feed__item-row.link-accent(href="#!")
+                        .feed__img-wrapper
+                            img.feed__img(src="https://cryptocomes.com/sites/default/files/styles/150/public/2019-08/Mike_Novogratz_Doesn%E2%80%99t_Think_Bitcoin_Price_Will_Ever_Go_Back_to_%245%2C000_.jpg?itok=ioChU4o4")
+
+                        .feed__item-info
+                            p.feed__item-desc Mike Novogratz Doesn’t Think Bitcoin Price Will Ever Go Back to $5,000
+                            .short 27 Oct
+
+                a.btn.btn--accent.feed__footer(href="#!") See all
+
+    .stories
+        .stories__list
+            a.stories__item(href="#!")
+                .stories__item-img
+                    img(src="img/content/stories/item_1.png")
+
+                .stories__item-headline BTCNEXT Has CEZA License and Launches Its Own BNX Coin!
+                .short 1 hour ago
+
+            a.stories__item(href="#!")
+                .stories__item-img
+                    img(src="img/content/stories/item_2.png")
+
+                .stories__item-headline CoinDeal Is Celebrating It’s Premier League Sponsorship Renewal with a Unique and Highly Anticipated Token Launch
+                .short 2 hour ago
+
+            a.stories__item(href="#!")
+                .stories__item-img
+                    img(src="img/content/stories/item_3.png")
+
+                .stories__item-headline NEXO Token Holders Receive US $2,409,574.87 in Dividends
+                .short 3 hour ago
+
+    .f-container
+        .main-block
+            .board
+                a.board__info(href="#!")
+                    h2.board__title WHALE ALERT: Almost $1 Bln Worth of BTC Moved to Unknown Wallets in One Hour
+                    p.board__desc While the whales are flexing their muscles, it’s time to put on our tinfoil hats and figure out what is going on
+
+                a.board__img(href="#!")
+                    img(src="img/content/board/item_2.png")
+
+                .board__footer.short__row
+                    a.short.short--author(href="#!")
+                        img.short--img(src="img/content/avatars/item_1.png")
+                        | Alex Dovbnya
+
+                    a.short.short--bold(href="#!") Price predictions
+                    .short 1 hour ago
+
+            .board
+                a.board__info(href="#!")
+                    h2.board__title WHALE ALERT: Almost $1 Bln Worth of BTC Moved to Unknown Wallets in One Hour
+                    p.board__desc While the whales are flexing their muscles, it’s time to put on our tinfoil hats and figure out what is going on
+
+                a.board__img(href="#!")
+                    img(src="img/content/board/item_3.png")
+
+                .board__footer.short__row
+                    a.short.short--author(href="#!")
+                        img.short--img(src="img/content/avatars/item_1.png")
+                        | Alex Dovbnya
+
+                    a.short.short--bold(href="#!") Price predictions
+                    .short 1 hour ago
+
+            .something.something--content
+                .something__content.something__content-long
+                    img(src="img/something/long.png")
+
+                .something__content.something__content-square
+                    img(src="img/something/square.png")
+
+            .board-line
+                a.board-line__img(href="#!")
+                    img(src="img/content/board-line/item_1.png")
+
+                .board-line__info
+                    a.board-line__title(href="#!") Mike Novogratz Doesn’t Think Bitcoin Price Will Ever Go Back to $5,000
+
+                    .board-line__footer.short__row
+                        a.short.short--author(href="#!")
+                            img.short--img(src="img/content/avatars/item_1.png")
+                            | Alex Dovbnya
+
+                        a.short.short--bold(href="#!") Price predictions
+                        .short 1 hour ago
+
+            .board-line
+                a.board-line__img(href="#!")
+                    img(src="img/content/board-line/item_2.png")
+                    .promo Sponsored
+
+                .board-line__info
+                    a.board-line__title(href="#!") Ushering in the future of money with Telegram’s GRAM Wallet
+
+                    .board-line__footer.short__row
+                        a.short.short--author(href="#!")
+                            img.short--img(src="img/content/avatars/item_2.png")
+                            | Yuri Molchan
+
+                        a.short.short--bold(href="#!") News
+                        .short 2 hours ago
 
         include blocks/aside.pug

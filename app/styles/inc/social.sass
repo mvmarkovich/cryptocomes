@@ -3,25 +3,12 @@
   align-items: center
   justify-content: space-between
 
-  &--border
-    border: $border
-    border-radius: 2px
-    width: @md-down 100%
-
-    ^&__link
-      width: 100% @md 40px @xl 72px
-      height: 38px
-      border-right: $border
-
-      &:last-child
-        border: none
-
   &__title
     text: 13px 16px 600 $pseudo-neutral-900
     margin-right: 1.5rem
 
   &__link
-    size: 48px
+    size: 56px
     background-position: center
     background-repeat: no-repeat
 
@@ -38,26 +25,53 @@
     &--fb
       background-image: resolve("icons/social/facebook.svg")
 
+      &:hover
+        background-image: svg-load("icons/social/facebook.svg" fill: #512DA8)
+
     &--tg
       background-image: resolve("icons/social/telegram.svg")
+
+      &:hover
+        background-image: svg-load("icons/social/telegram.svg" fill: #512DA8)
 
     &--tw
       background-image: resolve("icons/social/twitter.svg")
 
+      &:hover
+        background-image: svg-load("icons/social/twitter.svg" fill: #512DA8)
+
     &--em
       background-image: resolve("icons/social/email.svg")
+
+      &:hover
+        background-image: svg-load("icons/social/email.svg" fill: #512DA8)
 
     &--yt
       background-image: resolve("icons/social/youtube.svg")
 
+      &:hover
+        background-image: svg-load("icons/social/youtube.svg" fill: #512DA8)
+
     &--rd
       background-image: resolve("icons/social/reddit.svg")
+
+      &:hover
+        background-image: svg-load("icons/social/reddit.svg" fill: #512DA8)
 
     &--rs
       background-image: resolve("icons/social/rss.svg")
 
+      &:hover
+        background-image: svg-load("icons/social/rss.svg" fill: #512DA8)
+
     &--ln
       background-image: resolve("icons/social/linkedIn.svg")
 
+      &:hover
+        background-image: svg-load("icons/social/linkedIn.svg" fill: #512DA8)
+
     &--insta
       background-image: resolve("icons/social/instagram.svg")
+
+      &:hover
+        background-image: svg-load("icons/social/instagram.svg" fill: #512DA8)

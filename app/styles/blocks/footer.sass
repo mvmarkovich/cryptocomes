@@ -1,6 +1,6 @@
 .footer
   margin: 32px 0 0
-  background: #1C143D
+  background: #512DA8
 
   &__container
     max-width: @xl 1180px @md 768px @md-down 480px
@@ -10,18 +10,21 @@
   &__row
     box: space-between
     flex-wrap: wrap @md nowrap
-    padding: 24px * @xl 52px * 64px
-    border-bottom: 1px solid $pseudo-neutral-800
+    padding: 32px 0
+    border-bottom: 1px solid #EDE7F6
 
   &__social
-    border: 1px solid $pseudo-neutral-800
 
     .social__link
-      border-right: 1px solid $pseudo-neutral-800
+      background-color:  #FFFF00
+      border-right: 1px solid #512DA8
+
+      &:last-child
+        border: none
 
   &__title
-    text: $neutral 14px 1.2 @sm 17px @xl 22px
-    margin-bottom: 16px @md 24px
+    text: $neutral 17px 1.7
+    margin: 0 0 16px
 
   &__follow-us
     margin-right: 0 @md 24px @xl 56px
@@ -35,34 +38,35 @@
     width: @md-down 100%
 
     &-form
-
       .input
-        height: 40px
+        height: 56px
 
         &:first-child
-          margin-right: 16px
+          margin: 0
           width: calc(100% - 116px) @md auto
 
     &-input
       width: @md 116px @xl 269px
       background: transparent
-      border: 1px solid $pseudo-neutral-800
+      border: 1px solid #EDE7F6
       text: $neutral
+      height: 56px
 
       &::placeholder
-        text: $neutral
-
-    .btn--input
-      background: $accent-1-medium
-      text: $neutral
+        text: #EDE7F6
 
     &-agree
-      text: $pseudo-neutral-400 $body-tiny
-      margin-top: 0 @sm -2px
+      text: $neutral 17px 1.7
+
+      a
+        text: #FFFF00
+
+        &:hover
+          text: $neutral
 
   &__nav
-    padding: 24px * @md 32px * 40px @xl 52px * 64px
-    border-bottom: 1px solid $pseudo-neutral-800
+    padding: 32px 0
+    border-bottom: 1px solid #EDE7F6
     position: relative
 
     &-list
@@ -78,7 +82,10 @@
         width: @sm-down 40%
 
     &-link
-      text: $neutral 17px 1.2 @md 22px
+      text: #FFFF00 500 17px 1.7
+
+      &:hover
+        text: #EDE7F6
 
     &-child
 
@@ -93,26 +100,30 @@
           margin: 0
 
       &-link
-        text: $neutral 14px 1.4
+        text: #FFFF00 400 17px 1.7
+
+        &:hover
+          text: #EDE7F6
+
+  &__disclaimer
+    border-bottom: 1px solid #EDE7F6
+    padding: 16px 0
+
+    &-text
+      text: $neutral 14px 1.4
+      margin: 0
 
   &__copy
     box: wrap @md center
     padding: 16px 0
 
     &-text
-      text: $body-small
-      text: $pseudo-neutral-400
+      text: $neutral 14px 1.4
       margin-right: 2rem
       margin-bottom: @sm-down 1rem
 
     &-link
-      text: $body-small
-      text: $pseudo-neutral-400
+      text: #FFFF00 14px 1.4
 
-  &__disclaimer
-    border-bottom: 1px solid $pseudo-neutral-800
-    padding: 24px 0
-
-    &-text
-      text: $pseudo-neutral-400 14px 1.4
-      margin: 0
+      &:hover
+        text: $neutral

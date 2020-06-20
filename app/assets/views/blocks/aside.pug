@@ -1,122 +1,71 @@
 .aside
-    .feed
-        .feed__title Popular
+    .feed.feed--subscribe
+        .feed__title-row
+            .feed__title Follow us
 
-        .feed__content
-            a.feed__item.feed__item-row(href="#!")
-                .feed__img-wrapper
-                    img.feed__img(src="https://cryptocomes.com/sites/default/files/styles/150/public/node-16857.jpg?itok=vCzXW3Qg")
+            .feed__title-icon
+                img(src="img/icons/aside/follow-us.svg")
 
-                .feed__item-info
-                    .short__row
-                        .short 11:05AM
+        .feed__subscribe
+            a.feed__subscribe-item.link-accent.social__link.social__link--fb(href="#!" target="_blank")
+                .feed__item-desc Like
+                .feed__subscribe-headline cryptocomes.en
 
-                    p.feed__item-desc Altcoin Market in the Red: Bitcoin Cash, EOS, Bitcoin SV Drop 20 Percent
+            a.feed__subscribe-item.link-accent.social__link.social__link--tw(href="#!" target="_blank")
+                .feed__item-desc Follow
+                .feed__subscribe-headline @cryptocomes
 
-            a.feed__item.feed__item-row(href="#!")
-                .feed__img-wrapper
-                    img.feed__img(src="https://cryptocomes.com/sites/default/files/styles/150/public/node-17001.jpg?itok=MVlKYrle")
+            a.feed__subscribe-item.link-accent.social__link.social__link--yt(href="#!" target="_blank")
+                .feed__item-desc Watch
+                .feed__subscribe-headline cryptocomes
 
-                .feed__item-info
-                    .short__row
-                        .short 10:30AM
+            a.feed__subscribe-item.link-accent.social__link.social__link--tg(href="#!" target="_blank")
+                .feed__item-desc Join
+                .feed__subscribe-headline @cryptocomes_en
 
-                    p.feed__item-desc ConsenSys Chief Joe Lubin to Be Taken to Court by Ex-Staffer for $13 Mln
-
-            a.feed__item.feed__item-row(href="#!")
-                .feed__img-wrapper
-                    img.feed__img(src="https://cryptocomes.com/sites/default/files/styles/150/public/node-17130.jpg?itok=OZ5jaKts")
-
-                .feed__item-info
-                    .short__row
-                        .short 31 Oct
-
-                    p.feed__item-desc Mastercard Starts Creating Its Own Cryptocurrency Team
-
-            a.feed__item.feed__item-row(href="#!")
-                .feed__img-wrapper
-                    img.feed__img(src="https://cryptocomes.com/sites/default/files/styles/150/public/2019-08/Mike_Novogratz_Doesn%E2%80%99t_Think_Bitcoin_Price_Will_Ever_Go_Back_to_%245%2C000_.jpg?itok=ioChU4o4")
-
-                .feed__item-info
-                    .short__row
-                        .short 27 Oct
-
-                    p.feed__item-desc Mike Novogratz Doesn’t Think Bitcoin Price Will Ever Go Back to $5,000
-
-        a.btn.btn--arrow-right.feed__footer(href="#!") See all
+            a.feed__subscribe-item.link-accent.social__link.social__link--em(href="#!" target="_blank")
+                .feed__item-desc Subscribe to email
 
     .feed.feed--something
         img(src="img/something/aside--ad.png")
 
-    .feed.feed--subscribe
-        .feed__subscribe-nav
-            a.feed__subscribe-nav-link(href="#!") About us
-            a.feed__subscribe-nav-link(href="#!") Adverstizement
-            a.feed__subscribe-nav-link(href="#!") Press realeases
+    .feed
+        .feed__title-row
+            .feed__title Hot stuff
 
-        form.feed__subscribe-form
-            .input-custom
-                .input-custom__title Subscribtion
-
-                .custom__checkbox
-                    input.custom__checkbox-input#feed__subscribe-notice(type="checkbox")
-                    label.custom__checkbox-label(for="feed__subscribe-notice")
-                    label.custom__checkbox-text(for="feed__subscribe-notice") Push notifications
-
-            .input
-                input.input__elem(type="email" placeholder="Email" required)
-
-            button.btn.btn--accent.btn--big.btn--input(type="submit") Subscribe
-
-            .feed__subscribe-agree By pressing the “Subscribe button” you agree with our <a href="#!">Privacy Policy</a>
-
-        .feed__follow
-            .feed__follow-title Follow & contact
-
-            .social
-                a.social__link.social__link--fb(href="#!")
-                a.social__link.social__link--tg(href="#!")
-                a.social__link.social__link--tw(href="#!")
-                a.social__link.social__link--em(href="#!")
-
-    .feed.feed--tweet
-        .feed__title Crypto Tweets
+            .feed__title-icon
+                img(src="img/icons/aside/hot-stuff.svg")
 
         .feed__content
-            a.feed__item(href="#!")
-                .feed__user
-                    .feed__user-img--wrapper
-                        img.feed__user-img(src="img/content/aside/tweet_1.png")
+            a.feed__item.link-accent(href="#!")
+                p.feed__item-desc Mike Novogratz Doesn’t Think Bitcoin Price Will Ever Go Back to $5,000
+                .short 2 hours ago
 
-                    .feed__user-info
-                        .feed__user-name @VitalikButerin
-                        .feed__user-date Yesterday, 11:01 (updated)
+            a.feed__item.link-accent(href="#!")
+                p.feed__item-desc WHALE ALERT: Almost $1 Bln Worth of BTC Moved to Unknown Wallets in One Hour
+                .short 3 hours ago
 
-                p.feed__item-desc A Day and Night Difference or Nothing Special? Ethereum Futures Are Coming Soon
+            a.feed__item.link-accent(href="#!")
+                p.feed__item-desc Bitcoin Starts August with a Bang as Its Price Surges Past $10,400
+                .short 4 hours ago
 
-            a.feed__item(href="#!")
-                .feed__user
-                    .feed__user-img--wrapper
-                        img.feed__user-img(src="img/content/aside/tweet_2.png")
+            a.feed__item.link-accent(href="#!")
+                p.feed__item-desc Mike Novogratz Doesn’t Think Bitcoin Price Will Ever Go Back to $5,000
+                .short 5 hours ago
 
-                    .feed__user-info
-                        .feed__user-name @Utoday_en
-                        .feed__user-date 2 days ago
+            a.feed__item.link-accent(href="#!")
+                p.feed__item-desc Ushering in the future of money with Telegram’s GRAM Wallet
+                .short 6 hours ago
 
-                p.feed__item-desc Google’s Amir Sarhangi Joins Ripple
+            a.feed__item.link-accent(href="#!")
+                p.feed__item-desc PlusToken Chinese Ponzi Scheme Founders Who Grabbed $3 Bln from Investors Arrested in...
+                .short 7 hours ago
 
-            a.feed__item(href="#!")
-                .feed__user
-                    .feed__user-img--wrapper
-                        img.feed__user-img(src="img/content/aside/tweet_3.png")
+            a.feed__item.link-accent(href="#!")
+                p.feed__item-desc Ethereum, Ripple’s XRP, Bitcoin Cash, Litecoin, EOS Prices Post Green Updates, but Fall Short...
+                .short 8 hours ago
 
-                    .feed__user-info
-                        .feed__user-name @lopp
-                        .feed__user-date 3 days ago
-
-                p.feed__item-desc HitBTC, OKEx, Binance and Huobi Lead in Trading Pair Stakes
-
-        a.btn.btn--arrow-right.feed__footer(href="#!") See all
+        a.btn.btn--black.feed__footer(href="#!") See all
 
 
 

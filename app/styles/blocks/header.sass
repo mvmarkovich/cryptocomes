@@ -10,7 +10,7 @@
     padding: 0 16px
     position: relative
     will-change: transform
-    max-width: @xl 1152px @md 768px @md-down 480px
+    max-width: @xl 1182px @md 768px @md-down 480px
     margin: 0 auto
 
     &--sticky
@@ -32,15 +32,15 @@
     display: none
 
   &__nav
-    margin-top: 12px
     position: relative
     order: @xl-down 9
-    width: 100% @xl 740px
     display: none @md block
+    width: 100% @xl auto
+    margin: @md 8px 0 0 @xl 0
 
     &-list
       box: vertical @md horizontal space-between @xl center
-      background: @md-down #fff
+      background: @md-down #512DA8
       padding-top: @md-down 4px
       padding-bottom: @md-down 24px
       margin: @xl 0 24px
@@ -67,14 +67,16 @@
         display: none
 
       &:hover
+        background: #FFFF00
+
+        ^^&-link
+          text: #000
+
         ^^&-child-list
           display: @md block
 
         &:after
           background: $accent-1-medium
-
-      & + &
-        margin-left: 0 @md 24px
 
       &--arrow
         &:hover
@@ -83,13 +85,17 @@
             right: auto @md 24px
 
           ^^^&-link
+            text: #000
+
             &:after
-              transform: @md scaleY(-1)
+              background-image: resolve("icons/triangle_down-dark.svg")
 
         ^^&-link:after
           content: ""
           display: block
-          background: resolve("icons/triangle_right-dark.svg") @md resolve("icons/triangle_down.svg") center
+          background-image: resolve("icons/triangle_right-dark.svg") @md resolve("icons/triangle_down.svg")
+          background-repeat: no-repeat
+          background-position: center
           size: 24px
 
       ^&-link
@@ -99,80 +105,84 @@
           right: auto @md 24px
 
     &-link
-      text: $pseudo-neutral-900 600 15px 1.4 @md $neutral
+      text: $neutral 500 15px 1.4
       text-decoration: none
       box: space-between center @md left center
-      padding: 0 16px @md 0 0 12px
-      height: @md-down 48px
+      padding: 0 16px
+      height: 48px
       pointer-events: @md-down none
-
-      &:hover
-        text: $neutral
-
-      &:active
-        text: $neutral
 
     &-child
 
       &-list
         display: none
         position: absolute
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25)
+        background: #512DA8
         top: @md-down 54px
         bottom: @md-down 0
         width: @md-down 205px
         overflow: @md-down auto
-        padding-top: 8px
-        border-radius: @md 2px
-        border: @md 1px solid $pseudo-neutral-300
         min-width: @md 190px
-        background: #fff
         z-index: 999 @md 997
+        border-top: 1px solid #EDE7F6
 
         &.show
           display: @md-down block
 
       &-item
-        border-left: 4px solid transparent
-        margin-bottom: 8px
-
-        &--active
-          border-color: $pseudo-neutral-900
+        border-bottom: 1px solid #EDE7F6
 
         &:hover
-          background: @md $neutral-100
+          background: @md #FFFF00
+
+        &:last-child
+          border: none
 
       &-link
-        text: $pseudo-neutral-900 14px 1.4 600
+        text: $neutral 500 17px 1.7
         text-decoration: none
         text-transform: none
         letter-spacing: normal
         white-space: nowrap
-        height: 40px
+        height: 56px
         box: center
         padding: * 16px
+
+        &:hover
+          text: #000
 
   &__panel
     box: center space-between
 
   &__search
     position: absolute
-    left: 16px @md 215px @xl 240px
-    right: 16px @md 185px @xl 210px
-    top: 0 @md 4px @xl 0
+    left: 16px
+    right: 16px
+    top: 0
+    height: 48px
     display: none
 
     &-form
       box: center
 
     &-submit
-      position: absolute 0 null 0 0
-      background-image: resolve("icons/search-dark.svg")
+      position: absolute
+      background-image: svg-load("icons/search.svg" fill: #616161)
+      background-repeat: no-repeat
+      background-position: center
+      size: 48px
+      right: 48px
+      top: 0
+
+      &:before
+        display: none
 
     &-input
-      background: #fff @md $neutral-100
-      border-color: #fff @md $neutral-100
+      background: #FFD600
+      border-color: #FFD600
       min-height: 48px
-      padding: 0 48px
+      padding: 0 96px 0 16px
 
     &-close
       position: absolute 0 0 0 null
@@ -193,10 +203,6 @@
       background-image: resolve("icons/cross-light.svg")
 
   &--mobile-menu
-
-    ^&__container:after
-      display: none
-
     ^&__social
       display: @md-down flex
       height: @md-down 56px
@@ -208,16 +214,16 @@
       border-bottom: @md-down $border
 
     ^&__nav
-      position: @md-down absolute 37px 0px null null
+      position: @md-down fixed 37px 0px null null
       width: @md-down 205px
       display: @md-down block
       height: 100vh
-      background-color: #fff
+      background-color: #512DA8
 
 .mobile-menu
 
   &-cover
-    position: fixed 0 0 -82px 0
+    position: fixed 0 0 0 0
     z-index: 995
     background: $cover-color
     display: none

@@ -5,7 +5,6 @@
   //
 
   const $header = $(".header"),
-    $headerContainer = $(".header__container"),
     $headerBurger = $(".header__burger"),
     $mobileMenuCover = $(".mobile-menu-cover"),
     $headerBtnSearch = $(".header__btn-search"),
@@ -18,7 +17,6 @@
 
   function toggleMobileMenu() {
     $header.toggleClass("header--mobile-menu");
-    $headerBurger.toggleClass("btn--cross");
     hideMobileSubMenu();
     $("body").toggleClass("overflow-hidden");
     $mobileMenuCover.fadeToggle(280);
