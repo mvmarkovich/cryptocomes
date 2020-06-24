@@ -12,24 +12,19 @@
 
   &--author
     display: flex
-    align-items: center
+    align-items: flex-start @xl center
+    flex-direction: @xl-down column
+    justify-content: @xl-down center
     text: #000
     font-weight: 500
     height: 48px
-
-    span
-      position: relative
-      top: -5px @xl 0
+    padding:  @xl-down 0 0 0 40px
 
     .short
       margin: @xl 0 0 0 32px
-      position: @xl-down absolute
-      left: @xl-down 40px
-      top: @xl-down 25px
 
   &--bold
     font-weight: 500
-    height: 48px
 
   &__row
     display: flex
@@ -41,3 +36,6 @@
     size: 24px
     min-width: 24px
     margin: 0 16px 0 0
+    position: @xl-down absolute
+    left: @xl-down 0
+    top: @xl-down 12px
