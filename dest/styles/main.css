@@ -1329,7 +1329,6 @@ h5 {
 }
 
 .article__over .short--bold {
-  top: 3px;
 }
 
 .article__label {
@@ -2681,6 +2680,10 @@ blockquote strong {
 
   .article__over .short__row {
     align-items: flex-start;
+  }
+
+  .article__over .short--bold {
+    top: 3px;
   }
 
   .board-line__footer {
