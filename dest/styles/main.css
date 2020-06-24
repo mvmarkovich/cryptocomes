@@ -1420,10 +1420,6 @@ h5 {
   margin: 0;
 }
 
-.article__content p {
-  margin: 40px 0;
-}
-
 .article__disclaimer {
   color: #424242;
   font-size: 14px;
@@ -1555,7 +1551,7 @@ h5 {
 .board-line {
   display: flex;
   align-items: flex-start;
-  padding: 16px 16px 48px;
+  padding: 16px 16px 56px;
   margin: 0 0 32px;
   background-color: #fff;
   position: relative;
@@ -2059,7 +2055,7 @@ blockquote:before {
   left: 16px;
 }
 
-blockquote amp-img,blockquote img {
+blockquote img {
   margin: 16px 0 0;
   float: left;
   width: 40px;
@@ -2213,7 +2209,7 @@ blockquote strong {
     left: 40px;
   }
 
-  blockquote amp-img,blockquote img {
+  blockquote img {
     margin-top: 24px;
     width: 64px;
     height: 64px;

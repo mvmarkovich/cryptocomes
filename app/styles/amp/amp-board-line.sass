@@ -1,0 +1,42 @@
+.board-line
+  display: flex
+  align-items: flex-start
+  padding: 16px 16px 56px
+  margin: 0 0 32px
+  background-color: #fff
+  position: relative
+
+  &:last-child
+    margin: 32px 0 0
+
+  &:first-child
+    margin: 0 0 32px
+
+  &__img
+    max-width: 132px
+    min-width: 132px
+    position: relative
+    display: block
+
+  &__info
+    width: 100%
+    margin-left: 16px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+  &__title
+    text: #263238 500 14px 1.7
+    background: $neutral
+    width: 100%
+    margin: 0
+    display: block
+
+  &__footer
+    margin: 0
+    position: absolute
+    left: 16px
+    bottom: 0
+
+  .short--bold
+    display: @xl-down none
