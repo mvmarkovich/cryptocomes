@@ -110,15 +110,22 @@
 
   &--search
     height: 48px
+    min-width: 48px
+    width: 48px @md unset
+    overflow: hidden
+    padding: 12px @md 0
+    justify-content: flex-start
 
     &:before
       content: ''
       size: 24px
-      margin: 0 8px 0 0
+      min-width: 24px
+      margin: 0 20px 0 0 @md 0 8px 0 0
       background-position: center
       background-repeat: no-repeat
 
   &--cross,
+  &--cross-white,
   &--burger
     size: 48px
     background-position: center
@@ -141,6 +148,9 @@
 
   &--cross
     background-image: resolve("icons/cross.svg")
+
+  &--cross-white
+    background-image: resolve("icons/cross-white.svg")
 
   &--arrow-right
     &:after

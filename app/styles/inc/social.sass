@@ -1,11 +1,6 @@
 .social
   display: inline-flex
   align-items: center
-  justify-content: space-between
-
-  &__title
-    text: 13px 16px 600 $pseudo-neutral-900
-    margin-right: 1.5rem
 
   &__link
     size: 56px
@@ -28,17 +23,26 @@
       &:hover
         background-image: svg-load("icons/social/facebook.svg" fill: #512DA8)
 
+      &-white
+        background-image: resolve("icons/social/facebook-white.svg")
+
     &--tg
       background-image: resolve("icons/social/telegram.svg")
 
       &:hover
         background-image: svg-load("icons/social/telegram.svg" fill: #512DA8)
 
+      &-white
+        background-image: resolve("icons/social/telegram-white.svg")
+
     &--tw
       background-image: resolve("icons/social/twitter.svg")
 
       &:hover
         background-image: svg-load("icons/social/twitter.svg" fill: #512DA8)
+
+      &-white
+        background-image: resolve("icons/social/twitter-white.svg")
 
     &--em
       background-image: resolve("icons/social/email.svg")
@@ -51,6 +55,9 @@
 
       &:hover
         background-image: svg-load("icons/social/youtube.svg" fill: #512DA8)
+
+      &-white
+        background-image: resolve("icons/social/youtube-white.svg")
 
     &--rd
       background-image: resolve("icons/social/reddit.svg")
@@ -75,3 +82,5 @@
 
       &:hover
         background-image: svg-load("icons/social/instagram.svg" fill: #512DA8)
+
+

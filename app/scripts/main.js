@@ -13,7 +13,8 @@
     $headerSearchInput = $(".header__search-input"),
     $headerNavList = $(".header__nav-list"),
     $headerNavLinksList = $(".header__nav-item--arrow"),
-    $headerMobileMenuBack = $(".mobile-menu-back");
+    $headerMobileMenuBack = $(".mobile-menu-back"),
+    $headerMobileMenuClose = $(".header__mobile-cross");
 
   function toggleMobileMenu() {
     $header.toggleClass("header--mobile-menu");
@@ -43,7 +44,8 @@
   $headerNavLinksList.on("click", showMobileSubMenu);
   $headerBurger.on("click", toggleMobileMenu);
   $mobileMenuCover.on("click", toggleMobileMenu);
-  $headerBtnSearch.on("click", toggleHeaderSearch)
+  $headerMobileMenuClose.on("click", toggleMobileMenu);
+  $headerBtnSearch.on("click", toggleHeaderSearch);
   $headerSearchBtnClose.on("click", toggleHeaderSearch);
 
   //

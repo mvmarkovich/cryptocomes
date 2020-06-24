@@ -1,35 +1,22 @@
 .header
   background: $accent-1-medium
   position: relative
-  z-index: 996
 
   &__container
     box: center space-between
-    flex-wrap: wrap @xl nowrap
+    flex-wrap: @md wrap @xl nowrap
     height: @xl 48px
     padding: 0 16px
     position: relative
-    will-change: transform
     max-width: @xl 1182px @md 768px @md-down 480px
     margin: 0 auto
-
-    &--sticky
-      position: @sm-down fixed 0 0 null 0
-      background: @sm-down #fff
-      box-shadow: @sm-down 80px 0 0 #fff, -80px 0 0 #fff
-      transform: @sm-down translateY(-100%)
-      transition: @sm-down transform .3s ease
-
-      &-show
-        transform: @sm-down translateY(0)
 
   &__logo
     display: block
 
   &__social
-    width: 236px @xl 161px
-    position: @xl absolute null null 5px 0
     display: none
+    z-index: 997
 
   &__nav
     position: relative
@@ -41,7 +28,6 @@
     &-list
       box: vertical @md horizontal space-between @xl center
       background: @md-down #512DA8
-      padding-top: @md-down 4px
       padding-bottom: @md-down 24px
       margin: @xl 0 24px
 
@@ -51,7 +37,10 @@
     &-item
       position: @md relative
       font-family: $font
-      margin: 0 0 8px @md 0
+      border-bottom: 1px solid #EDE7F6 @md none
+
+      &:last-child
+        border: none
 
       &:hover
         &:before
@@ -93,10 +82,11 @@
         ^^&-link:after
           content: ""
           display: block
-          background-image: resolve("icons/triangle_right-dark.svg") @md resolve("icons/triangle_down.svg")
+          background-image: resolve("icons/triangle_down.svg")
           background-repeat: no-repeat
           background-position: center
           size: 24px
+          transform: rotate(-90deg) @md rotate(0)
 
       ^&-link
         pointer-events: @md-down none
@@ -108,8 +98,8 @@
       text: $neutral 500 15px 1.4
       text-decoration: none
       box: space-between center @md left center
-      padding: 0 16px
-      height: 48px
+      padding: 12px 16px
+      min-height: 48px
       pointer-events: @md-down none
 
     &-child
@@ -119,12 +109,12 @@
         position: absolute
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25)
         background: #512DA8
-        top: @md-down 54px
+        top: @md-down -1px
         bottom: @md-down 0
-        width: @md-down 205px
+        width: @md-down 240px
         overflow: @md-down auto
         min-width: @md 190px
-        z-index: 999 @md 997
+        z-index: 997
         border-top: 1px solid #EDE7F6
 
         &.show
@@ -150,10 +140,11 @@
         padding: * 16px
 
         &:hover
-          text: #000
+          text: @md #000
 
   &__panel
     box: center space-between
+    margin: 0 0 0 16px @md 0
 
   &__search
     position: absolute
@@ -197,28 +188,43 @@
 
   &__burger
     display: @md none
-    margin-left: 8px
-
-    &.btn--cross
-      background-image: resolve("icons/cross-light.svg")
 
   &--mobile-menu
     ^&__social
       display: @md-down flex
-      height: @md-down 56px
-      width: @md-down 205px
-      position: @md-down absolute 48px 0 null null
-      background: @md-down #fff
-      padding: @md-down * 24px
-      border-top: @md-down $border
-      border-bottom: @md-down $border
+      width: @md-down 240px
+      position: @md-down fixed 48px 0 null null
+      background: @md-down #512DA8
+      border-bottom: @md-down 1px solid #EDE7F6
+      height: @md-down 48px
+
+      .social__link
+        size: 48px
+        margin: 0 16px 0 0
+
+        &:last-child
+          margin: 0
 
     ^&__nav
-      position: @md-down fixed 37px 0px null null
-      width: @md-down 205px
+      position: @md-down fixed 96px 0 null null
+      width: @md-down 240px
       display: @md-down block
-      height: 100vh
-      background-color: #512DA8
+      z-index: @md-down 997
+      height: @md-down 100vh
+      background: @md-down #512DA8
+
+    ^&__mobile
+      display: @md-down flex
+      justify-content: @md-down flex-end
+      z-index: @md-down 997
+      border-bottom: @md-down 1px solid #EDE7F6
+      position: @md-down fixed 0 0 null null
+      background: @md-down #512DA8
+      width: @md-down 240px
+      height: @md-down 48px
+
+  &__mobile
+    display: none
 
 .mobile-menu
 
@@ -229,18 +235,19 @@
     display: none
 
   &-back
-    text: 14px 1.4 600
-    line-height: 55px
-    padding-left: 44px
-    position: absolute 49px 0 null null
-    size: 205px 54px
-    background-color: #fff
-    background-image: resolve("icons/arrow_long.svg")
+    text: #fff 17px 1.7 500
+    line-height: 48px
+    padding-left: 48px
+    position: fixed 48px 0 null null
+    z-index: 997
+    size: 240px 48px
+    background-color: #512DA8
+    background-image: resolve("icons/triangle_left.svg")
     background-repeat: no-repeat
     background-position: 11px center
     cursor: pointer
     display: none
-    border-bottom: 1px solid $pseudo-neutral-800
+    border-bottom: 1px solid #EDE7F6
 
     &.show
       display: @md-down block

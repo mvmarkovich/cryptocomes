@@ -1,6 +1,7 @@
 .board-line
   display: flex
-  padding: 16px @md 0
+  align-items: flex-start @xl normal
+  padding: 16px 16px 48px @xs 16px @xl 0
   margin: 0 0 32px
   background-color: #fff
   position: relative
@@ -12,26 +13,32 @@
     margin: 0 0 32px
 
   &__img
-    max-width: 156px @md 240px
-    min-width: 156px @md 240px
+    max-width: 132px @xs 156px @md 210px @xl 240px
+    min-width: 132px @xs 156px @md 210px @xl 240px
     position: relative
     display: block
 
   &__info
     width: 100%
-    margin-left: 16px @md 0
+    margin-left: 16px @xl 0
     display: flex
     flex-direction: column
     justify-content: space-between
-    padding: @md 16px 24px 0
-
-    .short--bold, .short--author
-      display: @md-down none
+    padding: @xl 16px 24px 0
 
   &__title
-    text: #263238 500 17px 1.7
+    text: #263238 500 14px 1.7 @sm 17px
     background: $neutral
     width: 100%
     margin: 0
     display: block
+
+  .short--bold
+    display: @xl-down none
+
+  .short
+    margin: @xl-down 0
+    position: absolute @xs relative
+    left: 16px @xs auto
+    bottom: 0 @xs auto
 

@@ -3,7 +3,7 @@
   white-space: nowrap
   text-decoration: none
   display: inline-flex
-  margin: 0 32px 0 0
+  margin: 0 24px 0 0 @sm 0 32px 0 0
   align-items: center
   position: relative
 
@@ -16,6 +16,16 @@
     text: #000
     font-weight: 500
     height: 48px
+
+    span
+      position: relative
+      top: -5px @xl 0
+
+    .short
+      margin: @xl 0 0 0 32px
+      position: @xl-down absolute
+      left: @xl-down 40px
+      top: @xl-down 25px
 
   &--bold
     font-weight: 500

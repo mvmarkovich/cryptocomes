@@ -18,11 +18,12 @@ block content
 
                 .board__footer.short__row
                     a.short.short--author(href="#!")
-                        img.short--img(src="img/content/avatars/item_1.png")
-                        | Alex Dovbnya
+                        img.short--img(src="img/content/avatars/item_2.png")
+                        span Alex Dovbnya
+                        .short.hide-xl-only 1 hour ago
 
                     a.short.short--bold(href="#!") Price predictions
-                    .short 1 hour ago
+                    .short.hide-xl-down 1 hour ago
 
             .something.something--content
                 .something__content.something__content-long
@@ -106,10 +107,11 @@ block content
                 .board__footer.short__row
                     a.short.short--author(href="#!")
                         img.short--img(src="img/content/avatars/item_1.png")
-                        | Alex Dovbnya
+                        span Alex Dovbnya
+                        .short.hide-xl-only 1 hour ago
 
                     a.short.short--bold(href="#!") Price predictions
-                    .short 1 hour ago
+                    .short.hide-xl-down 1 hour ago
 
             .board
                 a.board__info(href="#!")
@@ -121,11 +123,12 @@ block content
 
                 .board__footer.short__row
                     a.short.short--author(href="#!")
-                        img.short--img(src="img/content/avatars/item_1.png")
-                        | Alex Dovbnya
+                        img.short--img(src="img/content/avatars/item_2.png")
+                        span Yuri Molchan
+                        .short.hide-xl-only 2 hour ago
 
-                    a.short.short--bold(href="#!") Price predictions
-                    .short 1 hour ago
+                    a.short.short--bold(href="#!") News
+                    .short.hide-xl-down 2 hour ago
 
             .something.something--content
                 .something__content.something__content-long
@@ -144,10 +147,11 @@ block content
                     .board-line__footer.short__row
                         a.short.short--author(href="#!")
                             img.short--img(src="img/content/avatars/item_1.png")
-                            | Alex Dovbnya
+                            span Alex Dovbnya
+                            .short.hide-xl-only 10 months ago
 
                         a.short.short--bold(href="#!") Price predictions
-                        .short 1 hour ago
+                        .short.hide-xl-down 1 hour ago
 
             .board-line
                 a.board-line__img(href="#!")
@@ -160,9 +164,11 @@ block content
                     .board-line__footer.short__row
                         a.short.short--author(href="#!")
                             img.short--img(src="img/content/avatars/item_2.png")
-                            | Yuri Molchan
+                            span Yuri Molchan
+                            .short.hide-xl-only 10 months ago
 
                         a.short.short--bold(href="#!") News
-                        .short 2 hours ago
+                        .short.hide-xl-down 2 hours ago
 
-        include blocks/aside.pug
+        .aside
+            include blocks/aside.pug

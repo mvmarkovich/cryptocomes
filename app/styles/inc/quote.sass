@@ -1,36 +1,36 @@
 blockquote
-  margin: 2.5rem 0 1.7rem @md 3.2rem 0 2rem @xl 4rem 0 2.5rem
+  padding: 32px 16px @sm 40px 97px
+  margin: 28px -16px @sm * -27px
+  background: #F5F5F5
   position: relative
-  border-left: 4px solid $accent-1-light
-  padding: .5rem 1rem
-
-  &:before
-    content: ""
-    display: block
-    background: svg-load("icons/quote.svg" fill: $accent-1-light) center / cover
-    size: 1.5rem
-    position: absolute -26px null null -14px
+  text: #000 17px 1.6 @xl 25px
 
   p
-    text: $pseudo-neutral-900 500 15px 1.8 @xl 17px
-    font-style: italic
+    text: #000 17px 1.6 @xl 25px
 
-  img
-    display: block
-    border-radius: 50%
-    margin-right: .5rem @xl 1.1rem
-    size: 3rem @xl 4rem
+  b, strong
+    font-weight: 500
+
+  &:before
+    content: ''
+    size: 14px 9px @sm 28px 18px
+    background-repeat: no-repeat
+    background-image: svg-load("icons/quote.svg")
+    background-position: center
+    background-size: contain
+    background-color: #fff
+    position: absolute
+    top: 15px @sm 50px
+    left: 16px @sm 40px
+
+  img, amp-img
+    margin: 16px 0 0 @sm 24px * *
     float: left
-    margin-bottom: 0
+    size: 40px @sm 64px
 
   strong
-    text: $header-tiny
-    font-family: $font
-    margin-top: 1rem @xl 1.9rem
+    text: #000 17px 1.6
+    height: 40px @sm 64px
     display: block
-
-  em
-    text: $pseudo-neutral-400 $body-small
-    font-family: $font
-    font-style: normal
-    display: block
+    margin: 0 0 0 56px @sm * * * 80px
+    padding: 24px 0 32px @sm 40px 0 48px

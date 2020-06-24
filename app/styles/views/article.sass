@@ -1,93 +1,94 @@
 .article
+  &__over
+    display: flex
+    flex-direction: column
 
-  &__panel
-    margin: 0 0 8px
-    background: $neutral
-    box: center
-    padding: 8px 24px
+    ^&__label
+      order: 1
+
+    ^&__title
+      order: 2 @sm 3
+
+    .short__row
+      order: 3 @sm 1
+
+  &__label
+    display: inline-flex
+    align-items: center
+    text: 14px 1.5
+    margin: 16px 0 8px
+
+    &-img
+      margin: 0 16px 0 0
 
   &__wrapper
-    padding: 24px 16px
+    padding: 8px 16px @sm * 27px
+    margin: 0 0 32px
     background: $neutral
 
+  &__mark
+    margin: 28px 0
+
+    a
+      text: #512DA8
+
   &__main
-    margin: 20px -16px 16px @sm 32px 0 * @md 48px * *
+    margin: 28px -16px 12px @sm * 0 *
+
+  &__anchor
+    padding: 0 0 0 20px
+    margin: 24px 0
+
+    &-item
+      margin: 0 0 12px
+      position: relative
+
+      &:before
+        content: ""
+        display: block
+        position: absolute
+        left: -16px
+        top: 13px
+        width: 5px
+        height: 5px
+        border-radius: 50%
+        background: #512DA8
+
+    &-link
+      text: #512DA8 400 17px 1.7
 
   &__writer
     display: flex
-    flex-wrap: wrap
     align-items: flex-start
-    margin: 28px 0 40px @sm * 0 * @md 40px * 52px
+    flex-wrap: wrap @md nowrap
+    margin: 24px 0 0
+    padding: 32px 0
+    border-top: 1px solid #BDBDBD
 
     &-img
-
       &--wrapper
-        border-radius: 50%
-        overflow: hidden
-        max-width: 40px @xl 64px
-        min-width: 40px @xl 64px
-        margin: 0 16px 0 0 @xl 0 32px 0 0
-
-    &-title
-      text: 500 $pseudo-neutral-900 17px 1.4
-      margin: 0 0 8px @xl 0
+        max-width: 160px
+        min-width: 160px
+        margin: 0 0 16px @md 0 32px 0 0
 
     &-name
-      text: $pseudo-neutral-900 500 17px 1.4
-      margin: 0 0 16px
-      display: inline-flex
-
-    &-info
-      width: calc(100% - 56px) @xl auto
-
-    &-row
-      display: flex
-      align-items: center
-      flex-wrap: wrap
+      text: 500 17px 1.5
 
     &-social
-      margin: 0 0 0 -16px @xl 0 0 0 16px
+      margin: 0 0 0 -20px
+      width: 100%
 
     p
-      text: $pseudo-neutral-900 400 18px 1.5
-      margin: 12px 0 0 @xl -26px 0 0 96px
-
-    &-bg
-      background: $neutral-100
-      padding: 32px 16px @sm * 24px @md 32px
-      margin: 28px -16px 40px @sm * 0 * @md 40px * 52px
-
-      p
-        margin: @xl 0 * *
-
-      ^&-name
-        margin: 0 24px 0 0 @xl 0
-        text: $accent-1-medium
+      margin: 0
 
   &__content
     p
       margin: 40px 0
 
-  &__guid
-    background: $neutral-100
-    padding: 16px @sm 32px @xl * 64px
-
-    &-title
-      text: $pseudo-neutral-300
-      margin: 0 0 16px @sm * * 24px
-
-    &-item
-      margin: 0 0 16px
-
-      &:last-child
-        margin: 0
-
-    &-link
-      text: $pseudo-neutral-900 500 15px 1.8 @sm 17px
-
   &__disclaimer
-    text: $pseudo-neutral-300 14px 1.2
-    margin: 16px 0 0
+    text: #424242 14px 1.5
+    font-style: italic
+    margin: 12px 0 0
 
   &__card
     background: $neutral-100
@@ -108,46 +109,3 @@
         max-width: 88px @sm 128px
         min-width: 88px @sm 128px
         margin: 0 0 0 16px
-
-  &__wall
-    display: none @sm block
-    position: relative
-    margin: 64px 0 32px
-    
-    &-label
-      background: $accent-1-light
-      text: $neutral 15px 1.1 @xl 22px
-      padding: 4px 12px @xl 8px 16px
-      border-radius: 2px
-      position: absolute 16px null null 16px
-      z-index: 1
-
-    &-title
-      background: rgba(38, 50, 56, .65)
-      padding: 12px 16px
-      position: absolute null 0 0 0
-      text: $neutral 15px 1.4
-
-  &__ref
-    display: flex
-    align-items: flex-start
-    flex-wrap: wrap
-    justify-content: space-between
-    margin: -32px 0 0
-
-    &-item
-      width: 100% @sm 48% @xl 31%
-      text: $pseudo-neutral-900
-      margin: 32px 0 0
-
-    &-img
-      width: 100%
-
-      &--wrapper
-        max-width: @md 225px
-        width: @sm 100%
-        margin: 0 -16px 20px @sm 0 0 20px
-
-    &-name
-      text: 500 15px 1.4 @md 400 14px
-      margin: 20px 0 0

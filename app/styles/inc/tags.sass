@@ -1,10 +1,10 @@
 figure
-  margin: 28px -16px @sm * 0 @md 40px 0
+  margin: 24px 0
 
 figcaption
-  text: $pseudo-neutral-400 500 14px 1.4
-  margin: 8px 0 24px
-  font-family: $font
+  text: #424242 400 14px 1.5
+  font-style: italic
+  margin: 12px 0 0
 
 p
   text: 15px 1.7 @xl 17px
@@ -15,44 +15,41 @@ p
 
   &__content, &__content p
     text: 400 17px 1.8
-    font-family: $font-article
+    font-family: $font
     margin: 24px 0
     word-break: break-word
     clear: both
 
-    + img
-      margin-bottom: 1.7rem @xl 2.5rem
+    strong, b
+      font-weight: 500
 
-  ol
-    list-style-type: decimal
-    margin: 28px 0 @md 40px 0
-    padding: 0
-    padding-left: 1.1rem @xl 1rem
+    a
+      text: #512DA8
 
-    ol
-      margin: 16px 0 @md 24px 0 32px
+  ol:not([class])
+    padding: 0 0 0 20px
+    margin: 24px 0
 
     li
       text: 400 17px 1.8
-      font-family: $font-article
-      margin: 0 0 24px
+      font-family: $font
+      margin: 0 0 12px
 
       &:last-child
         margin: 0
 
-  ul:not([class])
-    margin: 28px 0 @md 40px 0
-    padding: 0 0 0 16px
-    list-style: none
+    p
+      margin: 0
 
-    ul
-      margin: 16px 0 @md 24px 0 32px
+  ul:not([class])
+    padding: 0 0 0 20px
+    margin: 24px 0
 
     li
-      text: 400 18px 1.8
-      font-family: $font-article
+      text: 400 17px 1.7
+      font-family: $font
       position: relative
-      margin: 0 0 24px
+      margin: 0 0 12px
 
       &:last-child
         margin: 0
@@ -68,8 +65,8 @@ p
         border-radius: 50%
         background: #000
 
-p + p, p + ul, p + ol
-  margin-top: -0.7rem @xl -1rem
+    p
+      margin: 0
 
 table
   width: 100%
