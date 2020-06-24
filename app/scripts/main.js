@@ -49,14 +49,6 @@
   $headerSearchBtnClose.on("click", toggleHeaderSearch);
 
   //
-  // Accordion
-  //
-
-  $(".accordion__title").on("click", function () {
-    $(this).parent().toggleClass("accordion--open");
-  });
-
-  //
   // Modals
   //
 
@@ -110,31 +102,6 @@
     event.stopPropagation();
   });
 
-
-  var currencyValue = $(".currencies__currency span");
-
-  $("[data-set-currency]").on("click", setCurrency);
-
-  function setCurrency() {
-    var currency = $(this).data("set-currency");
-
-    switch (currency) {
-      case "usd":
-        console.log("set usd")
-        break;
-
-      case "eur":
-        console.log("set eur")
-        break;
-
-      case "rub":
-        console.log("set rub")
-        break;
-    }
-
-    currencyValue.text(currency);
-  }
-
   function modalTimeout() {
     var i = 3;
     var timerId = setTimeout(function go() {
@@ -143,5 +110,34 @@
       i--;
     }, 0);
   }
+
+  //
+  // Sliders
+  //
+
+  $('.releases__list').slick({
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 1152,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          variableWidth: true
+        }
+      }
+    ]
+  });
 
 })(jQuery);

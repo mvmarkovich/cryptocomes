@@ -1,0 +1,55 @@
+.releases
+  padding: 32px 16px @sm * 32px @md * 80px @xl * 100px
+  margin: 32px 0
+  border: 2px solid #000
+  border-left: @sm-down none
+  border-right: @sm-down none
+  position: relative
+
+  &__title
+    text-transform: uppercase
+    text: #000 500 14px 1.6
+    padding: 0 20px
+    background: #FFFF00
+    display: inline-block
+    position: absolute
+    left: 50%
+    top: -12px
+    margin-left: -80px
+    
+  .slick-slider
+    position: @md-down static
+
+  &__item
+    margin: 0 32px 0 0 @md 0
+
+    &-inner
+      text: #000
+      max-width: 160px
+      width: 100%
+      margin: 0 auto
+      display: block
+      outline: none
+
+    &-img
+      min-width: 160px
+      max-width: 160px
+      margin: 0 0 16px
+
+    &-title
+      margin: 16px 0 0
+      text: 14px 1.5
+
+  .btn--block
+    justify-content: center
+    margin: 32px 0 0
+    display: @md-down block
+    padding: @md-down 0 48px
+
+    & > *
+      margin: 0 0 32px @md 0 32px 0 0
+      max-width: @md 256px
+      width: 100%
+
+      &:last-child
+        margin: 0 @md 0
