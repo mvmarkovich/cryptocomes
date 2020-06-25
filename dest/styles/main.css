@@ -163,14 +163,6 @@ a,button {
   margin-bottom: .5rem;
 }
 
-.btn-aside-space {
-  margin-top: 1rem;
-}
-
-.btn-filter-space {
-  margin-top: 2rem;
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -351,6 +343,20 @@ h5 {
   width: 100%;
   position: relative;
   z-index: 7;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.icon--push {
+  margin: 0 12px 0 0;
+  background-image: url('../img/icons/push.svg');
 }
 
 .btn {
@@ -1159,6 +1165,46 @@ h5 {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.push {
+  box-shadow: 0 0 20px rgba(81, 45, 168, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  max-width: 100%;
+  width: 100%;
+  background: #FFFFFF;
+  padding: 20px 16px;
+  z-index: 400;
+  margin: 0 auto;
+}
+
+.push__row {
+}
+
+.push__title {
+  color: #000;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0 0 16px;
+  display: flex;
+  align-items: center;
+}
+
+.push .btn--block {
+  width: 100%;
+}
+
+.push .btn {
+  width: 100%;
+  white-space: nowrap;
+  margin: 0 24px 0 0;
+}
+
+.push .btn:last-child {
+  margin: 0;
 }
 
 .breaking {
@@ -2387,6 +2433,10 @@ blockquote strong {
     margin: 0 32px 0 0;
   }
 
+  .push {
+    padding: 16px 32px;
+  }
+
   .breaking {
     margin-right: 0;
     margin-left: 0;
@@ -2665,6 +2715,31 @@ blockquote strong {
     display: none;
   }
 
+  .push {
+    max-width: 620px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .push__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .push__title {
+    margin: 0 24px 0 0;
+  }
+
+  .push .btn--block {
+    width: auto;
+  }
+
+  .push .btn {
+    max-width: 148px;
+    min-width: 148px;
+  }
+
   .breaking {
     display: flex;
     align-items: center;
@@ -2826,10 +2901,6 @@ blockquote strong {
 @media (min-width: 1152px) {
   .container {
     max-width: 1182px;
-  }
-
-  .btn-aside-space {
-    margin-top: 2rem;
   }
 
   .hide-xl-only {
@@ -3174,6 +3245,10 @@ blockquote strong {
 
   .mobile-menu-back.show {
     display: block;
+  }
+
+  .push__title {
+    justify-content: center;
   }
 
   .breaking__label {

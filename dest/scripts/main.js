@@ -112,6 +112,18 @@
   }
 
   //
+  // Cookies
+  //
+
+  $('.cookies .btn--accent').on('click', function() {
+    $(".cookies").detach();
+    var date = new Date();
+    days = 365;
+    date.setTime(+date + (days * 86400000));
+    document.cookie = "accept=1; expires=" + date.toGMTString();
+  });
+
+  //
   // Sliders
   //
 

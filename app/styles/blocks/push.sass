@@ -1,0 +1,34 @@
+.push
+  box-shadow: 0 0 20px rgba(81, 45, 168, 0.5)
+  position: fixed 0 0 null 0
+  max-width: 100% @md 620px
+  width: 100%
+  background: $neutral
+  padding: 20px 16px @sm 16px 32px @md 8px *
+  z-index: 400
+  margin: 0 auto
+
+  &__row
+    display: @md flex
+    align-items: @md center
+    justify-content: @md space-between
+
+  &__title
+    text: #000 14px 1.7
+    box: center
+    justify-content: @md-down center
+    margin: 0 0 16px @md 0 24px 0 0
+
+  .btn--block
+    width: 100% @md auto
+
+
+  .btn
+    max-width: @md 148px
+    min-width: @md 148px
+    width: 100%
+    white-space: nowrap
+    margin: 0 24px 0 0
+
+    &:last-child
+      margin: 0
