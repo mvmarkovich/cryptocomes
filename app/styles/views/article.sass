@@ -12,6 +12,7 @@
     .short__row
       order: 3 @sm 1
       align-items: @xl-down flex-start
+      margin: 16px 0 0 @sm -20px 0 0
 
     .short--bold
       top: @xl-down 3px
@@ -20,13 +21,13 @@
     display: inline-flex
     align-items: center
     text: 14px 1.5
-    margin: 16px 0 8px
+    margin: 0 0 16px
 
     &-img
       margin: 0 16px 0 0
 
   &__wrapper
-    padding: 8px 16px @sm * 27px
+    padding: 28px 16px @sm * 27px
     margin: 0 0 32px
     background: $neutral
 
@@ -37,7 +38,20 @@
       text: #512DA8
 
   &__main
-    margin: 28px -16px 12px @sm * 0 *
+    margin: 28px -16px 12px @sm * -27px *
+
+    ^&__caption
+      margin: 28px 16px 0 @sm * 27px *
+
+  &__content
+    text: 400 17px 1.8
+    font-family: $font
+    margin: 24px 0 0
+    word-break: break-word
+    clear: both
+
+  &__social
+    margin: 0 0 0 -16px
 
   &__anchor
     padding: 0 0 0 20px
@@ -65,7 +79,7 @@
     display: flex
     align-items: flex-start
     flex-wrap: wrap @md nowrap
-    margin: 24px 0 0
+    margin: 24px 0 -28px
     padding: 32px 0
     border-top: 1px solid #BDBDBD
 
