@@ -1,0 +1,37 @@
+.cookies
+  background: $neutral
+  box-shadow: 0 0 20px rgba(81, 45, 168, 0.5)
+  position: fixed
+  right: 0
+  bottom: 0
+  left: 0
+  padding: 16px 0 @md 10px 0
+  z-index: 300
+
+  &__row
+    display: block @md flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 16px @sm 0
+
+  &__desc
+    text: 400 14px 1.5
+    margin: 0
+    max-width: 825px
+    text-align: center @md left
+
+    a
+      text: #512DA8
+
+  .btn__block
+    justify-content: center
+    margin: 16px auto 0 @md 0 0 0 32px
+    display: flex
+    align-items: center
+
+    & > *
+      margin: 0 16px 0 0 @sm 0 24px 0 0
+      white-space: nowrap
+
+      &:last-child
+        margin: 0 @sm 0
