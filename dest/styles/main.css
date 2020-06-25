@@ -347,6 +347,7 @@ h5 {
 
 .aside {
   max-width: 100%;
+  margin: 0 0 0 32px;
   width: 100%;
   position: relative;
   z-index: 7;
@@ -1705,6 +1706,34 @@ h5 {
   padding: 0 16px;
 }
 
+.board-info {
+  display: flex;
+  background: #FFFFFF;
+  margin: 0 0 32px;
+  padding: 16px;
+}
+
+.board-info__img {
+  max-width: 132px;
+  min-width: 132px;
+  position: relative;
+}
+
+.board-info__lead {
+  padding: 0 0 0 16px;
+}
+
+.board-info__title {
+  min-height: 108px;
+}
+
+.board-info__desc {
+  color: #000;
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 16px 0 0 -145px;
+}
+
 .board-line {
   display: flex;
   align-items: flex-start;
@@ -2061,10 +2090,10 @@ figure {
 }
 
 p {
-  font-size: 15px;
+  font-weight: 400;
+  font-size: 17px;
   line-height: 1.7;
-  margin: 0;
-  margin-bottom: 1.7rem;
+  margin: 24px 0;
 }
 
 .article__content p {
@@ -2238,6 +2267,21 @@ blockquote strong {
 }
 
 @media (min-width: 380px) {
+  .board-info__img {
+    max-width: 156px;
+    min-width: 156px;
+  }
+
+  .board-info__title {
+    min-height: 128px;
+  }
+
+  .board-info__desc {
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: -170px;
+  }
+
   .board-line {
     padding: 16px;
   }
@@ -2356,6 +2400,16 @@ blockquote strong {
 
   .board__title {
     font-size: 24px;
+  }
+
+  .board-info__title {
+    font-size: 28px;
+    margin: 0 0 8px;
+    min-height: 1px;
+  }
+
+  .board-info__desc {
+    margin: 8px 0 0;
   }
 
   .board-line__title {
@@ -2621,6 +2675,11 @@ blockquote strong {
     padding: 0 32px;
   }
 
+  .board-info__img {
+    max-width: 210px;
+    min-width: 210px;
+  }
+
   .board-line__img {
     max-width: 210px;
     min-width: 210px;
@@ -2711,7 +2770,7 @@ blockquote strong {
   }
 
   .main-block {
-    width: 728px;
+    width: 782px;
   }
 
   .aside {
@@ -2812,6 +2871,19 @@ blockquote strong {
     padding-left: 100px;
   }
 
+  .board-info {
+    padding: 0;
+  }
+
+  .board-info__img {
+    max-width: 240px;
+    min-width: 240px;
+  }
+
+  .board-info__lead {
+    padding: 28px 32px;
+  }
+
   .board-line {
     align-items: normal;
     padding: 0;
@@ -2824,7 +2896,7 @@ blockquote strong {
 
   .board-line__info {
     margin-left: 0;
-    padding: 16px 24px 0;
+    padding: 16px 32px 0;
   }
 
   .board-line__title {
@@ -2849,11 +2921,6 @@ blockquote strong {
 
   .footer__nav-item {
     width: auto;
-  }
-
-  p {
-    font-size: 17px;
-    margin-bottom: 2.5rem;
   }
 
   table td,table th {
@@ -2948,10 +3015,6 @@ blockquote strong {
   .slick-arrow {
     bottom: 89px;
     top: auto;
-  }
-
-  .main-block {
-    order: 2;
   }
 
   .something-long {
@@ -3082,6 +3145,11 @@ blockquote strong {
   .releases {
     border-left: none;
     border-right: none;
+  }
+
+  .board-info__title {
+    display: flex;
+    align-items: center;
   }
 
   .staff__item .social {
