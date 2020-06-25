@@ -337,6 +337,12 @@ h5 {
   z-index: 99;
 }
 
+.main-news-block {
+  width: 100%;
+  position: relative;
+  z-index: 99;
+}
+
 .aside {
   max-width: 100%;
   margin: 0 0 0 32px;
@@ -2606,6 +2612,10 @@ blockquote strong {
     width: 480px;
   }
 
+  .main-news-block {
+    width: 480px;
+  }
+
   .aside {
     max-width: 240px;
   }
@@ -2917,6 +2927,10 @@ blockquote strong {
 
   .main-block {
     width: 782px;
+  }
+
+  .main-news-block {
+    width: 728px;
   }
 
   .aside {
