@@ -1,0 +1,42 @@
+.breaking
+  margin: 32px 16px @sm * 0
+  padding: 16px
+  background: #FFD600
+  display: block @md flex
+  align-items: @md center
+  text: #000
+  text-align: center @md left
+
+  &:hover
+    text: #512DA8
+
+  &__label
+    display: flex
+    align-items: center
+    justify-content: @md-down center
+    text: #512DA8 500 20px 1.5 @sm 24px
+    text-transform: uppercase
+    margin: 0 0 4px @md 0 16px 0 0
+
+    &:before,
+    &:after
+      content: ''
+      size: 32px
+      min-width: 32px
+      background-position: center
+      background-repeat: no-repeat
+      background-size: contain
+
+    &:before
+      background-image: resolve("icons/lightning-prev.svg")
+      margin: 0 4px 0 0
+
+    &:after
+      background-image: resolve("icons/lightning-next.svg")
+      margin: 0 0 0 4px
+
+  &__title
+    text: 500 14px 1.7 @sm 17px
+
+
+

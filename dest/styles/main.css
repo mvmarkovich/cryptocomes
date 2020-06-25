@@ -1160,6 +1160,56 @@ h5 {
   overflow: hidden;
 }
 
+.breaking {
+  margin: 32px 16px;
+  padding: 16px;
+  background: #FFD600;
+  display: block;
+  color: #000;
+  text-align: center;
+}
+
+.breaking:hover {
+  color: #512DA8;
+}
+
+.breaking__label {
+  display: flex;
+  align-items: center;
+  color: #512DA8;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin: 0 0 4px;
+}
+
+.breaking__label:after,.breaking__label:before {
+  content: '';
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.breaking__label:before {
+  background-image: url('../img/icons/lightning-prev.svg');
+  margin: 0 4px 0 0;
+}
+
+.breaking__label:after {
+  background-image: url('../img/icons/lightning-next.svg');
+  margin: 0 0 0 4px;
+}
+
+.breaking__title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
 .feed {
   background: #FFD600;
   margin: 0 0 32px;
@@ -2220,6 +2270,19 @@ blockquote strong {
     margin: 0 32px 0 0;
   }
 
+  .breaking {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .breaking__label {
+    font-size: 24px;
+  }
+
+  .breaking__title {
+    font-size: 17px;
+  }
+
   .article__over .article__title {
     order: 3;
   }
@@ -2455,6 +2518,16 @@ blockquote strong {
 
   .header__burger {
     display: none;
+  }
+
+  .breaking {
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+
+  .breaking__label {
+    margin: 0 16px 0 0;
   }
 
   .feed {
@@ -2931,6 +3004,10 @@ blockquote strong {
 
   .mobile-menu-back.show {
     display: block;
+  }
+
+  .breaking__label {
+    justify-content: center;
   }
 
   .releases .slick-slider {
