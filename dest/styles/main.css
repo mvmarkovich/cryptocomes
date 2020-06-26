@@ -154,6 +154,7 @@ a,button {
 
 a {
   text-decoration: none;
+  color: #512DA8;
 }
 
 .link {
@@ -2150,6 +2151,10 @@ p {
   margin: 24px 0;
 }
 
+p b,p strong {
+  font-weight: 500;
+}
+
 .article__content p {
   font-weight: 400;
   font-size: 17px;
@@ -2158,14 +2163,6 @@ p {
   margin: 24px 0;
   word-break: break-word;
   clear: both;
-}
-
-.article__content p b,.article__content p strong {
-  font-weight: 500;
-}
-
-.article__content p a {
-  color: #512DA8;
 }
 
 .article ol:not([class]) {
