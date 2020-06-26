@@ -1,0 +1,62 @@
+.modal
+  position: fixed 0 0 0 0
+  background: $cover-color
+  justify-content: center
+  z-index: 99990
+  display: none
+  overflow: auto
+  opacity: 0
+  transition: .3s ease
+  padding: 16px @md 32px
+
+  &--open
+    display: flex
+
+  &--fadeIn
+    opacity: 1
+
+    ^&__square
+      transform: translateY(0) scale(1)
+
+  &__square
+    transform: translateY(-10px) scale(.98)
+    transition: .3s ease
+    background: #fff
+
+  &--bg
+    background: #FFD600
+
+  &__close
+    position: absolute
+    right: 0
+    top: 0
+    z-index: 3
+
+  &__square
+    max-width: 416px @md 640px
+    width: 100%
+    box: vertical left @md horizontal
+    margin: auto
+    display: none
+
+    &-content
+      padding: 20px 16px 24px @sm 40px 40px 20px
+      position: relative
+      width: 100%
+
+    &-img
+      max-width: 110px @md 200px
+      width: 100%
+      margin: 0 auto 12px @md 0 40px 0 0
+
+    &-row
+      display: @md flex
+      align-items: @md flex-start
+
+    &-title
+      text: #000 500 17px 1.7
+      margin: 0 0 20px
+      text-align: center @md left
+
+    .btn--input
+      min-height: 48px
