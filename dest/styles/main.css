@@ -2067,7 +2067,6 @@ h5 {
 .footer__nav-item {
   width: 60%;
   margin: 16px 0 0;
-  white-space: nowrap;
 }
 
 .footer__nav-item:nth-child(even) {
