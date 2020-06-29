@@ -227,7 +227,7 @@ h5 {
 }
 
 .container {
-  max-width: 768px;
+  max-width: 810px;
   margin-right: auto;
   margin-left: auto;
   padding: 0;
@@ -2736,9 +2736,9 @@ ul {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 826px) {
   .container {
-    max-width: 768px;
+    max-width: 810px;
   }
 
   .f-container {
@@ -2791,7 +2791,7 @@ ul {
 
   .header__container {
     flex-wrap: wrap;
-    max-width: 768px;
+    max-width: 826px;
   }
 
   .header__nav {
@@ -2995,7 +2995,7 @@ ul {
   }
 
   .footer__container {
-    max-width: 768px;
+    max-width: 826px;
   }
 
   .footer__row {
@@ -3081,7 +3081,7 @@ ul {
 
 @media (min-width: 992px) {
   .container {
-    max-width: 768px;
+    max-width: 810px;
   }
 }
 
@@ -3381,7 +3381,7 @@ ul {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 825px) {
   .something-long {
     display: none;
   }
