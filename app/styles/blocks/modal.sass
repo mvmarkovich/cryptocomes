@@ -58,5 +58,42 @@
       margin: 0 0 20px
       text-align: center @md left
 
+    &-desc
+      text: #000 400 17px 1.7
+
     .btn--input
       min-height: 48px
+
+  .input
+    margin: 0 0 16px
+
+    &__elem
+      text: 17px 1.7
+      border-color: #512DA8
+
+      &::placeholder
+        text: #512DA8
+
+    &:last-child
+      margin: 0
+
+  &__thank
+    max-width: @md 400px
+    text-align: center
+
+    ^&__square
+      &-title
+        text: #000 400 22px 1.5 @sm 24px
+        margin: 0 0 4px
+        text-align: center
+
+  &__icons
+    margin: 0 auto 16px
+    size: 40px
+    min-width: 40px
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+
+    &-check
+      background-image: resolve("icons/check-modal.svg")

@@ -1,3 +1,7 @@
+.form--half
+  width: 100%
+  max-width: 360px
+
 .form--row
   box:
   flex-wrap: wrap @md nowrap
@@ -9,14 +13,14 @@
 
 .input
   position: relative
-  margin-bottom: 16px
+  margin: 0 0 24px
 
   &__elem
-    border: 1px solid #512DA8
+    border: 1px solid #9E9E9E
     padding: 0 16px
     height: 48px
     outline: 0
-    text: #000 500 17px 1.7
+    text: #000 500 14px 1.5
     font-family: 'Montserrat', sans-serif
     width: 100%
     display: flex
@@ -24,7 +28,30 @@
     justify-content: flex-start
 
     &::placeholder
-      text: #512DA8
+      text: #757575
+
+  &__label
+    margin: 0 0 4px
+    text: #757575 14px 1.5
+
+    &-file
+      text: 500 #512DA8 14px 1.5
+      border: 1px solid #9E9E9E
+      size: 180px 48px
+      display: flex
+      align-items: center
+      justify-content: center
+      cursor: pointer
+
+      &:after
+        content: ''
+        size: 32px
+        background: resolve("icons/attach_file.svg") no-repeat center / contain
+        margin: 0 0 0 4px
+        display: block
+
+      &:hover
+        border-color: #512DA8
 
   &__agree
     text: #616161 14px 1.5
@@ -32,3 +59,8 @@
 
     a
       text-decoration: underline
+
+  &__file
+    display: none
+
+

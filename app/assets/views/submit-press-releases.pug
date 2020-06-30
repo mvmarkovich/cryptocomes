@@ -1,0 +1,50 @@
+extends layouts/layout.pug
+
+block title
+    title Press Releases | CC
+
+block content
+    .f-container
+        .main-block
+            include blocks/submit-press-release.pug
+
+        .aside
+            .feed.feed--defaults
+                .feed__title Latest news
+
+                .feed__content
+                    a.feed__item.feed__item-row.link-accent(href="#!")
+                        .feed__img-wrapper
+                            img.feed__img(src="https://cryptocomes.com/sites/default/files/styles/150/public/node-16857.jpg?itok=vCzXW3Qg")
+
+                        .feed__item-info
+                            p.feed__item-desc Altcoin Market in the Red: Bitcoin Cash, EOS, Bitcoin SV Drop 20 Percent
+                            .short 11:05AM
+
+                    a.feed__item.feed__item-row.link-accent(href="#!")
+                        .feed__img-wrapper
+                            img.feed__img(src="https://cryptocomes.com/sites/default/files/styles/150/public/node-17001.jpg?itok=MVlKYrle")
+
+                        .feed__item-info
+                            p.feed__item-desc ConsenSys Chief Joe Lubin to Be Taken to Court by Ex-Staffer for $13 Mln
+                            .short 10:30AM
+
+                    a.feed__item.feed__item-row.link-accent(href="#!")
+                        .feed__img-wrapper
+                            img.feed__img(src="https://cryptocomes.com/sites/default/files/styles/150/public/node-17130.jpg?itok=OZ5jaKts")
+
+                        .feed__item-info
+                            p.feed__item-desc Mastercard Starts Creating Its Own Cryptocurrency Team
+                            .short 31 Oct
+
+                    a.feed__item.feed__item-row.link-accent(href="#!")
+                        .feed__img-wrapper
+                            img.feed__img(src="https://cryptocomes.com/sites/default/files/styles/150/public/2019-08/Mike_Novogratz_Doesn%E2%80%99t_Think_Bitcoin_Price_Will_Ever_Go_Back_to_%245%2C000_.jpg?itok=ioChU4o4")
+
+                        .feed__item-info
+                            p.feed__item-desc Mike Novogratz Doesn’t Think Bitcoin Price Will Ever Go Back to $5,000
+                            .short 27 Oct
+
+                a.btn.btn--accent.feed__footer(href="#!") See all
+
+            include blocks/aside.pug

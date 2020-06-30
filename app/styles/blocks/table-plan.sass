@@ -1,0 +1,44 @@
+.table-plan
+  margin: 28px 0
+  border-top: 1px solid #CFD8DC
+  border-bottom: 1px solid #CFD8DC
+
+  &__footer, &__row
+    box: middle @md space-between
+
+    ^&__col
+      box: middle vertical
+
+      span
+        text: #9E9E9E 14px 1.5
+
+      &:nth-child(1)
+        width: 100%
+
+      &:nth-child(2)
+        margin: 0 0 0 16px
+        width: auto
+        text: center
+        align-items: center
+
+  &__footer
+    ^&__col
+      white-space: nowrap
+      text: 500 14px 1.7 @md 17px
+
+      &:nth-child(2)
+        align-items: flex-start
+        flex-direction: row
+
+  &__col
+    padding: 16px 0
+
+    .icon
+      display: block
+
+  &__row
+    &:not(:last-child)
+      border-bottom: 1px solid #CFD8DC
+
+    ^&__col
+      text: 400 14px 1.7 @md 17px
