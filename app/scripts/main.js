@@ -152,4 +152,26 @@
     ]
   });
 
+  //
+  // Copy URL Share block
+  //
+
+  document.getElementById('copier').addEventListener('click', function(e) {
+    var copytext = document.createElement('input');
+    copytext.value = window.location.href;
+    document.body.appendChild(copytext);
+    copytext.select();
+    document.execCommand('copy');
+    document.body.removeChild(copytext)
+  });
+
+  //
+  // Anchor top page
+  //
+
+  $('.social__link--up').click(function() {
+    $('html, body').animate({scrollTop: 0},300);
+    return false;
+  })
+
 })(jQuery);

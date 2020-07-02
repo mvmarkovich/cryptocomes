@@ -4,18 +4,9 @@
 
   &__link
     size: 56px
+    display: block
     background-position: center
     background-repeat: no-repeat
-
-    &--name
-      display: block
-      margin-right: 1rem
-      text: $pseudo-neutral-300 500 13px 24px
-
-    &--tiny
-      size: 1rem
-      background-size: contain
-      margin-right: 1rem
 
     &--fb
       background-image: resolve("icons/social/facebook.svg")
@@ -82,5 +73,12 @@
 
       &:hover, &-paint
         background-image: svg-load("icons/social/instagram.svg" fill: #512DA8)
+
+    &--copy
+      background-image: resolve("icons/copy.svg")
+
+    &--up
+      background-image: resolve("icons/chevron-up.svg")
+
 
 

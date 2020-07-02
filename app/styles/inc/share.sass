@@ -1,0 +1,31 @@
+.share
+
+  &__social
+    margin-top: 0 @md -172px
+    z-index: 202
+    display: inline-flex @md block
+    width: 100% @md auto
+
+    .social__link
+      background-color: #512DA8
+      margin: @md 0 0 16px
+      width: 100% @md 48px
+      height: 48px
+      border-right: 1px solid $neutral @md none
+
+      &:last-child
+        margin: @md 0
+        border: none
+
+  &-and-up
+    position: fixed
+    left: 0 @md 16px
+    right: 0 @md auto
+    top: @md 50%
+    bottom: 0 @md 16px
+    box: horizontal center middle @md vertical top
+    z-index: 201
+
+@media (min-width: 1367px)
+  .share-and-up
+    left: calc(50% - 560px - 112px)
