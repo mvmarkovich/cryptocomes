@@ -27,6 +27,7 @@
   &__title
     text: $neutral 17px 1.7
     margin: 0 0 16px
+    display: block
 
   &__follow-us
     margin-right: 0 @md 24px @xl 56px
@@ -41,6 +42,7 @@
 
     &-form
       flex-wrap: @xl-down wrap
+      align-items: flex-end
 
       .input
         height: 56px
@@ -49,6 +51,8 @@
         &:first-child
           margin: 0 0 16px @md 0
           width: 100% @md auto
+          height: auto
+          display: block
 
     &-input
       width: 100% @md 232px @xl 269px
@@ -62,7 +66,7 @@
 
     &-agree
       text: $neutral 17px 1.7
-      margin: 0 @md 16px 0 0 @xl 0 0 0 16px
+      margin: 0 @md 16px 0 0 @xl 0
 
       a
         text: #FFFF00
