@@ -5,19 +5,8 @@ header.header
             | logo
 
         .header__panel
-            button.header__btn-search.btn--light.btn--icon.btn--icon-text(aria-label="open search")
-                include ../../img/icons/search.svg
-                | Search
             button.header__burger.btn--light.btn--icon(on="tap:sidebar.toggle" aria-label="open sidebar")
                 include ../../img/icons/burger.svg
-
-        .header__search
-            form.header__search-form(action="#" target="_blank" method="get")
-                button.header__search-submit.btn.btn--light.btn--search(type="submit")
-                    include ../../img/icons/search.svg
-                input.input__elem.header__search-input(type="text" name="search" placeholder="Type to search")
-                button.header__search-close.btn.btn--light.btn--cross
-                    include ../../img/icons/cross.svg
 
 amp-sidebar#sidebar.sidebar(layout='nodisplay', side='right')
     .sidebar__row
