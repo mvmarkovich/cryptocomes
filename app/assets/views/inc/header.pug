@@ -1,7 +1,8 @@
 header.header
   .header__container
     a.header__logo(href="#!")
-      img.header__logo-img(src="img/icons/logo.svg")
+      img.header__logo-img(src="img/icons/logo.svg" alt="Logo")
+      | Logo
 
     .header__mobile
       button.btn.btn--light.btn--cross-white.header__mobile-cross
@@ -25,8 +26,8 @@ header.header
                     a.header__nav-child-link(href="#!c" + i)= child.name
 
     .header__panel
-      button.header__btn-search.btn.btn--light.btn--search Search
-      button.header__burger.btn.btn--light.btn--burger
+      button.header__btn-search.btn.btn--light.btn--search(aria-label="open search") Search
+      button.header__burger.btn.btn--light.btn--burger(aria-label="open menu")
 
     .mobile-menu-back Back
 

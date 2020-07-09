@@ -2,12 +2,13 @@ header.header
     .header__container
         a.header__logo(href="#!")
             include ../../img/icons/logo.svg
+            | logo
 
         .header__panel
-            button.header__btn-search.btn--light.btn--icon.btn--icon-text
+            button.header__btn-search.btn--light.btn--icon.btn--icon-text(aria-label="open search")
                 include ../../img/icons/search.svg
                 | Search
-            button.header__burger.btn--light.btn--icon(on="tap:sidebar.toggle")
+            button.header__burger.btn--light.btn--icon(on="tap:sidebar.toggle" aria-label="open sidebar")
                 include ../../img/icons/burger.svg
 
         .header__search

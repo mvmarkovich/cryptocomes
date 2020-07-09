@@ -2,14 +2,14 @@
     .article__wrapper
         .article__over
             a.article__label.link-accent(href="#!")
-                amp-img.article__label-img(src="img/icons/article__label.svg" layout="fixed" width="24" height="16")
+                amp-img.article__label-img(src="img/icons/article__label.svg" layout="fixed" width="24" height="16" alt="CryptoComes Original Article")
                 | CryptoComes Original Article
 
             h1.article__title Women of Crypto at the Crypto Invest Summit: Separate but Hopeful
 
             .short__row
                 a.short.short--author(href="#!")
-                    amp-img.short--img(src="img/content/avatars/item_1.png" layout="fixed" width="24" height="24")
+                    amp-img.short--img(src="img/content/avatars/item_1.png" layout="fixed" width="24" height="24" alt="Alex Dovbnya")
                     span Alex Dovbnya
                     .short 10 months ago
 
@@ -18,7 +18,7 @@
         p.article__mark While the leading crypto is going down, some altcoins are rocketing. Which coins can show growth both in short and long-term scenarios? <a href="#!">Link example</a>
 
         .article__main
-            amp-img.article__main-img(src="img/content/article/main-img.png" layout="responsive" width="736" height="464")
+            amp-img.article__main-img(src="img/content/article/main-img.png" layout="responsive" width="736" height="464" alt="main img")
 
         .article__disclaimer Disclaimer: The opinion expressed here is not investment advice – it is provided for informational purposes only. It does not necessarily reflect the opinion of U.Today. Every investment and all trading involves risk, so you should always perform your own research prior to making decisions. We do not recommend investing money you cannot afford to lose.
 
@@ -90,51 +90,55 @@
                 a.link.link-hash-tag(href="#!") #hashtag
 
         .article__writer
-            a.article__writer-img--wrapper(href="#!")
-                amp-img.article__writer-img(src="https://cryptocomes.com/sites/default/files/2019-06/Alex-Moris_0.jpg" layout="fixed" width="160" height="160")
+            a.article__writer-info.link-accent(href="#!")
+                .article__writer-img--wrapper
+                    amp-img.article__writer-img(src="https://cryptocomes.com/sites/default/files/2019-06/Alex-Moris_0.jpg" layout="fixed" width="160" height="160")
 
-            .article__writer-info
-                a.article__writer-name.link-accent(href="#!") Konstantin Konstantinopolsky
+                .article__writer-name Konstantin Konstantinopolsky
 
-                .social.article__writer-social
-                    a.social__link(href="#!")
-                        include ../../img/icons/social/facebook.svg
-                    a.social__link(href="#!")
-                        include ../../img/icons/social/linkedIn.svg
-                    a.social__link(href="#!")
-                        include ../../img/icons/social/telegram.svg
-                    a.social__link(href="#!")
-                        include ../../img/icons/social/twitter.svg
+            .social.article__writer-social
+                a.social__link(href="#!")
+                    include ../../img/icons/social/facebook.svg
+                    | Facebook
+                a.social__link(href="#!")
+                    include ../../img/icons/social/linkedIn.svg
+                    | LinkedIn
+                a.social__link(href="#!")
+                    include ../../img/icons/social/telegram.svg
+                    | Telegram
+                a.social__link(href="#!")
+                    include ../../img/icons/social/twitter.svg
+                    | Twitter
 
-                p I did some quite research, checked a hefty load of sources and here’s my superb mining platforms overview. In the early days of crypto community conferences, the number of women attending and especially speaking was notoriously low.
-
-    .board-line
-        a.board-line__img(href="#!")
-            amp-img(src="img/content/board-line/item_1.png" layout="responsive" width="240" height="150")
-
-        .board-line__info
-            a.board-line__title(href="#!") Mike Novogratz Doesn’t Think Bitcoin Price Will Ever Go Back to $5,000
-
-            .board-line__footer.short__row
-                a.short.short--author(href="#!")
-                    amp-img.short--img(src="img/content/avatars/item_1.png" layout="fixed" width="24" height="24")
-                    span Alex Dovbnya
-                    .short 10 months ago
-
-                a.short.short--bold(href="#!") Price predictions
+            p I did some quite research, checked a hefty load of sources and here’s my superb mining platforms overview. In the early days of crypto community conferences, the number of women attending and especially speaking was notoriously low.
 
     .board-line
-        a.board-line__img(href="#!")
-            amp-img(src="img/content/board-line/item_2.png" layout="responsive" width="240" height="150")
-            .promo Sponsored
+        a.board-line__info(href="#!")
+            .board-line__img
+                amp-img(src="img/content/board-line/item_1.png" layout="responsive" width="240" height="150")
 
-        .board-line__info
-            a.board-line__title(href="#!") Ushering in the future of money with Telegram’s GRAM Wallet
+            .board-line__title Mike Novogratz Doesn’t Think Bitcoin Price Will Ever Go Back to $5,000
 
-            .board-line__footer.short__row
-                a.short.short--author(href="#!")
-                    amp-img.short--img(src="img/content/avatars/item_2.png" layout="fixed" width="24" height="24")
-                    span Yuri Molchan
-                    .short 10 months ago
+        .board-line__footer.short__row
+            a.short.short--author(href="#!")
+                amp-img.short--img(src="img/content/avatars/item_1.png" layout="fixed" width="24" height="24")
+                span Alex Dovbnya
+                .short 10 months ago
 
-                a.short.short--bold(href="#!") News
+            a.short.short--bold(href="#!") Price predictions
+
+    .board-line
+        a.board-line__info(href="#!")
+            .board-line__img
+                amp-img(src="img/content/board-line/item_2.png" layout="responsive" width="240" height="150")
+                .promo Sponsored
+
+            .board-line__title Ushering in the future of money with Telegram’s GRAM Wallet
+
+        .board-line__footer.short__row
+            a.short.short--author(href="#!")
+                amp-img.short--img(src="img/content/avatars/item_2.png" layout="fixed" width="24" height="24")
+                span Yuri Molchan
+                .short 10 months ago
+
+            a.short.short--bold(href="#!") News

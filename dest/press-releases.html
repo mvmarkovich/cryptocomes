@@ -20,7 +20,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__container"><a class="header__logo" href="#!"><img class="header__logo-img" src="img/icons/logo.svg"></a>
+      <div class="header__container"><a class="header__logo" href="#!"><img class="header__logo-img" src="img/icons/logo.svg" alt="Logo">Logo</a>
         <div class="header__mobile">
           <button class="btn btn--light btn--cross-white header__mobile-cross"></button>
         </div>
@@ -67,8 +67,8 @@
           </ul>
         </nav>
         <div class="header__panel">
-          <button class="header__btn-search btn btn--light btn--search">Search</button>
-          <button class="header__burger btn btn--light btn--burger"></button>
+          <button class="header__btn-search btn btn--light btn--search" aria-label="open search">Search</button>
+          <button class="header__burger btn btn--light btn--burger" aria-label="open menu"></button>
         </div>
         <div class="mobile-menu-back">Back</div>
         <div class="header__search">
@@ -169,7 +169,7 @@
           <div class="feed feed--subscribe">
             <div class="feed__title-row">
               <div class="feed__title">Follow us</div>
-              <div class="feed__title-icon"><img src="img/icons/aside/follow-us.svg"></div>
+              <div class="feed__title-icon"><img src="img/icons/aside/follow-us.svg" alt="Follow us"></div>
             </div>
             <div class="feed__subscribe"><a class="feed__subscribe-item link-accent social__link social__link--fb" href="#!" target="_blank">
                 <div class="feed__item-desc">Like</div>
@@ -182,11 +182,11 @@
                 <div class="feed__subscribe-headline">@cryptocomes_en</div></a><a class="feed__subscribe-item link-accent social__link social__link--em" href="#!" data-modal="subscribe-1">
                 <div class="feed__item-desc">Subscribe to email</div></a></div>
           </div>
-          <div class="feed feed--something"><img src="img/something/aside--ad.png"></div>
+          <div class="feed feed--something"><img src="img/something/aside--ad.png" alt="Banner"></div>
           <div class="feed">
             <div class="feed__title-row">
               <div class="feed__title">Hot stuff</div>
-              <div class="feed__title-icon"><img src="img/icons/aside/hot-stuff.svg"></div>
+              <div class="feed__title-icon"><img src="img/icons/aside/hot-stuff.svg" alt="Hot stuff"></div>
             </div>
             <div class="feed__content"><a class="feed__item link-accent" href="#!">
                 <p class="feed__item-desc">Mike Novogratz Doesn’t Think Bitcoin Price Will Ever Go Back to $5,000</p>
@@ -217,8 +217,8 @@
           <div class="footer__subscribe">
             <form class="form--row footer__subscribe-form" target="#" method="get">
               <div class="input">
-                <label class="footer__title">Subscribe to daily newsletter</label>
-                <input class="footer__subscribe-input input__elem" type="text" name="email" placeholder="Email" required>
+                <label class="footer__title" for="footer__subscribe-input">Subscribe to daily newsletter</label>
+                <input class="footer__subscribe-input input__elem" id="footer__subscribe-input" type="text" name="email" placeholder="Email" required>
               </div>
               <div class="input">
                 <button class="btn btn--wide btn--input" type="submit">Subscribe</button>

@@ -13,8 +13,8 @@ footer.footer
       .footer__subscribe
         form.form--row.footer__subscribe-form(target="#" method="get")
           .input
-            label.footer__title Subscribe to daily newsletter
-            input.footer__subscribe-input.input__elem(type="text" name="email" placeholder="Email" required)
+            label.footer__title(for="footer__subscribe-input") Subscribe to daily newsletter
+            input.footer__subscribe-input.input__elem#footer__subscribe-input(type="text" name="email" placeholder="Email" required)
 
           .input
             button.btn.btn--wide.btn--input(type="submit") Subscribe

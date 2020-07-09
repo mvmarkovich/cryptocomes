@@ -7,18 +7,22 @@ footer.footer
                 .social.footer__social
                     a.social__link(href="#!")
                         include ../../img/icons/social/facebook.svg
+                        | Facebook
                     a.social__link(href="#!")
                         include ../../img/icons/social/twitter.svg
+                        | Twitter
                     a.social__link(href="#!")
                         include ../../img/icons/social/youtube.svg
+                        | YouTube
                     a.social__link(href="#!")
                         include ../../img/icons/social/telegram.svg
+                        | Telegram
 
             .footer__subscribe
                 form.form--row.footer__subscribe-form(target="_blank" action="/" method="get" )
                     .input
-                        label.footer__title Subscribe to daily newsletter
-                        input.footer__subscribe-input.input__elem(type="text" name="email" placeholder="Email" required)
+                        label.footer__title(for="footer__subscribe-input") Subscribe to daily newsletter
+                        input.footer__subscribe-input.input__elem#footer__subscribe-input(type="text" name="email" placeholder="Email" required)
 
                     .input
                         button.btn.btn--wide.btn--input(type="submit") Subscribe

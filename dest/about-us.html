@@ -20,7 +20,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__container"><a class="header__logo" href="#!"><img class="header__logo-img" src="img/icons/logo.svg"></a>
+      <div class="header__container"><a class="header__logo" href="#!"><img class="header__logo-img" src="img/icons/logo.svg" alt="Logo">Logo</a>
         <div class="header__mobile">
           <button class="btn btn--light btn--cross-white header__mobile-cross"></button>
         </div>
@@ -67,8 +67,8 @@
           </ul>
         </nav>
         <div class="header__panel">
-          <button class="header__btn-search btn btn--light btn--search">Search</button>
-          <button class="header__burger btn btn--light btn--burger"></button>
+          <button class="header__btn-search btn btn--light btn--search" aria-label="open search">Search</button>
+          <button class="header__burger btn btn--light btn--burger" aria-label="open menu"></button>
         </div>
         <div class="mobile-menu-back">Back</div>
         <div class="header__search">
@@ -150,8 +150,8 @@
           <div class="footer__subscribe">
             <form class="form--row footer__subscribe-form" target="#" method="get">
               <div class="input">
-                <label class="footer__title">Subscribe to daily newsletter</label>
-                <input class="footer__subscribe-input input__elem" type="text" name="email" placeholder="Email" required>
+                <label class="footer__title" for="footer__subscribe-input">Subscribe to daily newsletter</label>
+                <input class="footer__subscribe-input input__elem" id="footer__subscribe-input" type="text" name="email" placeholder="Email" required>
               </div>
               <div class="input">
                 <button class="btn btn--wide btn--input" type="submit">Subscribe</button>
