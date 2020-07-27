@@ -1,0 +1,153 @@
+extends layouts/layout.pug
+
+block title
+    title Article | CC
+
+block content
+    .f-container
+        .main-block
+            .article
+                .article__wrapper
+                    .article__over
+                        h1.article__title Women of Crypto at the Crypto Invest Summit: Separate but Hopeful
+
+                    .btn--block.btn--block-event
+                        a.btn.btn--bright.btn--huge.btn--event(href="#!") Buy tickets
+
+                    p.article__mark Crypto events are beginning to invite more women speakers, but tend to feature them in separate Women in Crypto panelse
+
+                    .article__main
+                        img.article__main-img(src="img/content/event/main-img.png" alt="main-img")
+
+                    .article__content
+                        h2 About this event
+
+                        p Description. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+                        p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.
+
+                        .event__info.event--bg
+                            .event__info-row
+                                .event__info-label Event type:
+                                .event__info-text Online conference
+                            .event__info-row
+                                .event__info-label Location:
+                                .event__info-text Zurich, Switzerland
+                            .event__info-row
+                                .event__info-label Venue:
+                                .event__info-text ???
+                            .event__info-row
+                                .event__info-label Start Date:
+                                .event__info-text 1 March 2018
+                            .event__info-row
+                                .event__info-label End Date:
+                                .event__info-text 3 March 2018
+                            .event__info-row
+                                .event__info-label Ticket from:
+                                .event__info-text $100
+                            .event__info-row
+                                .event__info-label Ticket to:
+                                .event__info-text $300:
+                            .event__info-row
+                                .event__info-label Website:
+                                .event__info-text
+                                    a.link-decorate(href="#!") https://cocacola.com
+                            .event__info-row
+                                .event__info-label Organization:
+                                .event__info-text CocaCola
+                            .event__info-row
+                                .event__info-label Contacts:
+                                .event__info-text Leah Callon-Butler Chief Impact Officer: <br>
+                                    a.link-decorate(href="mailto:leah@cocacola.com") leah@cocacola.com
+                            .event__info-row
+                                .event__info-label Social links:
+                                .event__info-text
+                                    .social
+                                        a.social__link.social__link--ln-paint(href="#!")
+                                        a.social__link.social__link--fb-paint(href="#!")
+                                        a.social__link.social__link--tg-paint(href="#!")
+                                        a.social__link.social__link--tw-paint(href="#!")
+
+                        h2 Speakers
+
+                        .speakers
+                            .speakers__item
+                                .speakers__img
+                                    img(src="img/content/event/speakers_1.png")
+                                .speakers__name John Smith, enterpreneur
+
+                            .speakers__item
+                                .speakers__img
+                                    img(src="img/content/event/speakers_no-photo.svg")
+                                .speakers__name Mike O’Neil, CryptoLuck founder
+
+                            .speakers__item
+                                .speakers__img
+                                    img(src="img/content/event/speakers_2.png")
+                                .speakers__name Cassedy Cage, data scientist
+
+                            .speakers__item
+                                .speakers__img
+                                    img(src="img/content/event/speakers_3.png")
+                                a.speakers__name(href="#!") Gordon Freeman, venture investor
+
+                            .speakers__item
+                                .speakers__img
+                                    img(src="img/content/event/speakers_no-photo.svg")
+                                a.speakers__name(href="#!") Phillip D’Angelo, BlockRocket founder
+
+                            .speakers__item
+                                .speakers__img
+                                    img(src="img/content/event/speakers_4.png")
+                                .speakers__name Kevin Mallowne, Dash accountant
+
+                        h2 Agenda
+
+                        p Description. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+                        p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.
+
+                        .btn--block.btn--block-event
+                            a.btn.btn--bright.btn--huge.btn--event(href="#!") Buy tickets
+
+
+        .aside
+            .feed.feed--defaults
+                .feed__title Latest news
+
+                .feed__content
+                    a.feed__item.feed__item-row.link-accent(href="#!")
+                        .feed__img-wrapper
+                            img.feed__img(src="https://cryptocomes.com/sites/default/files/styles/150/public/node-16857.jpg?itok=vCzXW3Qg" alt="Altcoin Market in the Red: Bitcoin Cash, EOS, Bitcoin SV Drop 20 Percent")
+
+                        .feed__item-info
+                            p.feed__item-desc Altcoin Market in the Red: Bitcoin Cash, EOS, Bitcoin SV Drop 20 Percent
+                            .short 11:05AM
+
+                    a.feed__item.feed__item-row.link-accent(href="#!")
+                        .feed__img-wrapper
+                            img.feed__img(src="https://cryptocomes.com/sites/default/files/styles/150/public/node-17001.jpg?itok=MVlKYrle" alt="ConsenSys Chief Joe Lubin to Be Taken to Court by Ex-Staffer for $13 Mln")
+
+                        .feed__item-info
+                            p.feed__item-desc ConsenSys Chief Joe Lubin to Be Taken to Court by Ex-Staffer for $13 Mln
+                            .short 10:30AM
+
+                    a.feed__item.feed__item-row.link-accent(href="#!")
+                        .feed__img-wrapper
+                            img.feed__img(src="https://cryptocomes.com/sites/default/files/styles/150/public/node-17130.jpg?itok=OZ5jaKts" alt="Mastercard Starts Creating Its Own Cryptocurrency Team")
+
+                        .feed__item-info
+                            p.feed__item-desc Mastercard Starts Creating Its Own Cryptocurrency Team
+                            .short 31 Oct
+
+                    a.feed__item.feed__item-row.link-accent(href="#!")
+                        .feed__img-wrapper
+                            img.feed__img(src="https://cryptocomes.com/sites/default/files/styles/150/public/2019-08/Mike_Novogratz_Doesn%E2%80%99t_Think_Bitcoin_Price_Will_Ever_Go_Back_to_%245%2C000_.jpg?itok=ioChU4o4" alt="Mike Novogratz Doesn’t Think Bitcoin Price Will Ever Go Back to $5,000")
+
+                        .feed__item-info
+                            p.feed__item-desc Mike Novogratz Doesn’t Think Bitcoin Price Will Ever Go Back to $5,000
+                            .short 27 Oct
+
+                a.btn.btn--accent.feed__footer(href="#!") See all
+
+            include blocks/aside.pug

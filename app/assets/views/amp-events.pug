@@ -1,117 +1,195 @@
 extends layouts/amp-layout.pug
 
 block title
-    title AMP Article | CC
+    title AMP Events | CC
 
 block content
     .f-container
         .main-block
-            .article
-                .article__wrapper
-                    .article__over
-                        h1.article__title Women of Crypto at the Crypto Invest Summit: Separate but Hopeful
+            .events
+                .events__info
+                    h1.events__info-title Cryptocurrency and DeFi Events Calendar - U.Today
 
                     .btn--block.btn--block-event
-                        a.btn.btn--bright.btn--huge.btn--event(href="#!") Buy tickets
+                        a.btn.btn--accent.btn--huge.btn--event(href="#!") Submit Event for Free
 
-                    p.article__mark Crypto events are beginning to invite more women speakers, but tend to feature them in separate Women in Crypto panelse
+                .events__col
+                    h2.events__col-title Preffered by U.Today
 
-                    .article__main
-                        amp-img.article__main-img(src="img/content/event/main-img.png" layout="responsive" width="736" height="464" alt="Main img")
+                    .events__card
+                        .events__card-left
+                            .events__card-img
+                                amp-img(src="img/content/events/item_1.png" layout="responsive" width="240" height="158" alt="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia ratio...")
 
-                    .article__content
-                        h2 About this event
+                        .events__card-info
+                            a.short.short--bg(href="#!") Blockspot Conference Europe 2018
+                            p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia ratio... <a href="#!">Read more</a>
 
-                        p Description. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                            ul
+                                li
+                                    span Dates:
+                                    span 1 March 2018
 
-                        p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.
+                                li
+                                    span Location:
+                                    span Zurich, Switzerland
 
-                        .event__info.event--bg
-                            .event__info-row
-                                .event__info-label Event type:
-                                .event__info-text Online conference
-                            .event__info-row
-                                .event__info-label Location:
-                                .event__info-text Zurich, Switzerland
-                            .event__info-row
-                                .event__info-label Venue:
-                                .event__info-text ???
-                            .event__info-row
-                                .event__info-label Start Date:
-                                .event__info-text 1 March 2018
-                            .event__info-row
-                                .event__info-label End Date:
-                                .event__info-text 3 March 2018
-                            .event__info-row
-                                .event__info-label Ticket from:
-                                .event__info-text $100
-                            .event__info-row
-                                .event__info-label Ticket to:
-                                .event__info-text $300:
-                            .event__info-row
-                                .event__info-label Website:
-                                .event__info-text
-                                    a.link-decorate(href="#!") https://cocacola.com
-                            .event__info-row
-                                .event__info-label Organization:
-                                .event__info-text CocaCola
-                            .event__info-row
-                                .event__info-label Contacts:
-                                .event__info-text Leah Callon-Butler Chief Impact Officer: <br>
-                                    a.link-decorate(href="mailto:leah@cocacola.com") leah@cocacola.com
-                            .event__info-row
-                                .event__info-label Social links:
-                                .event__info-text
-                                    .social
-                                        a.social__link(href="#!")
-                                            include ../img/icons/social/linkedin-paint.svg
-                                        a.social__link(href="#!")
-                                            include ../img/icons/social/facebook-paint.svg
-                                        a.social__link(href="#!")
-                                            include ../img/icons/social/telegram-paint.svg
-                                        a.social__link(href="#!")
-                                            include ../img/icons/social/twitter-paint.svg
+                                li
+                                    span Venue:
+                                    span Kaskaden-Halle
 
-                        h2 Speakers
+                            .btn--block.btn--block-event
+                                a.btn.btn--accent.btn--large.btn--event(href="#!") Buy tickets
 
-                        .speakers
-                            .speakers__item
-                                .speakers__img
-                                    amp-img(src="img/content/event/speakers_1.png" layout="responsive" width="64" height="64")
-                                .speakers__name John Smith, enterpreneur
+                    .events__card
+                        .events__card-left
+                            .events__card-img
+                                amp-img(src="img/content/events/item_2.png" layout="responsive" width="240" height="158" alt="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia ratio...")
 
-                            .speakers__item
-                                .speakers__img
-                                    amp-img(src="img/content/event/speakers_no-photo.svg" layout="responsive" width="64" height="64")
-                                .speakers__name Mike O’Neil, CryptoLuck founder
+                        .events__card-info
+                            a.short.short--bg(href="#!") Tron Price ‘Ready to Fly’
+                            p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia ratio... <a href="#!">Read more</a>
 
-                            .speakers__item
-                                .speakers__img
-                                    amp-img(src="img/content/event/speakers_2.png" layout="responsive" width="64" height="64")
-                                .speakers__name Cassedy Cage, data scientist
+                            ul
+                                li
+                                    span Dates:
+                                    span 1 March 2018
 
-                            .speakers__item
-                                .speakers__img
-                                    amp-img(src="img/content/event/speakers_3.png" layout="responsive" width="64" height="64")
-                                a.speakers__name(href="#!") Gordon Freeman, venture investor
+                                li
+                                    span Location:
+                                    span Zurich, Switzerland
 
-                            .speakers__item
-                                .speakers__img
-                                    amp-img(src="img/content/event/speakers_no-photo.svg" layout="responsive" width="64" height="64")
-                                a.speakers__name(href="#!") Phillip D’Angelo, BlockRocket founder
+                                li
+                                    span Venue:
+                                    span Kaskaden-Halle
 
-                            .speakers__item
-                                .speakers__img
-                                    amp-img(src="img/content/event/speakers_4.png" layout="responsive" width="64" height="64")
-                                .speakers__name Kevin Mallowne, Dash accountant
+                    .events__card
+                        .events__card-left
+                            .events__card-img
+                                amp-img(src="img/content/events/item_3.png" layout="responsive" width="240" height="158" alt="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia ratio...")
 
-                        h2 Agenda
+                        .events__card-info
+                            a.short.short--bg(href="#!") Lorem ipsum dolor sit amet
+                            p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia ratio... <a href="#!">Read more</a>
 
-                        p Description. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                            ul
+                                li
+                                    span Dates:
+                                    span 1 March 2018
 
-                        p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.
+                                li
+                                    span Location:
+                                    span Zurich, Switzerland
 
-                        .btn--block.btn--block-event
-                            a.btn.btn--bright.btn--huge.btn--event(href="#!") Buy tickets
+                                li
+                                    span Venue:
+                                    span Kaskaden-Halle
+
+                            .btn--block.btn--block-event
+                                a.btn.btn--accent.btn--large.btn--event(href="#!") Buy tickets
+
+                    .events__card
+                        .events__card-left
+                            .events__card-img
+                                amp-img(src="img/content/events/item_4.png" layout="responsive" width="240" height="158" alt="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia ratio...")
+
+                        .events__card-info
+                            a.short.short--bg(href="#!") Lorem ipsum dolor sit amet
+                            p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia ratio... <a href="#!">Read more</a>
+
+                            ul
+                                li
+                                    span Dates:
+                                    span 1 March 2018
+
+                                li
+                                    span Location:
+                                    span Zurich, Switzerland
+
+                                li
+                                    span Venue:
+                                    span Kaskaden-Halle
+
+                            .btn--block.btn--block-event
+                                a.btn.btn--accent.btn--large.btn--event(href="#!") Buy tickets
+
+                    .events__card
+                        .events__card-left
+                            .events__card-img
+                                amp-img(src="img/content/events/item_5.png" layout="responsive" width="240" height="158" alt="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia ratio...")
+
+                        .events__card-info
+                            a.short.short--bg(href="#!") Lorem ipsum dolor sit amet
+                            p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia ratio... <a href="#!">Read more</a>
+
+                            ul
+                                li
+                                    span Dates:
+                                    span 1 March 2018
+
+                                li
+                                    span Location:
+                                    span Zurich, Switzerland
+
+                                li
+                                    span Venue:
+                                    span Kaskaden-Halle
+
+                .events__col
+                    h2.events__col-title All events
+
+                    .events__card.events__card-medium
+                        .events__card-left
+                            .events__card-img
+                                amp-img(src="img/content/events/small_item_1.png" layout="responsive" width="214" height="144" alt="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia ratio...")
+
+                        .events__card-info
+                            a.events__card-title(href="#!") Lorem ipsum dolor sit amet
+                            p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumaut odit aut ... <a href="#!">Read more</a>
+
+                            ul
+                                li
+                                    span Dates:
+                                    span Jul 22, 2020 - Jul 23, 2020
+
+                                li
+                                    span Location:
+                                    span Zurich, Switzerland
+
+                    .events__card.events__card-medium
+                        .events__card-left
+                            .events__card-img
+                                amp-img(src="img/content/events/small_item_2.png" layout="responsive" width="214" height="144" alt="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia ratio...")
+
+                        .events__card-info
+                            a.events__card-title(href="#!") Lorem ipsum dolor sit amet
+                            p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumaut odit aut ... <a href="#!">Read more</a>
+
+                            ul
+                                li
+                                    span Dates:
+                                    span Jul 22, 2020 - Jul 23, 2020
+
+                                li
+                                    span Location:
+                                    span Zurich, Switzerland
+
+                    .events__card.events__card-medium
+                        .events__card-left
+                            .events__card-img
+                                amp-img(src="img/content/events/small_item_3.png" layout="responsive" width="214" height="144" alt="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia ratio...")
+
+                        .events__card-info
+                            a.events__card-title(href="#!") Lorem ipsum dolor sit amet
+                            p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumaut odit aut ... <a href="#!">Read more</a>
+
+                            ul
+                                li
+                                    span Dates:
+                                    span Jul 22, 2020 - Jul 23, 2020
+
+                                li
+                                    span Location:
+                                    span Zurich, Switzerland
 
         include blocks/amp-aside.pug
