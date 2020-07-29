@@ -20,6 +20,7 @@ html(lang="en" dir="ltr" ⚡)
         script(async='', custom-element='amp-sidebar', src='https://cdn.ampproject.org/v0/amp-sidebar-0.1.js')
         script(async='', custom-element='amp-form', src='https://cdn.ampproject.org/v0/amp-form-0.1.js')
         script(async='', custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js")
+        script(async='', custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js")
 
         link(rel="icon", type="image/png", sizes="16x16", href="img/favicon/favicon-16x16.png")
 
@@ -65,13 +66,4 @@ html(lang="en" dir="ltr" ⚡)
 
 
     body
-        include ../inc/amp-header.pug
-
-        .page-container.container
-            block content
-
-        include ../inc/amp-footer.pug
-
-        include ../inc/amp-share.pug
-
-        include ../inc/amp-cookies.pug
+        block content

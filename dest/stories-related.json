@@ -1,0 +1,31 @@
+{
+    "bookendVersion": "v1.0",
+
+    "components": [
+        {
+            "type": "heading",
+            "text": "Related"
+        },
+        {
+            "type": "landscape",
+            "title": "Mike Novogratz Doesn’t Think Bitcoin Price Will Ever Go Back to $5,000",
+            "url": "https://wikipedia.org/wiki/Cat",
+            "image": "img/content/amp-stories/related_item_1.png",
+            "category": "Stories"
+        },
+        {
+            "type": "landscape",
+            "title": "Ushering in the future of money with Telegram’s GRAM Wallet",
+            "url": "/",
+            "image": "img/content/amp-stories/related_item_2.png",
+            "category": "Interviews"
+        },
+        {
+            "type": "landscape",
+            "title": "Mike Novogratz Doesn’t Think Bitcoin Price Will Ever Go Back to $5,000",
+            "url": "/",
+            "image": "img/content/amp-stories/related_item_3.png",
+            "category": "Price Prediction"
+        }
+    ]
+}

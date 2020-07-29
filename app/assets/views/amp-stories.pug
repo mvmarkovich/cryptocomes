@@ -1,0 +1,39 @@
+extends layouts/amp-stories-layout.pug
+
+block title
+    title AMP Stories | CC
+
+block content
+    amp-story(standalone title="Tron (TRX) Goes Live on McAfeeDEX after Week’s Delay" publisher="U.TODAY" publisher-logo-src="https://u.today/themes/contrib/amptheme/uamp/img/icons/logo.svg" poster-portrait-src="https://u.today/sites/default/files/styles/736x/public/2020-04/2965_0.jpg.webp")
+            amp-story-page#slide_1
+                amp-story-grid-layer(template="fill")
+                    amp-img.amp-story__img(src="img/content/amp-stories/bg_item_1.png" layout="responsive" width="360" height="640")
+
+                amp-story-grid-layer.amp-story__wrapper-bg(template="vertical")
+                    .amp-story__header
+                        a.short.short--author(href="#!")
+                            amp-img.short--img(src="https://u.today/sites/default/files/2019-11/vera-ava.jpg" layout="fixed" width="24" height="24")
+                            | Vera Yurina
+
+                        h2 Lorem ipsum dolor sit amet sed do eiusmod
+                        p.amp-story__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita
+
+                        .short__row
+                            a.short(href="#!") Price predictions
+                            .short Jul 22, 2020
+
+            amp-story-page#slide_2
+                amp-story-grid-layer(template="fill")
+                    amp-img.amp-story__img(src="img/content/amp-stories/bg_item_2.png" layout="responsive" width="360" height="640")
+
+                amp-story-grid-layer.amp-story__wrapper.amp-story__wrapper-bg.bottom(template="vertical")
+                    .amp-story__header
+                        a.short.short--author(href="#!")
+                            amp-img.short--img(src="https://u.today/sites/default/files/2019-11/vera-ava.jpg" layout="fixed" width="24" height="24")
+                            | Vera Yurina
+
+                        h3 Lorem ipsum dolor sit amet sed do eiusmod
+                        p.amp-story__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita
+
+
+            amp-story-bookend(src="stories-related.json" layout="nodisplay")
