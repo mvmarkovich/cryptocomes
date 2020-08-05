@@ -1,0 +1,115 @@
+extends layouts/layout.pug
+
+block title
+    title Author | CC
+
+block content
+    .f-container
+        .main-block
+            .partners__list
+                .partners__item
+                    a.img-link(href="#!")
+                        img.partners__img(src="img/content/partners/item_1.svg" alt="Сoinalyze")
+
+                    .partners__info
+                        .partners__name Сoinalyze
+
+                        p The professional cryptocurrency trader’s website, all the tools a crypto trader might need: live prices and charts, rich price statistics, candlestick patterns detection, price alerts, unique volume indicators, trollbox, news aggregation and many more valuable tools.
+
+                        .partners__row
+                            a.partners__link.link(href="www.coinalyze.net") www.coinalyze.net
+
+                .partners__item
+                    a.img-link(href="#!")
+                        img.partners__img(src="img/content/partners/item_2.svg" alt="NewsNow")
+
+                    .partners__info
+                        .partners__name NewsNow
+
+                        p NewsNow.co.uk is the UK's first and leading home-grown and independent news aggregation service. Fully-automated, and on a continuous basis, NewsNow displays breaking headlines linking to news websites all around the world.
+
+                        .partners__row
+                            a.partners__link.link(href="www.newsnow.co.uk") www.newsnow.co.uk
+
+                .partners__item
+                    a.img-link(href="#!")
+                        img.partners__img(src="img/content/partners/item_3.svg" alt="Bitcolumnist")
+
+                    .partners__info
+                        .partners__name Bitcolumnist
+
+                        p Bitcolumnist aggregates top cryptocurrency news in an easy-to-read, distraction-free format.
+
+                        .partners__row
+                            a.partners__link.link(href="#!") https://bc-conference.org
+                            .store
+                                a.store__link.store__link--pm(href="#!pm")
+                                    | Play Market
+
+                                a.store__link.store__link--as(href="#!as")
+                                    | App Store
+
+                .partners__item
+                    a.img-link(href="#!")
+                        img.partners__img(src="img/content/partners/item_4.svg" alt="Faws")
+
+                    .partners__info
+                        .partners__name Faws
+
+                        p Faws allows you to create personalized watchlists to follow your favorites crypto projects, and stay alerted of news in real-time.
+
+                        .partners__row
+                            a.partners__link.link(href="www.faws.com") www.faws.com
+
+                .partners__item
+                    a.img-link(href="#!")
+                        img.partners__img(src="img/content/partners/item_5.svg" alt="Coinzilla")
+
+                    .partners__info
+                        .partners__name Coinzilla
+
+                        p The Top Finance & Crypto Ad Network. Chosen by more than 50% of crypto advertisers, Coinzilla's network of publishers has more than 700 active websites & blogs.
+
+                        .partners__row
+                            a.partners__link.link(href="www.coinzilla.com") www.coinzilla.com
+
+        .aside
+            .feed.feed--defaults
+                .feed__title Latest news
+
+                .feed__content
+                    a.feed__item.feed__item-row.link-accent(href="#!")
+                        .feed__img-wrapper
+                            img.feed__img(src="https://cryptocomes.com/sites/default/files/styles/150/public/node-16857.jpg?itok=vCzXW3Qg")
+
+                        .feed__item-info
+                            p.feed__item-desc Altcoin Market in the Red: Bitcoin Cash, EOS, Bitcoin SV Drop 20 Percent
+                            .short 11:05AM
+
+                    a.feed__item.feed__item-row.link-accent(href="#!")
+                        .feed__img-wrapper
+                            img.feed__img(src="https://cryptocomes.com/sites/default/files/styles/150/public/node-17001.jpg?itok=MVlKYrle")
+
+                        .feed__item-info
+                            p.feed__item-desc ConsenSys Chief Joe Lubin to Be Taken to Court by Ex-Staffer for $13 Mln
+                            .short 10:30AM
+
+                    a.feed__item.feed__item-row.link-accent(href="#!")
+                        .feed__img-wrapper
+                            img.feed__img(src="https://cryptocomes.com/sites/default/files/styles/150/public/node-17130.jpg?itok=OZ5jaKts")
+
+                        .feed__item-info
+                            p.feed__item-desc Mastercard Starts Creating Its Own Cryptocurrency Team
+                            .short 31 Oct
+
+                    a.feed__item.feed__item-row.link-accent(href="#!")
+                        .feed__img-wrapper
+                            img.feed__img(src="https://cryptocomes.com/sites/default/files/styles/150/public/2019-08/Mike_Novogratz_Doesn%E2%80%99t_Think_Bitcoin_Price_Will_Ever_Go_Back_to_%245%2C000_.jpg?itok=ioChU4o4")
+
+                        .feed__item-info
+                            p.feed__item-desc Mike Novogratz Doesn’t Think Bitcoin Price Will Ever Go Back to $5,000
+                            .short 27 Oct
+
+                a.btn.btn--accent.feed__footer(href="#!") See all
+
+            include blocks/aside.pug
