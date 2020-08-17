@@ -59,7 +59,7 @@ ul
 
 .slick-next
   background-image: resolve("icons/slider-next-arrow.svg")
-  right: 0 @sm 16 @md -65px @xl -75px
+  right: 0 @sm 16px @md -65px @xl -75px
 
   &:hover
     background-image: svg-load("icons/slider-next-arrow.svg" stroke: #000)
@@ -70,3 +70,6 @@ ul
 
   &:hover
     background-image: svg-load("icons/slider-prev-arrow.svg" stroke: #000)
+
+.slick-disabled
+  display: none !important

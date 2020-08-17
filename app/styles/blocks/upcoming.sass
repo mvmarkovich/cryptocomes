@@ -1,0 +1,76 @@
+.upcoming
+  margin: 16px 0
+  padding: @sm-down 0 16px
+  position: relative
+
+  &__header
+    margin: 0 0 8px
+    padding: 16px
+    display: flex
+    background: #fff
+
+    .btn
+      min-height: 24px
+      margin-right: 16px
+      font-weight: 500
+      text: #424242 15px
+
+  &__title
+    text: 500 17px 1.7
+    white-space: pre
+    margin: 0 16px 0 0
+
+  &__slider
+    .slick-track
+      display: flex
+
+    .slick-next
+      right: -54px @xl -67px
+
+    .slick-prev
+      left: -54px @xl -67px
+
+  &__item
+    background: #fff
+    vertical-align: top
+    max-width: 236px @xl 237px
+    width: 100%
+    height: auto
+
+    .short
+      margin: 0 16px 0 0
+
+    & + &
+      margin: 0 0 0 8px
+
+    &-info
+      padding: 16px
+
+      & > *
+        margin: 0 0 16px
+
+        &:last-child
+          margin: 0
+
+    &-title
+      text: 500 17px 1.7
+      white-space: pre-wrap
+      min-height: 84px
+      margin: 0 0 4px
+
+    &-link
+      text: 400 14px 1.5
+      display: block
+
+    .btn--event
+      font-size: 13px
+      border-radius: 2px
+      width: auto
+      padding: 0 20px
+
+.promocode
+  &__title
+    text: 500 15px 1.6
+
+  &__value
+    text: #424242 400 13px 1.5
