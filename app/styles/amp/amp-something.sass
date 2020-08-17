@@ -2,41 +2,20 @@
   overflow: hidden
   text-align: center
   position: relative
+  margin: 28px 0
 
-  &--top
-    position: relative
-    margin: 16px 0
-
-  &--content
-    margin: 24px 0 @md 32px 0 @xl 40px 0
+  amp-img
+    max-width: 336px
+    min-width: 336px
+    margin: 0 auto
 
   &__content
-    display: flex
-    width: 100%
-    position: relative
-
-    amp-img
-      margin-right: auto
-      margin-left: auto
-      height: auto
-
-    &-long
-      text-align: center
-      display: none @md flex
-      justify-content: center
+    display: block
 
     &-square
-      display: flex @md none
-      justify-content: center
+      display: inherit
       text-align: center
 
-.ref
-  text-align: center
-  margin: 0 0 16px
-  padding: 0 16px
-  text: #78909c 14px 1.6
-
-  a
-    color: #78909c
-    text-decoration: underline
-
+      & > ins
+        display: block
+        margin: 0 auto
