@@ -184,6 +184,10 @@
     document.body.removeChild(copytext)
   });
 
+  $('.article__wrapper').bind('copy cut drag drop', function (e) {
+    e.preventDefault();
+  });
+
   //
   // Anchor top page
   //
