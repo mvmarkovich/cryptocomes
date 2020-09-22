@@ -35,13 +35,10 @@
     vertical-align: top
     max-width: 236px @xl 237px
     width: 100%
-    height: auto
+    height: 100%
 
     .short
       margin: 0 16px 0 0
-
-    & + &
-      margin: 0 0 0 8px
 
     &-info
       padding: 16px
@@ -67,6 +64,13 @@
       border-radius: 2px
       width: auto
       padding: 0 20px
+
+  .views-row
+    margin: 0 0 0 8px
+    height: auto
+
+    &:first-child
+      margin: 0
 
 .promocode
   &__title
