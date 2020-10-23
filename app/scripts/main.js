@@ -124,54 +124,6 @@
   });
 
   //
-  // Sliders
-  //
-
-  $('.releases__list').slick({
-    infinite: true,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    arrows: true,
-    dots: false,
-    responsive: [
-      {
-        breakpoint: 1152,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          variableWidth: true
-        }
-      }
-    ]
-  });
-
-  $('.upcoming__slider').slick({
-    infinite: false,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    variableWidth: true,
-    arrows: true,
-    dots: false,
-    responsive: [
-      {
-        breakpoint: 826,
-        settings: {
-          arrows: false,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        }
-      }
-    ]
-  });
-
-  //
   // Copy URL Share block
   //
 

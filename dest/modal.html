@@ -15,7 +15,10 @@
     <link rel="stylesheet" type="text/css" href="libs/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css">
     <title>Modal | CC</title>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400;1,500&amp;family=Yellowtail&amp;display=swap" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+      
+    </style>
     <link href="styles/main.css" rel="stylesheet">
   </head>
   <body>
@@ -241,5 +244,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="libs/slick/slick.min.js"></script>
     <script src="scripts/main.js"></script>
+    <script>$('.releases__list').slick({infinite: true,slidesToShow: 5,slidesToScroll: 1,arrows: true,dots: false,responsive: [{breakpoint: 1152,settings: {slidesToShow: 3,slidesToScroll: 1}},{breakpoint: 768,settings: {slidesToShow: 2,slidesToScroll: 1,variableWidth: true}}]});$('.upcoming__slider').slick({infinite: false,slidesToShow: 3,slidesToScroll: 1,variableWidth: true,arrows: true,dots: false,responsive: [{breakpoint: 826,settings: {arrows: false,slidesToShow: 1,slidesToScroll: 1,}}]});</script>
   </body>
 </html>
