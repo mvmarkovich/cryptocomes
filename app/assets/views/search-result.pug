@@ -1,0 +1,99 @@
+extends layouts/layout.pug
+
+block title
+    title Search result | CC
+
+block content
+    .f-container
+        .main-block
+            .search-result
+                .board-line
+                    a.board-line__img(href="#!")
+                        img(src="img/content/board-line/item_1.png" alt="Title category")
+
+                    .board-line__info
+                        a.board-line__title(href="#!") Tron CEO Justin Sun Teases "Huge" Secret Guest at Upcoming NiTROn <span class="bright">Bitcoin</span> Summit
+
+                        .board-line__footer.short__row
+                            a.short.short--author(href="#!")
+                                img.short--img(src="img/content/avatars/item_1.png" alt="Alex Dovbnya")
+                                span Alex Dovbnya
+                                .short.hide-xl-only 10 months ago
+
+                            a.short.short--bold(href="#!") Price predictions
+                            .short.hide-xl-down 1 hour ago
+
+                .infoblock--tiny
+                    a.short.short--author-big(href="#!")
+                        img.short--img(src="img/content/avatars/item_1.png" alt="Alex Dovbnya")
+
+                        .short__author-info
+                            .short__author-name Alex Dovbnya
+                            .short @rogerkver
+
+                .board-line
+                    a.board-line__img(href="#!")
+                        img(src="img/content/board-line/item_2.png" alt="Title category")
+                        .promo Sponsored
+
+                    .board-line__info
+                        a.board-line__title(href="#!") It's Official: Tron CEO Justin Sun Confirms Much-Hyped Partnership with Samsung <span class="bright">Bitcoin</span>
+
+                        .board-line__footer.short__row
+                            a.short.short--author(href="#!")
+                                img.short--img(src="img/content/avatars/item_2.png" alt="Yuri Molchan")
+                                span Yuri Molchan
+                                .short.hide-xl-only 10 months ago
+
+                            a.short.short--bold(href="#!") News
+                            .short.hide-xl-down 2 hours ago
+
+                .events__card
+                    .events__card-left
+                        .events__card-img
+                            img(src="img/content/events/item_2.png" alt="Event title")
+
+                    .events__card-info
+                        a.short.short--bg(href="#!") Tron Price ‘Ready to Fly’
+                        p Nemo enim <span class="bright">Bitcoin</span> ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia ratio... <a href="#!">Read more</a>
+
+                        ul
+                            li
+                                span Dates:
+                                span 1 March 2018
+
+                            li
+                                span Location:
+                                span Zurich, Switzerland
+
+                            li
+                                span Venue:
+                                span Kaskaden-Halle
+
+                .staff__item
+                    a.staff__img-wrapper(href="#!")
+                        img.staff__img(src="https://cryptocomes.com/sites/default/files/styles/250/public/2019-07/xYuri,P20Antolov.png,qitok=jsS-tsB3.pagespeed.ic.z1NTM3mRxw.webp")
+
+                    .staff__info
+                        .staff__info-column
+                            a.staff__name.link-accent(href="#!") Yuri Molchan
+
+                            .social
+                                a.social__link.social__link--fb(href="#!")
+                                a.social__link.social__link--ln(href="#!")
+                                a.social__link.social__link--tg(href="#!")
+                                a.social__link.social__link--tw(href="#!")
+                                a.social__link.social__link--em(href="#!")
+
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, <span class="bright">Bitcoin</span> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+                .board-info
+                    .board-info__img
+                        img(src="img/content/board-line/board-info.png" alt="#Lorem ipsum dolor sit amet")
+
+                    .board-info__lead
+                        .board-info__title <span class="bright">#Bitcoin</span>
+                        p.board-info__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru
+
+        .aside
+            include blocks/aside.pug

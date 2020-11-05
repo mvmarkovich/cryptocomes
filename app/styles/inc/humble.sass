@@ -18,10 +18,22 @@
     text: #000
     font-weight: 500
     height: 48px
-    padding:  @xl-down 0 0 0 40px
+    padding: @xl-down 0 0 0 40px
 
     .short
       margin: @xl 0 0 0 32px
+
+    &-big
+
+      ^^&--img
+        position: static
+        size: 40px
+        min-width: 40px
+
+  &__author
+
+    &-name
+      font-weight: 500
 
   &--bold
     font-weight: 500

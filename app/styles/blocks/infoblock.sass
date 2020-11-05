@@ -30,13 +30,18 @@
       &:last-child
         margin: 0
 
+  &--tiny
+    padding: 16px
+    background: $neutral
+
 .staff
   &__item
-    align-items: flex-start
+    align-items: @sm flex-start
     position: relative
-    padding: 32px 48px 32px 0 @sm 32px 0
-    display: flex
+    padding: 16px 0 @sm 32px 0
+    display: @sm flex
     border-bottom: 1px solid #E0E0E0
+    background: $neutral
 
     &:last-child
       border: 0
@@ -44,25 +49,20 @@
 
     .social
       margin: 0 0 0 -16px
-      position: @sm-down absolute
-      top: @sm-down 10px
-      right: @sm-down 0
-      display: @sm-down flex
-      flex-direction: @sm-down column
 
       &__link
         size: 48px
         min-width: 48px
 
   &__info
-    margin-left: 16px @md 32px
+    margin-left: @sm 16px @md 32px
 
     &-column
-      height: 72px @sm 100px @md auto
+      height: @sm 100px @md auto
 
     p
       text: #000 400 17px 1.7
-      margin: 16px 0 0 -132px @sm 16px 0 0 -174px @md 0
+      margin: 4px 0 0 @sm 16px 0 0 -174px @md 0
 
   &__name
     text: #000 500 17px 1.7
@@ -76,8 +76,8 @@
     width: 100%
 
     &-wrapper
-      min-width: 116px @sm 160px
-      max-width: 116px @sm 160px
-      height: 72px @sm 100px
-      border-radius: 2px
+      min-width: 160px
+      max-width: 160px
       overflow: hidden
+      display: block
+      margin: @sm-down 0 0 16px
