@@ -137,10 +137,6 @@
     $temp.remove();
   });
 
-  $('.article__content').bind('copy cut drag drop', function (e) {
-    e.preventDefault();
-  });
-
   //
   // Anchor top page
   //
