@@ -112,6 +112,18 @@
   }
 
   //
+  // Fixed sidebar
+  //
+
+  var sidebar = new StickySidebar('.aside', {
+    containerSelector: '.f-container',
+    innerWrapperSelector: '.sidebar__inner',
+    topSpacing: 16,
+    bottomSpacing: 16,
+    minWidth: 784
+  });
+
+  //
   // Cookies
   //
 
