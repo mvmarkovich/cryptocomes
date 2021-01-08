@@ -18,7 +18,7 @@
 .page-container
   margin: 32px * *
 
-.f-container
+.f-container, .main-container
   box: space-between
   flex-wrap: wrap @md nowrap
   align-items: flex-start
@@ -42,3 +42,12 @@
   width: 100%
   position: relative
   z-index: 7
+
+.aside
+  .aside-fixed
+    position: fixed
+    z-index: 101
+
+  .aside-stop
+    position: relative
+    z-index: 101
