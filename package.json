@@ -5,14 +5,17 @@
   "dependencies": {
     "browser-sync": "^2.18.13",
     "del": "^3.0.0",
-    "gulp": "^4.0.0",
+    "gulp": "^4.0.2",
     "gulp-4.0.build": "^4.0.0-build.b7f3e2c",
     "gulp-concat": "^2.6.1",
     "gulp-debug": "^3.1.0",
     "gulp-if": "^2.0.2",
+    "gulp-install": "^1.1.0",
+    "gulp-webp": "^4.0.1",
     "postcss": "^7.0.5",
     "postcss-nested-ancestors": "^2.0.0",
-    "postcss-responsive-type": "^1.0.0"
+    "postcss-responsive-type": "^1.0.0",
+    "yuicompressor": "^2.4.8"
   },
   "devDependencies": {
     "@babel/core": "^7.1.5",
@@ -34,7 +37,7 @@
     "gulp-postcss": "^7.0.1",
     "gulp-pug": "^3.3.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.2.1",
+    "gulp-sass": "^5.1.0",
     "gulp-strip-css-comments": "^2.0.0",
     "gulp-uglify": "^3.0.0",
     "gulp-uglifycss": "^1.0.9",
@@ -43,7 +46,9 @@
     "gulp-watch-pug": "^1.0.0",
     "normalize.css": "^8.0.0",
     "postcss-alias": "^2.0.0",
+    "postcss-apply": "^0.12.0",
     "postcss-assets": "^5.0.0",
+    "postcss-custom-properties": "^9.0.2",
     "postcss-each": "^0.10.0",
     "postcss-extend": "^1.0.5",
     "postcss-flexbox": "^1.0.3",

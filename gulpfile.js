@@ -21,7 +21,6 @@
     stripCssComments = require('gulp-strip-css-comments'),
     cssDeclarationSorter = require('css-declaration-sorter');
 
-
   //write html by pug
   gulp.task('views', function buildHTML() {
     return gulp
@@ -59,7 +58,6 @@
     require('postcss-inline-svg')({
       path: 'app/assets/img/'
     }),
-    require('autoprefixer'),
     require('postcss-unique-selectors'),
     require('css-mqpacker')({
       sort: true
@@ -97,7 +95,7 @@
   gulp.task('postcssAmp', function () {
     return (
       gulp
-      .src(['app/styles/*.sss'])
+      .src(['app/styles/amp.sss'])
       .pipe(sourcemaps.init())
       .pipe(
         postcss(processors, {
@@ -112,31 +110,10 @@
       .pipe(gulp.dest('dest/styles/'))
     );
   });
-
+  
   // write js
   gulp.task('scripts', function () {
     return gulp.src('app/scripts/**').pipe(gulp.dest('dest/scripts'));
-  });
-
-  //delete dest folder
-  gulp.task('clean', function () {
-    return del('dest');
-  });
-
-  //lib
-  gulp.task('libs-css', function () {
-    return gulp
-      .src('app/libs/**/*.css')
-      .pipe(uglifycss())
-      .pipe(concat('libs.min.css'))
-      .pipe(gulp.dest('dest/styles/'));
-  });
-
-  gulp.task('libs-js', function () {
-    return gulp
-      .src('app/libs/**/*.js')
-      .pipe(concat('libs.min.js'))
-      .pipe(gulp.dest('dest/scripts/'));
   });
 
   //copy all assets files
@@ -149,43 +126,15 @@
       .pipe(gulp.dest('dest'));
   });
 
-  //run task for build once
-  gulp.task(
-    'build',
-    gulp.series(
-      'clean',
-      gulp.parallel(
-        'assets',
-        'postcss',
-        'postcssAmp',
-        'views',
-        'libs-css',
-        'libs-js',
-        'scripts'
-      )
-    )
-  );
-
-  //up static server; watching change in dest and reload page
-  gulp.task('server', function () {
-    browserSync.init({
-      server: 'dest',
-      notify: false
-    });
-
-    browserSync.watch('dest/**/*.*').on('change', browserSync.reload);
-  });
-
   //watching by all files in dest
   gulp.task('watch', function () {
-    gulp.watch(['app/styles/**/*.*', '!app/styles/amp-article.sass'], gulp.series('postcss'));
-    gulp.watch('app/styles/amp-article.sass', gulp.series('postcssAmp'));
+    gulp.watch(['app/styles/**/*.*'], gulp.series('postcss'));
+    gulp.watch('app/styles/amp.sass', gulp.series('postcssAmp'));
     gulp.watch('app/scripts/**/*.*', gulp.series('scripts'));
     gulp.watch('app/assets/**/*.*', gulp.series('assets'));
     gulp.watch('app/assets/views/**/*.*', gulp.series('views'));
-    gulp.watch('app/libs/**/*.js', gulp.series('libs-js'));
-    gulp.watch('app/libs/**/*.css', gulp.series('libs-css'));
+    //gulp.watch('app/libs/**/*.js', gulp.series('libs-js'));
+    //gulp.watch('app/libs/**/*.css', gulp.series('libs-css'));
   });
 
-  gulp.task('dev', gulp.series('build', gulp.parallel('watch', 'server')));
 })();

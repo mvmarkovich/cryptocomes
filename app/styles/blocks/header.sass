@@ -1,258 +1,56 @@
 .header
-  background: $accent-1-medium
-  position: relative
-  z-index: 996
+	&__logo
+		display: block
+		min-width: 235px
+		max-width: 235px
 
-  &__container
-    box: center space-between
-    flex-wrap: @md wrap @xl nowrap
-    height: @xl 48px
-    padding: 0 16px
-    position: relative
-    max-width: 100% @md 826px @xl 1182px
-    margin: 0 auto
+	&__row
+		position: relative
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: @md 0 24px @xl 0 48px
 
-  &__logo
-    display: inline-flex
-    width: 128px
-    overflow: hidden
+		&:before
+			content: ''
+			height: 48px
+			background: #adffe7
+			position: absolute
+			bottom: 0
+			left: -20px @md 0
+			right: -20px @md 0
+			z-index: -1
 
-  &__social
-    display: none
-    z-index: 997
+	&__nav
+		display: @xl-down none
 
-  &__nav
-    position: relative
-    order: @xl-down 9
-    display: none @md block
-    width: 100% @xl auto
-    margin: @md 8px 0 0 @xl 0
+		&-list
+			list-style: none
+			padding: 0
+			margin: 0
 
-    &-list
-      box: vertical @md horizontal space-between @xl center
-      background: @md-down #512DA8
-      padding-bottom: @md-down 24px
-      margin: @xl 0 24px
+			display: flex
+			align-items: center
 
-      &.visibility-hidden
-        visibility: @xl-down visible
+		&-item
+			margin: 0 16px 0 0
 
-    &-item
-      position: @md relative
-      font-family: $font
-      border-bottom: 1px solid #EDE7F6 @md none
+			&::before
+				content: '/'
+				color: #000
+				text: 18px 1.33
+				margin-right: 16px
 
-      &:last-child
-        border: none
+			&:first-child
+				&::before
+					display: none
 
-      &:hover
-        &:before
-          display: @md-down block
+			&:last-child
+				margin: 0
 
-      &:after
-        content: ""
-        height: 40px @md 4px
-        margin-top: @md-down -44px
-        width: @md-down 4px
-        position: absolute auto auto auto 0 @md absolute auto 0 -1px 0
-        z-index: 997
-        display: none
+		&-link
+			color: #000
+			text: 18px 1.33
 
-      &:hover
-        background: #FFFF00
-
-        ^^&-link
-          text: #000
-
-        ^^&-child-list
-          display: @md block
-
-        &:after
-          background: $accent-1-medium
-
-      &--arrow
-        &:hover
-
-          &:after
-            right: auto @md 24px
-
-          ^^^&-link
-            text: #000
-
-            &:after
-              background-image: resolve("icons/triangle_down-dark.svg")
-
-        ^^&-link:after
-          content: ""
-          display: block
-          background-image: resolve("icons/triangle_down.svg")
-          background-repeat: no-repeat
-          background-position: center
-          size: 24px
-          transform: rotate(-90deg) @md rotate(0)
-
-        ^^&-link
-          pointer-events: @md-down none
-
-        &:after
-          right: auto @md 24px
-
-    &-link
-      text: $neutral 500 15px 1.4
-      text-decoration: none
-      box: space-between center @md left center
-      padding: 12px @xl 12px 16px
-      min-height: 48px
-
-    &-child
-
-      &-list
-        display: none
-        position: absolute
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25)
-        background: #512DA8
-        top: @md-down 47px
-        bottom: @md-down 0
-        width: @md-down 240px
-        overflow: @md-down auto
-        min-width: @md 190px
-        z-index: 997
-        border-top: 1px solid #EDE7F6
-
-        &.show
-          display: @md-down block
-
-      &-item
-        border-bottom: 1px solid #EDE7F6
-
-        &:hover
-          background: @md #FFFF00
-
-        &:last-child
-          border: none
-
-      &-link
-        text: $neutral 500 17px 1.7
-        text-decoration: none
-        text-transform: none
-        letter-spacing: normal
-        white-space: nowrap
-        height: 56px
-        box: center
-        padding: * 16px
-
-        &:hover
-          text: @md #000
-
-  &__panel
-    box: center space-between
-    margin: 0 0 0 16px @md 0
-
-  &__search
-    position: absolute
-    left: 16px
-    right: 16px
-    top: 0
-    height: 48px
-    display: none
-
-    &-form
-      box: center
-
-    &-submit
-      position: absolute
-      background-image: svg-load("icons/search.svg" fill: #616161)
-      background-repeat: no-repeat
-      background-position: center
-      size: 48px
-      right: 48px
-      top: 0
-
-      &:before
-        display: none
-
-    &-input
-      background: #FFD600
-      border-color: #FFD600
-      min-height: 48px
-      padding: 0 96px 0 16px
-
-    &-close
-      position: absolute 0 0 0 null
-
-  &__account
-    margin-right: @md-down 16px
-
-    &-img
-      display: block
-      border-radius: 2px
-      position: absolute
-
-  &__burger
-    display: @md none
-
-  &--mobile-menu
-    ^&__social
-      display: @md-down flex
-      width: @md-down 240px
-      position: @md-down fixed 48px 0 null null
-      background: @md-down #512DA8
-      border-bottom: @md-down 1px solid #EDE7F6
-      height: @md-down 48px
-
-      .social__link
-        size: 48px
-        margin: 0 16px 0 0
-
-        &:last-child
-          margin: 0
-
-    ^&__nav
-      position: @md-down fixed 48px 0 null null
-      width: @md-down 240px
-      display: @md-down block
-      z-index: @md-down 997
-      height: @md-down 100vh
-      background: @md-down #512DA8
-
-    ^&__mobile
-      display: @md-down flex
-      justify-content: @md-down flex-end
-      z-index: @md-down 997
-      border-bottom: @md-down 1px solid #EDE7F6
-      position: @md-down fixed 0 0 null null
-      background: @md-down #433099
-      width: @md-down 240px
-      height: @md-down 48px
-
-  &__mobile
-    display: none
-
-.mobile-menu
-
-  &-cover
-    position: fixed 0 0 0 0
-    z-index: 995
-    background: $cover-color
-    display: none
-
-  &-back
-    text: #fff 17px 1.7 500
-    line-height: 48px
-    padding-left: 48px
-    position: fixed 48px 0 null null
-    z-index: 997
-    size: 240px 48px
-    background-color: #512DA8
-    background-image: resolve("icons/triangle_left.svg")
-    background-repeat: no-repeat
-    background-position: 11px center
-    cursor: pointer
-    display: none
-    border-bottom: 1px solid #EDE7F6
-
-    &.show
-      display: @md-down block
-
-.overflow-hidden
-  overflow: hidden
+	&__burger
+		display: none

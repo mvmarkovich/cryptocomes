@@ -1,181 +1,174 @@
 .article
-  &__over
-    display: flex
-    flex-direction: column
+    &__label
+        color: #5200ff
+        text: 12px
+        text-transform: uppercase
+        margin-bottom: 16px
 
-    ^&__label
-      order: 1
+    &__title
+        text: 40px 1.14 @xl 56px
+        margin-bottom: 24px
 
-    ^&__title
-      order: 2 @sm 3
+    &__over
+        display: @xl flex
 
-    .short__row
-      order: 3 @sm 1
-      align-items: @xl-down flex-start
-      margin: 16px 0 0 @sm -20px 0 0
+    &__img
+        &--wrap
+            width: @xl 50%
+            margin: 0 0 32px @xl 0 32px 0 0
 
-    .short-space-small
-      order: 3 @sm 3
-      margin: @sm 16px 0 0
-      flex-wrap: wrap
+    &__lead
+        width: 100% @xl 50%
 
-    .short--bold
-      top: @xl-down 3px
+    &__caption, figcaption
+        text: 12px 1.33
+        margin-top: 8px
 
-    .share
-      order: 2 @sm 4
+    &__annonce
+        text: 24px 1.25 @xl 32px
+        margin: 0 0 32px
 
-  &__title
-    font-size: @sm-down 26px
-    line-height: @sm-down 2.1
-    min-height: @sm-down 246px
-    display: @sm-down flex
-    align-items: @sm-down center
-    margin: @sm-down 0 0 16px
+    &__short
+        margin-bottom: 24px
 
-  &__label
-    display: inline-flex
-    align-items: center
-    text: 14px 1.5
-    margin: 0 0 16px
+    &__share
+        width: @xl-down 100%
+        justify-content: space-between
 
-    &-img
-      margin: 0 16px 0 0
-      max-width: 24px
+    &__aside-container
+        display: flex
+        padding: @xl 0 104px
 
-  &__wrapper
-    padding: 28px 16px @sm * 27px
-    margin: 0 0 32px
-    background: $neutral
+    &__content
+        width: 100%
+        margin: @xl 0 104px 0 0
 
-  .something
-    margin: 28px 0
+    &__aside
+        min-width: 312px
+        max-width: 312px
+        display: @xl-down none
 
-  &__mark
-    margin: 28px 0
+    &__hotstuff
+        position: relative
+        padding: 32px 0 32px 32px
 
-    a
-      text: #512DA8
+        &-title
+            color: #5200ff
+            text: 700 32px .69
+            margin-bottom: 32px
 
-  &__main
-    margin: 28px -16px 12px @sm * -27px *
-    padding-top: 63.0435%
-    position: relative
-    overflow: hidden
+        &:before
+            content: ''
+            position: absolute 0 null null 0
+            z-index: -1
+            size: 66.6% 100%
+            background: #adffe7
 
-    img
-      position: absolute 0
-      width: 100%
+        .post-card
+            border-bottom: 1px solid #5200ff
+            padding-bottom: 32px
+            margin-bottom: 32px
 
-    ^&__caption
-      margin: 40px 16px 0 @sm * 27px *
+            &:last-child
+                border: none
+                padding: 0
+                margin: 0
 
-  &__content
-    margin: 24px 0 0
+    &__recommended
+        position: relative
+        padding: 24px 0 @xl 64px 0
+        margin-top: 8px
 
-    .something
-      margin: 24px 0
+        &-group
+            display: flex
+            flex-wrap: wrap
+            margin: @xl * -32px
+            margin-bottom: -48px
 
-    img
-      width: auto
-      height: auto
+            .post-card
+                width: 100% @xl 33.3%
+                padding: @xl 0 32px
+                margin-bottom: 48px
 
-  &__social
-    margin: 0 0 0 -16px
+        &:before
+            content: ''
+            position: absolute 0 null null 50%
+            z-index: -1
+            size: 100vw 100%
+            background: #adffe7
+            transform: translateX(-50%)
 
-  &__anchor
-    padding: 0 0 0 20px
-    margin: 24px 0
+    &__detail
+        color: #000
+        font-family: var(--second-family)
 
-    &-item
-      margin: 0 0 12px
-      position: relative
+        p:not([class])
+            text: 18px 1.67
+            margin: 24px 0
 
-      &:before
-        content: ""
+        a:not([class])
+            color: #000
+            text-decoration: underline
+            text-decoration-thickness: 1px
+            text-underline-offset: 2px
+
+        .something
+            margin: 40px 0 @xl 48px 0
+
+    &__author
+        margin: 40px 0 @xl 48px 0
+
+        &-name
+            color: #5200ff
+            text: 700 12px 1.33
+            margin-bottom: 8px
+
+        &-text
+            & > *
+                margin: 0 0 16px
+
+                &:last-child
+                    margin: 0
+
+            p:not([class])
+                text: 12px 1.33
+                margin: 0
+
+.humble
+    color: #000
+    text: 400 12px 1.33
+
+    &--row
+        display: flex
+        flex-wrap: wrap
+
+        .humble
+            margin-right: 8px
+            margin-bottom: 8px
+
+    &--author
+        a:not([class])
+            color: #5200ff
+            text: 700
+            margin-left: 8px
+
+.post-card
+    &__body
         display: block
-        position: absolute
-        left: -16px
-        top: 13px
-        width: 5px
-        height: 5px
-        border-radius: 50%
-        background: #512DA8
 
-    &-link
-      text: #512DA8 400 17px 1.7
+    &__img
+        position: absolute 0 null null 0
+        width: 100%
 
-  &__writer
-    display: flex
-    align-items: flex-start
-    flex-wrap: wrap @md nowrap
-    margin: 24px 0 -28px
-    padding: 32px 0
-    border-top: 1px solid #BDBDBD
+        &--wrap
+            position: relative
+            padding-top: 60%
+            overflow: hidden
+            margin-bottom: 8px
 
-    &-img
-      &--wrapper
-        display: none
-        max-width: 160px
-        min-width: 160px
-        margin: 0 0 16px @md 0 32px 0 0
+    &__title
+        color: #000
+        text: 700 20px 1.1
 
-    &-name
-      text: 500 17px 1.5
-
-    &-social
-      margin: 0 0 0 -16px
-      width: 100%
-
-    p
-      margin: 0
-
-  &__disclaimer
-    text: #424242 14px 1.5
-    font-style: italic
-    margin: 12px 0 0
-
-  &__card
-    background: $neutral-100
-    padding: 16px @xl * * * 32px
-    display: flex
-    align-items: flex-start @sm center
-    margin: 28px -16px @sm * 0 @md 40px 0
-    font-family: $font
-
-    &-title
-      text: $pseudo-neutral-900 500 15px 1.6
-
-    &-img
-
-      &--wrapper
-        border-radius: 2px
-        overflow: hidden
-        max-width: 88px @sm 128px
-        min-width: 88px @sm 128px
-        margin: 0 0 0 16px
-
-  &__event
-    padding: 32px 0
-    margin: 24px 0 -28px
-    border-top: 1px solid #BDBDBD
-
-    a
-      text: #512DA8
-
-    &-item
-      box:
-      margin: 0 0 12px
-
-    &-title
-      text: #616161 400 13px 1.9
-      min-width: 90px
-      margin: 0 32px 0 0
-
-    &-desc
-      text: 400 14px 1.5
-
-  table
-
-    p, ul
-      margin: 0
+    &__date
+        margin-top: 8px

@@ -16,76 +16,36 @@
     <title>Press Releases | CC</title>
     <link href="styles/main.css" rel="stylesheet">
   </head>
-  <body>
+  <body><!-- START upper banner -->
+    <div class="something--upper">
+      <div class="something">
+        <div class="something__title">AD</div>
+        <!-- default nav-->
+        <div class="something__nav">
+          <div class="something__label">AD</div>
+          <button class="btn btn--light something__close" aria-label="Close ad"></button>
+        </div>
+        <div class="something__content">
+          <div class="something__content--long"><a href="#" target="_blank"><img src="img/something/ad-upper_1150x60.svg" width="1150" height="60" alt="Ad header desktop"></a></div>
+          <div class="something__content--square"><a href="#" target="_blank"><img src="img/something/ad-upper_336x60.svg" width="336" height="60" alt="Ad header mobile"></a></div>
+        </div>
+      </div>
+    </div><!-- END upper banner -->
     <header class="header">
-      <div class="header__container"><a class="header__logo" href="#!"><img class="header__logo-img" src="img/icons/logo.svg" alt="Logo">Logo</a>
-        <div class="header__mobile">
-          <button class="btn btn--light btn--cross-white header__mobile-cross"></button>
-        </div>
-        <!--
-        .social.header__social
-          a.social__link.social__link--fb-white(href="#!")
-          a.social__link.social__link--tw-white(href="#!")
-          a.social__link.social__link--yt-white(href="#!")
-          a.social__link.social__link--tg-white(href="#!")
-        
-        -->
-        <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li class="header__nav-item header__nav-item--arrow"><a class="header__nav-link" href="/0">News</a>
-              <ul class="header__nav-child-list">
-                <li class="header__nav-child-item"><a class="header__nav-child-link" href="#!c0">Latest News</a></li>
-                <li class="header__nav-child-item header__nav-child-item--active"><a class="header__nav-child-link" href="#!c1">Bitcoin News</a></li>
-                <li class="header__nav-child-item"><a class="header__nav-child-link" href="#!c2">Ethereum News</a></li>
-                <li class="header__nav-child-item"><a class="header__nav-child-link" href="#!c3">Bitcoin Cash News</a></li>
-                <li class="header__nav-child-item"><a class="header__nav-child-link" href="#!c4">Ripple News</a></li>
-                <li class="header__nav-child-item"><a class="header__nav-child-link" href="#!c5">EOS News</a></li>
-                <li class="header__nav-child-item"><a class="header__nav-child-link" href="#!c6">Litecoin News</a></li>
-                <li class="header__nav-child-item"><a class="header__nav-child-link" href="#!c7">Cardano News</a></li>
-                <li class="header__nav-child-item"><a class="header__nav-child-link" href="#!c8">NEM</a></li>
-                <li class="header__nav-child-item"><a class="header__nav-child-link" href="#!c9">Press releases</a></li>
-                <li class="header__nav-child-item"><a class="header__nav-child-link" href="#!c10">Submit Press releases</a></li>
-              </ul>
-            </li>
-            <li class="header__nav-item header__nav-item--arrow header__nav-item--active"><a class="header__nav-link" href="/1">Stories</a>
-              <ul class="header__nav-child-list">
-                <li class="header__nav-child-item"><a class="header__nav-child-link" href="#!c0">Features</a></li>
-                <li class="header__nav-child-item header__nav-child-item--active"><a class="header__nav-child-link" href="#!c1">Opinions</a></li>
-                <li class="header__nav-child-item"><a class="header__nav-child-link" href="#!c2">Artificial Intelligence</a></li>
-                <li class="header__nav-child-item"><a class="header__nav-child-link" href="#!c3">SingUlarity</a></li>
-                <li class="header__nav-child-item"><a class="header__nav-child-link" href="#!c4">Infographics</a></li>
-                <li class="header__nav-child-item"><a class="header__nav-child-link" href="#!c5">ICO Watch</a></li>
-              </ul>
-            </li>
-            <li class="header__nav-item header__nav-item--arrow"><a class="header__nav-link" href="/2">Guides</a>
-              <ul class="header__nav-child-list">
-                <li class="header__nav-child-item"><a class="header__nav-child-link" href="#!c0">Coins Guide</a></li>
-                <li class="header__nav-child-item header__nav-child-item--active"><a class="header__nav-child-link" href="#!c1">WikiCoin</a></li>
-                <li class="header__nav-child-item"><a class="header__nav-child-link" href="#!c2">CryptoTips</a></li>
-                <li class="header__nav-child-item"><a class="header__nav-child-link" href="#!c3">Trading Guide</a></li>
-              </ul>
-            </li>
-            <li class="header__nav-item"><a class="header__nav-link" href="/3">Price Predictions</a>
-            </li>
-            <li class="header__nav-item"><a class="header__nav-link" href="/4">Blockchain Programming</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__panel">
-          <button class="header__btn-search btn btn--light btn--search" aria-label="open search">Search</button>
-          <button class="header__burger btn btn--light btn--burger" aria-label="open menu"></button>
-        </div>
-        <div class="mobile-menu-back">Back</div>
-        <div class="header__search">
-          <form class="header__search-form" action="#" method="get">
-            <button class="header__search-submit btn btn--light btn--search" type="submit"></button>
-            <input class="input__elem header__search-input" type="text" name="search" placeholder="Type to search">
-            <button class="header__search-close btn btn--light btn--cross"></button>
-          </form>
+      <div class="container header__container">
+        <div class="header__row"><a class="header__logo" href="main.html" title="CryptoComes"><img class="header__logo-img" src="img/icons/logo.svg" alt="CryptoComes"></a>
+          <nav class="header__nav" aria-label="Main navigation">
+            <ul class="header__nav-list">
+              <li class="header__nav-item"><a class="header__nav-link" href="/0">News</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="/1">Price Predictions</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="/2">WikiCoin</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="/3">About Us</a></li>
+            </ul>
+          </nav>
+          <button class="btn btn--light btn--burger header__burger" aria-label="open menu"></button>
         </div>
       </div>
     </header>
-    <div class="mobile-menu-cover"></div>
     <div class="page-container container">
       <div class="f-container">
         <div class="main-block">
@@ -304,9 +264,6 @@
         </div>
       </div>
     </footer>
-    <div class="share-and-up">
-      <div class="share__social"><a class="social__link social__link--fb-white" href="#!">Facebook</a><a class="social__link social__link--tw-white" href="#!">Twitter</a><a class="social__link social__link--tg-white" href="#!">Telegram</a><a class="social__link social__link--copy" href="#">Copy URL</a><a class="social__link social__link--up" href="#!">Go up</a></div>
-    </div>
     <div class="modal" id="subscribe-1">
       <div class="modal__square modal--bg">
         <button class="modal__close btn btn--light btn--cross" data-close-modal></button>
@@ -356,11 +313,38 @@
           <div class="modal__square-desc">We will get in contact with you soon.</div>
         </div>
       </div>
-    </div>
+    </div><!-- START lowner banner -->
+    <div class="something--lowner">
+      <div class="something">
+        <div class="something__title">AD</div>
+        <!-- default nav-->
+        <div class="something__nav">
+          <div class="something__label">AD</div>
+          <button class="btn btn--light something__close" aria-label="Close ad"></button>
+        </div>
+        <!-- bottom right nav-->
+        <div class="something__nav bottom-right">
+          <div class="something__label">AD</div>
+          <button class="btn btn--light something__close" aria-label="Close ad"></button>
+        </div>
+        <!-- bottom left nav-->
+        <div class="something__nav bottom-left">
+          <div class="something__label">AD</div>
+          <button class="btn btn--light something__close" aria-label="Close ad"></button>
+        </div>
+        <!-- top left nav-->
+        <div class="something__nav top-left">
+          <div class="something__label">AD</div>
+          <button class="btn btn--light something__close" aria-label="Close ad"></button>
+        </div>
+        <div class="something__content">
+          <div class="something__content--long"><a href="#" target="_blank"><img src="img/something/ad-lowner_1150x60.svg" width="1150" height="60" alt="Ad lowner desktop"></a></div>
+          <div class="something__content--square"><a href="#" target="_blank"><img src="img/something/ad-lowner_336x60.svg" width="336" height="60" alt="Ad lowner mobile"></a></div>
+        </div>
+      </div>
+    </div><!-- END lowner banner -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="libs/slick/slick.min.js"></script>
-    <script src="libs/sticky-sidebar/sticky-sidebar.min.js"></script>
-    <script src="libs/sticky-sidebar/ResizeSensor.js"></script>
     <script src="scripts/main.js"></script>
     <script>$('.releases__list').slick({infinite: true,slidesToShow: 5,slidesToScroll: 1,arrows: true,dots: false,responsive: [{breakpoint: 1152,settings: {slidesToShow: 3,slidesToScroll: 1}},{breakpoint: 768,settings: {slidesToShow: 2,slidesToScroll: 1,variableWidth: true}}]});$('.upcoming__slider').slick({infinite: false,slidesToShow: 3,slidesToScroll: 1,variableWidth: true,arrows: true,dots: false,responsive: [{breakpoint: 826,settings: {arrows: false,slidesToShow: 1,slidesToScroll: 1,}}]});</script>
   </body>

@@ -1,194 +1,193 @@
 .btn
-  text: #512DA8 500 14px 1.5
-  line-height: unset
-  min-height: 48px
-  border: 2px solid #512DA8
-  padding: 0 12px
-  text-decoration: none
-  background: transparent
-  display: inline-flex
-  align-items: center
-  justify-content: center
-  font-family: $font
-  outline: 0
-  cursor: pointer
-  user-select: none
-  -webkit-tap-highlight-color: transparent
+	text: #512DA8 500 14px 1.5
+	line-height: unset
+	min-height: 48px
+	border: 2px solid #512DA8
+	padding: 0 12px
+	text-decoration: none
+	background: transparent
+	display: inline-flex
+	align-items: center
+	justify-content: center
+	font-family: var(--font-family)
+	outline: 0
+	cursor: pointer
+	user-select: none
+	-webkit-tap-highlight-color: transparent
 
-  &:hover
-    border-color: #000
-    text: #000
+	&:hover
+		border-color: #000
+		text: #000
 
-  &--wide
-    padding: * 36px
+	&--wide
+		padding: * 36px
 
-  &--input
-    display: flex
-    width: 100%
-    min-height: 48px
-    text: #000 17px 1.7
-    border-radius: 0
-    font-weight: 400
+	&--input
+		display: flex
+		width: 100%
+		min-height: 48px
+		text: #000 17px 1.7
+		border-radius: 0
+		font-weight: 400
 
-    &:hover
-      border-color: #FFFF00
-      text: #512DA8
+		&:hover
+			border-color: #FFFF00
+			text: #512DA8
 
-  &--light
-    margin: 0
-    padding: 0
-    outline: 0
-    border: 0
-    background: transparent
-    cursor: pointer
+	&--light
+		margin: 0
+		padding: 0
+		outline: 0
+		border: 0
+		min-height: 1px
+		background: transparent
+		cursor: pointer
 
-  &--block
-    display: flex
-    width: 100%
+	&--block
+		display: flex
+		width: 100%
 
-    &-event
-      margin: 24px 0 0
+		&-event
+			margin: 24px 0 0
 
-      .promocode
-        margin: 16px 0 0 @xl 0 0 0 16px
-        min-width: 336px
-        width: 100%
+		.promocode
+			margin: 16px 0 0 @xl 0 0 0 16px
+			min-width: 336px
+			width: 100%
 
-        &__title
-          text: 400 17px 1.7
+			&__title
+				text: 400 17px 1.7
 
-        &__value
-          text: #000 500 17px 1.7
+			&__value
+				text: #000 500 17px 1.7
 
-    &-bg
-      display: block @xl flex
-      align-items: @xl center
-      background: #FFF9C4
-      padding: 16px
+		&-bg
+			display: block @xl flex
+			align-items: @xl center
+			background: #FFF9C4
+			padding: 16px
 
-  &--small
-    min-height: 24px
+	&--small
+		min-height: 24px
 
-  &--event
-    text: 500 17px
-    width: 100%
+	&--event
+		text: 500 17px
+		width: 100%
 
-  &--big
-    min-height: 40px
+	&--big
+		min-height: 40px
 
-  &--large
-    min-height: 48px
+	&--large
+		min-height: 48px
 
-  &--huge
-    min-height: 56px
+	&--huge
+		min-height: 56px
 
-  &--full
-    width: 100%
+	&--full
+		width: 100%
 
-  &--show
+	&--show
+		&--open
+			display: none
 
-    &--open
-      display: none
+	&--hash-tag
+		text: 14px 1.4 normal none none
+		background: #512DA8
+		color: #fff
 
-  &--hash-tag
-    text: 14px 1.4 normal none none
-    background: #512DA8
-    color: #fff
+		&:hover
+			background: #FFFF00
+			border-color: #FFFF00
+			color: #000
 
-    &:hover
-      background: #FFFF00
-      border-color: #FFFF00
-      color: #000
+	&-aside-space
+		margin: 32px 16px
+		width: auto
 
-  &-aside-space
-    margin: 32px 16px
-    width: auto
+	&--accent
+		background: #512DA8
+		text: #fff
 
-  &--accent
-    background: #512DA8
-    text: #fff
+		&:hover
+			background: #FFFF00
+			border-color: #FFFF00
+			text: #000
 
-    &:hover
-      background: #FFFF00
-      border-color: #FFFF00
-      text: #000
+	&--accent-2
+		background: $accent-2-medium
+		text: #fff
 
-  &--accent-2
-    background: $accent-2-medium
-    text: #fff
+		&:hover
+			background: $accent-2-medium
+			text: #fff
 
-    &:hover
-      background: $accent-2-medium
-      text: #fff
+	&--bright
+		background: #FFD600
+		border-color: #FFD600
+		text: #000
 
-  &--bright
-    background: #FFD600
-    border-color: #FFD600
-    text: #000
+		&:hover
+			background: #512DA8
+			border-color: #512DA8
+			text: #fff
 
-    &:hover
-      background: #512DA8
-      border-color: #512DA8
-      text: #fff
+	&--black
+		background: #000
+		text: $neutral
+		border: none
 
-  &--black
-    background: #000
-    text: $neutral
-    border: none
+		&:hover
+			background: #512DA8
+			text: $neutral
 
-    &:hover
-      background: #512DA8
-      text: $neutral
+	&--search
+		height: 48px
+		min-width: 48px
+		width: 48px @md unset
+		overflow: hidden
+		padding: 12px @md 0
+		justify-content: flex-start
 
-  &--search
-    height: 48px
-    min-width: 48px
-    width: 48px @md unset
-    overflow: hidden
-    padding: 12px @md 0
-    justify-content: flex-start
+		&:before
+			content: ''
+			size: 24px
+			min-width: 24px
+			margin: 0 20px 0 0 @md 0 8px 0 0
+			background-position: center
+			background-repeat: no-repeat
 
-    &:before
-      content: ''
-      size: 24px
-      min-width: 24px
-      margin: 0 20px 0 0 @md 0 8px 0 0
-      background-position: center
-      background-repeat: no-repeat
+	&--cross,
+	&--cross-white,
+	&--burger
+		size: 48px
+		background-position: center
+		background-repeat: no-repeat
 
-  &--cross,
-  &--cross-white,
-  &--burger
-    size: 48px
-    background-position: center
-    background-repeat: no-repeat
+	&--burger
+		background-image: resolve("icons/burger.svg")
 
-  &--burger
-    background-image: resolve("icons/burger.svg")
+	&--search
+		color: $neutral
 
-  &--search
-    color: $neutral
+		&:before
+			background-image: resolve("icons/search.svg")
 
-    &:before
-      background-image: resolve("icons/search.svg")
+		&:hover
+			text: #FFFF00
 
-    &:hover
-      text: #FFFF00
+		&:before
+			background-image: svg-load("icons/search.svg" fill: #FFFF00)
 
-      &:before
-        background-image: svg-load("icons/search.svg" fill: #FFFF00)
+	&--cross
+		background-image: resolve("icons/cross.svg")
 
-  &--cross
-    background-image: resolve("icons/cross.svg")
+	&--cross-white
+		background-image: resolve("icons/cross-white.svg")
 
-  &--cross-white
-    background-image: resolve("icons/cross-white.svg")
-
-  &--arrow-right
-    &:after
-      content: ''
-      size: 24px
-      background-image: resolve("icons/triangle_right-dark.svg")
-      background-position: center
-      background-repeat: no-repeat
-
+	&--arrow-right
+		&:after
+			content: ''
+			size: 24px
+			background-image: resolve("icons/triangle_right-dark.svg")
+			background-position: center
+			background-repeat: no-repeat

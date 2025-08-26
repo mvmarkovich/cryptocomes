@@ -1,44 +1,45 @@
 include ../inc/var.pug
 doctype html
 html(lang="en" dir="ltr")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=5")
-    link(rel='apple-touch-icon', sizes='180x180', href='/apple-touch-icon.png')
-    link(rel='icon', type='image/png', sizes='32x32', href='img/favicon/favicon-32x32.png')
-    link(rel='icon', type='image/png', sizes='16x16', href='img/favicon/favicon-16x16.png')
-    link(rel='mask-icon', href='img/favicon/safari-pinned-tab.svg', color='#512DA8')
-    meta(name='theme-color', content='#512DA8')
-    meta(name="msapplication-TileColor", content="#512DA8")
-    meta(name="msapplication-config", content="img/favicon/browserconfig.xml")
-    meta(name="theme-color", content="#512DA8")
-    link(rel="stylesheet" type="text/css" href="libs/slick/slick.css")
-    link(rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css")
-    block title
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5")
+		link(rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png')
+		link(rel='icon' type='image/png' sizes='32x32' href='img/favicon/favicon-32x32.png')
+		link(rel='icon' type='image/png' sizes='16x16' href='img/favicon/favicon-16x16.png')
+		link(rel='mask-icon' href='img/favicon/safari-pinned-tab.svg' color='#512DA8')
+		meta(name='theme-color' content='#512DA8')
+		meta(name="msapplication-TileColor" content="#512DA8")
+		meta(name="msapplication-config" content="img/favicon/browserconfig.xml")
+		meta(name="theme-color" content="#512DA8")
+		link(rel="stylesheet" type="text/css" href="libs/slick/slick.css")
+		link(rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css")
+		block title
 
-    block head
-      link(href="styles/main.css" rel="stylesheet")
+		block head
+			link(href="styles/main.css" rel="stylesheet")
 
-  body
+	body
+		block something-upper
+			include ../blocks/something-upper.pug
 
-    include ../inc/header.pug
+		include ../inc/header.pug
 
-    .page-container.container
-      block content
+		.page-container.container
+			block content
 
-    include ../inc/footer.pug
+		include ../inc/footer.pug
 
-    include ../inc/share.pug
+		include ../inc/modals.pug
 
-    include ../inc/modals.pug
+		block something-lowner
+			include ../blocks/something-lowner.pug
 
-    block foot
-      script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js")
-      script(src="libs/slick/slick.min.js")
-      script(src="libs/sticky-sidebar/sticky-sidebar.min.js")
-      script(src="libs/sticky-sidebar/ResizeSensor.js")
+		block foot
+			script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+			script(src="libs/slick/slick.min.js")
 
-      script(src="scripts/main.js")
+			script(src="scripts/main.js")
 
-      script.
-        $('.releases__list').slick({infinite: true,slidesToShow: 5,slidesToScroll: 1,arrows: true,dots: false,responsive: [{breakpoint: 1152,settings: {slidesToShow: 3,slidesToScroll: 1}},{breakpoint: 768,settings: {slidesToShow: 2,slidesToScroll: 1,variableWidth: true}}]});$('.upcoming__slider').slick({infinite: false,slidesToShow: 3,slidesToScroll: 1,variableWidth: true,arrows: true,dots: false,responsive: [{breakpoint: 826,settings: {arrows: false,slidesToShow: 1,slidesToScroll: 1,}}]});
+			script.
+				$('.releases__list').slick({infinite: true,slidesToShow: 5,slidesToScroll: 1,arrows: true,dots: false,responsive: [{breakpoint: 1152,settings: {slidesToShow: 3,slidesToScroll: 1}},{breakpoint: 768,settings: {slidesToShow: 2,slidesToScroll: 1,variableWidth: true}}]});$('.upcoming__slider').slick({infinite: false,slidesToShow: 3,slidesToScroll: 1,variableWidth: true,arrows: true,dots: false,responsive: [{breakpoint: 826,settings: {arrows: false,slidesToShow: 1,slidesToScroll: 1,}}]});
