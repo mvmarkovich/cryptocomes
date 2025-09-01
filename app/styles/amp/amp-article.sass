@@ -1,129 +1,161 @@
 .article
-  &__over
-    .short__row
-      align-items: flex-start
+    &__label
+        color: #5200ff
+        text: 12px
+        text-transform: uppercase
+        margin-bottom: 16px
 
-    .short--bold
-      top: 3px
+    &__title
+        text: 40px 1.14
+        margin-bottom: 24px
 
-  &__label
-    display: inline-flex
-    align-items: center
-    text: 14px 1.5
-    margin: 0 0 8px
+    &__img
+        &--wrap
+            margin: 0 0 32px
 
-    &-img
-      margin: 0 16px 0 0
+    &__lead
+        width: 100%
 
-  &__title
-    font-size: 26px
-    line-height: 2.1
-    min-height: 246px
-    display: flex
-    align-items: center
+    &__caption, figcaption
+        text: 12px 1.33
+        margin-top: 8px
 
-  &__wrapper
-    padding: 8px 16px
-    margin: 0 0 32px
-    background: $neutral
+    &__annonce
+        text: 24px 1.25
+        margin: 0 0 32px
 
-  &__mark
-    margin: 28px 0
+    &__short
+        margin-bottom: 24px
 
-    a
-      text: #512DA8
+    &__share
+        width: 100%
+        justify-content: space-between
 
-  &__main
-    margin: 28px -16px 24px
+    &__aside-container
+        display: flex
 
-    ^&__caption
-      margin: 8px 16px 0
+    &__content
+        width: 100%
 
-  &__anchor
-    padding: 0 0 0 20px
-    margin: 24px 0
+    &__hotstuff
+        position: relative
+        padding: 32px 0 32px 32px
 
-    &-item
-      margin: 0 0 12px
-      position: relative
+        &-title
+            color: #5200ff
+            text: 700 32px .69
+            margin-bottom: 32px
 
-      &:before
-        content: ""
+        &:before
+            content: ''
+            position: absolute 0 null null 0
+            z-index: -1
+            size: 66.6% 100%
+            background: #adffe7
+
+        .post-card
+            border-bottom: 1px solid #5200ff
+            padding-bottom: 32px
+            margin-bottom: 32px
+
+            &:last-child
+                border: none
+                padding: 0
+                margin: 0
+
+    &__recommended
+        position: relative
+        padding: 24px 0
+        margin-top: 8px
+
+        &-group
+            display: flex
+            flex-wrap: wrap
+            margin-bottom: -48px
+
+            .post-card
+                width: 100%
+                margin-bottom: 48px
+
+        &:before
+            content: ''
+            position: absolute 0 null null 50%
+            z-index: -1
+            size: 100vw 100%
+            background: #adffe7
+            transform: translateX(-50%)
+
+    &__detail
+        color: #000
+        font-family: var(--second-family)
+
+        p:not([class])
+            text: 18px 1.67
+            margin: 24px 0
+
+        a:not([class])
+            color: #000
+            text-decoration: underline
+            text-decoration-thickness: 1px
+            text-underline-offset: 2px
+
+        .something
+            margin: 40px 0
+
+    &__author
+        margin: 40px 0
+
+        &-name
+            color: #5200ff
+            text: 700 12px 1.33
+            margin-bottom: 8px
+
+        &-text
+            & > *
+                margin: 0 0 16px
+
+                &:last-child
+                    margin: 0
+
+            p:not([class])
+                text: 12px 1.33
+                margin: 0
+
+.humble
+    color: #000
+    text: 400 12px 1.33
+
+    &--row
+        display: flex
+        flex-wrap: wrap
+
+        .humble
+            margin-right: 8px
+            margin-bottom: 8px
+
+    &--author
+        a:not([class])
+            color: #5200ff
+            text: 700
+            margin-left: 8px
+
+.post-card
+    &__body
         display: block
-        position: absolute
-        left: -16px
-        top: 13px
-        width: 5px
-        height: 5px
-        border-radius: 50%
-        background: #512DA8
 
-    &-link
-      text: #512DA8 400 17px 1.7
+    &__img
+        position: absolute 0 null null 0
+        width: 100%
 
-  &__content
-    .something
-      margin: 24px 0
+        &--wrap
+            position: relative
+            padding-top: 60%
+            overflow: hidden
+            margin-bottom: 8px
 
-  &__writer
-    display: flex
-    align-items: flex-start
-    flex-wrap: wrap
-    margin: 24px 0 0
-    padding: 32px 0
-    border-top: 1px solid #BDBDBD
+    &__title
+        color: #000
+        text: 700 20px 1.1
 
-    &-img
-      &--wrapper
-        max-width: 160px
-        min-width: 160px
-        margin: 0 0 16px
-        display: none
-
-        span
-          display: none
-
-    &-name
-      text: 500 17px 1.5
-
-    &-social
-      margin: 0 0 0 -16px
-      width: 100%
-
-      .social__link
-        svg
-          fill: #512DA8
-
-    p
-      margin: 0
-
-  &__disclaimer
-    text: #424242 14px 1.5
-    font-style: italic
-    margin: 12px 0 0
-
-  &__card
-    background: $neutral-100
-    padding: 16px
-    display: flex
-    align-items: flex-start
-    justify-content: space-between
-    margin: 28px -16px
-    font-family: $font
-
-    &-title
-      text: $pseudo-neutral-900 500 15px 1.6
-
-    &-img
-
-      &--wrapper
-        border-radius: 2px
-        overflow: hidden
-        max-width: 88px
-        min-width: 88px
-        margin: 0 0 0 16px
-
-  &__tags
-    .link-hash-tag
-      line-height: 48px
-      margin-bottom: 0
+    &__date
+        margin-top: 8px

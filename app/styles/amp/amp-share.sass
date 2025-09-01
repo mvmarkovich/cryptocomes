@@ -1,47 +1,15 @@
 .share
+	padding: 16px
+	display: inline-flex
+	background: #adffe7
 
-  &__social
-    z-index: 202
-    display: inline-flex
-    width: 100%
+	&__link
+		display: inline-flex
+		align-items: center
+		size: 24px
+		min-width: 24px
+		background: transparent
+		margin-right: 16px
 
-    .social__link
-      background: #512DA8
-      width: 100%
-      border-right: 1px solid $neutral
-      box: middle center
-
-      &:last-child
-        border: none
-
-  &-and-up
-    position: fixed
-    left: 0
-    right: 0
-    bottom: 0
-    box: horizontal center middle
-    z-index: 201
-
-  &--row
-    box: center space-between
-    margin: 16px 0
-
-    .social__link
-      width: 100%
-      height: 32px
-      margin: 0 8px 0 0
-      display: flex
-      justify-content: center
-      align-items: center
-
-      &-fb
-        background: #3B5998
-
-      &-tw
-        background: #1DA1F2
-
-      &-em
-        background: #512da8
-
-      &:last-child
-        margin: 0
+		&:last-child
+			margin: 0

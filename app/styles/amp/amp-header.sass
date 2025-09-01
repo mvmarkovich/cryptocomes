@@ -1,83 +1,52 @@
 .header
-  background: $accent-1-medium
-  position: relative
-  z-index: 996
+	&__logo
+		display: block
+		min-width: 235px
+		max-width: 235px
 
-  &__container
-    box: center space-between
-    flex-wrap: wrap
-    padding: 0 16px
-    position: relative
-    max-width: $container-sm-px
-    margin: 0 auto
+	&__row
+		position: relative
+		display: flex
+		align-items: center
+		justify-content: space-between
 
-  &__logo
-    display: inline-flex
-    width: 128px
-    overflow: hidden
+		&:before
+			content: ''
+			height: 48px
+			background: #adffe7
+			position: absolute
+			bottom: 0
+			left: -20px
+			right: -20px
+			z-index: -1
 
-    svg
-      min-width: 128px
+	&__nav
+		display: @xl-down none
 
-  &__social
-    width: 236px
-    display: none
+		&-list
+			list-style: none
+			padding: 0
+			margin: 0
 
-  &__panel
-    box: center space-between
+			display: flex
+			align-items: center
 
-.sidebar
-  width: 240px
-  background: #512DA8
+		&-item
+			margin: 0 16px 0 0
 
-  &__social
-    width: 100%
-    height: 48px
-    border-bottom: 1px solid #cfd8dc
+			&::before
+				content: '/'
+				color: #000
+				text: 18px 1.33
+				margin-right: 16px
 
-    .social__link
-      margin: 0 16px 0 0
+			&:first-child
+				&::before
+					display: none
 
-      &:last-child
-        margin: 0
+			&:last-child
+				margin: 0
 
-  &__row
-    display: flex
-    justify-content: flex-end
-    height: 48px
-    border-bottom: 1px solid #EDE7F6
-
-  &__nav
-    margin: 0 0 16px
-
-    &-link
-      text: $neutral 500 17px 1.7
-      height: 56px
-      box: center
-      padding-left: 16px
-      text-decoration: none
-
-    &-child
-      &-list
-        margin: -16px 0 0
-        padding: 16px 0 8px
-        list-style: none
-
-      &-item
-        & + &
-          margin-top: 8px
-
-      &-link
-        text: $neutral 400 17px 1.7
-        display: block
-        padding-left: 32px
-        line-height: 40px
-        text-decoration: none
-
-  .btn--icon
-    path
-      stroke: #fff
-
-  .social__link
-    path
-      fill: #fff
+		&-link
+			color: #000
+			text: 18px 1.33

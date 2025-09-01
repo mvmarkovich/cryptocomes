@@ -4,8 +4,107 @@ block title
     title AMP Article | CC
 
 block content
-    .f-container
-        .main-block
-          include blocks/amp-article.pug
+    <!-- START leaderboard banner -->
+    .something--leaderboard
+        .something
+            .something__content
+                amp-ad(width="336" height="60" type="doubleclick")
+    <!-- END leaderboard banner -->
+    
+    .article
+        .article__label Cardano News
+        h1.article__title Women of Crypto at the Crypto Invest Summit: Separate but Hopeful
 
-        include blocks/amp-aside.pug
+        .article__over
+            .article__img--wrap
+                amp-img.article__img(src="img/content/article/main-img.png" layout="intrinsic" width="592" height="368" alt="Title article")
+                .article__caption Cover image via <a href="https://stock.adobe.com/ru" target="_blank">stock.adobe.com</a>
+
+            .article__lead
+                p.article__annonce IOG has now made it possible to nominate other stake pool operators
+
+                .article__short.humble--row
+                    .humble.humble--author
+                        | By
+                        <a href="author.html">Alex Dovbnya</a>
+                    .humble Aug 26, 2025, 2:26 AM GMT+2
+
+                .share.article__share
+                    amp-social-share.share__link(type="facebook" width="48" height="48" layout="responsive" aria-label="Share facebook")
+                        include ../img/icons/share/fb.svg
+
+                    amp-social-share.share__link(type="telegram" data-share-endpoint="https://t.me/share/url?url={url}&text={text}" width="48" height="48" layout="responsive" aria-label="Share")
+                        include ../img/icons/share/tg.svg
+
+                    amp-social-share.share__link(type="twitter" width="48" height="48" layout="responsive" aria-label="share email")
+                        include ../img/icons/share/x.svg
+
+        // баннерный слот
+        .something
+            .something__title Advertisement
+
+            .something__content
+                amp-ad(width="300" height="250" type="doubleclick")
+
+        .article__aside-container
+            .article__content
+                .article__detail
+                    p Cardano developer IOG has kicked off another round of stake pool delegation, according to its <a href="#!" target="_blank">Sept. 1 announcement</a>.
+                    
+                    p Ben O'Hanlon, head of community, insights and engagement, says that stake pool operators (SPOs) will be able to nominate two additional pools that they believe deserve more recognition:
+                    
+                    .something
+                        .something__title Advertisement
+
+                        .something__content
+                            amp-ad(width="300" height="250" type="doubleclick")
+
+                    blockquote As well as requesting delegation to their own pools, SPOs will also be invited to nominate up to two additional pools they feel should be recognized and supported for their positive contribution to the community.
+
+                    p SPOs usually contribute to the ecosystem by building new tools, writing high-quality content and educating on some important topics.
+                    p As of now, 3 million ADA tokens have already been allocated to 200 pools.
+                    p On Sept. 12, Cardano is expected to release smart contracts, with the Alonzo hard fork recently launching on the mainnet.
+
+                    .something
+                        .something__title Advertisement
+
+                        .something__content
+                            amp-ad(width="300" height="250" type="doubleclick")
+
+                    p The fastest way to get crypto news is to <a href="#!" target="_blank">follow our Twitter</a>. You won’t miss a thing! Subscribe.
+
+                .article__author
+                    a.article__author-name(href="author.html") Alex Dovbnya
+                    .article__author-text
+                        p Alex covers all things crypto — from major projects, which are fighting tooth and nail to gain the upper hand in the burgeoning industry, to the latest regulatory trends around the world. He’s a firm believer that Blockchain has the potential to reshape pretty much every business out there, and cryptocurrencies are only a stepping stone to the upcoming decentralized revolution.
+
+                .article__label Cardano News
+
+        .article__recommended
+             .article__recommended-group
+                .post-card
+                    a.post-card__body(href="article.html")
+                        .post-card__img--wrap
+                            amp-img.post-card__img(src="img/content/article/recommended/post-card_0.png" layout="intrinsic" width="654" height="397" alt="Name card")
+
+                        .post-card__title Anti-Bitcoin Activist Arrested in El Salvador
+
+                    .humble.post-card__date 4 years 7 months ago
+
+                .post-card
+                    a.post-card__body(href="article.html")
+                        .post-card__img--wrap
+                            amp-img.post-card__img(src="img/content/article/recommended/post-card_0.png" layout="intrinsic" width="654" height="397" alt="Name card")
+
+                        .post-card__title $4 Million Worth Doge Meme NFT to Be Sold for Less Than $1 Per Fraction
+
+                    .humble.post-card__date 4 years 7 months ago
+
+                .post-card
+                    a.post-card__body(href="article.html")
+                        .post-card__img--wrap
+                            amp-img.post-card__img(src="img/content/article/recommended/post-card_0.png" layout="intrinsic" width="654" height="397" alt="Name card")
+
+                        .post-card__title Blow to Ripple as SEC Gets Access to Company's Missing Slack Messages
+
+                    .humble.post-card__date 4 years 7 months ago

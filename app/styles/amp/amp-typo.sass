@@ -1,0 +1,42 @@
+body
+    text: #000 400 17px 1.7
+    font-family: var(--font-family)
+    background: #fff
+    overflow-x: hidden
+
+h1, h2, h3, h4, h5
+    color: #000
+    font-family: var(--font-family)
+    font-weight: 700
+    margin-top: 0
+
+h1
+    text: 20px 1.5 @sm 32px
+    margin: 0
+
+h2
+    text: 22px 1.5 @sm 28px
+    margin: 0 0 24px
+
+h3
+    text: 20px 1.5 @sm 24px
+    margin: 0 0 16px
+
+h4
+    text: 17px 1.41
+
+h5
+    text: 15px 1.6
+
+blockquote
+    text: 700 18px 1.67
+    margin: 40px 0 @xl 48px 0
+
+    &:before
+        content: ''
+        width: 100%
+        display: block
+        min-height: 26px
+        margin-bottom: 8px
+        border-bottom: 1px solid #5200ff
+        background: svg-load("icons/quote.svg") no-repeat top left / 28px
