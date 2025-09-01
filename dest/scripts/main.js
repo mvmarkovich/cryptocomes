@@ -68,6 +68,19 @@ if (document.querySelector('.something--lowner')) {
 	new FixedElementsPadding('.something--lowner', '.campaign-island, .article__menu, .main-anchors, .contents--static, .admin-panel, .unit-nav, .header__c-select');
 }
 
+function copyToClipboard(e) {
+	let input = document.body.appendChild(document.createElement("input"));
+	input.classList.add('input-copy-hidden');
+	input.value = window.location.href;
+	input.select();
+	document.execCommand('copy');
+	input.parentNode.removeChild(input);
+}
+
+document.querySelectorAll('[data-copy-url]').forEach(copyButton => {
+	copyButton.addEventListener("click", copyToClipboard)
+})
+
 //
 // Header and mobile menu
 //

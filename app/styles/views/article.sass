@@ -156,6 +156,10 @@
     &__body
         display: block
 
+        &:hover
+            ^^&__title
+                color: @lg #5200FF
+
     &__img
         position: absolute 0 null null 0
         width: 100%
@@ -168,6 +172,7 @@
 
     &__title
         color: #000
+        transition: .2s
         text: 700 20px 1.1
 
     &__date
