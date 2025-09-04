@@ -56,19 +56,15 @@
 			transition: 0s
 
 		&--long
-			display: none @md flex
+			display: none @xl flex
 
 		&--square
-			display: flex @md none
-
-		&--slot
-			display: flex
+			display: flex @xl none
 
 	&--upper, &--lowner, &--leaderboard, &--sub
 		width: 100%
 
 		.something
-			border-radius: 0
 			border: none
 			padding: 0
 			margin: auto
@@ -99,6 +95,12 @@
 			&__content
 				> *
 					max-width: 100%
+
+				&--long
+					display: none @md flex @xl flex
+
+				&--square
+					display: flex @md none @xl none
 
 	&--upper
 		position: sticky
@@ -155,6 +157,7 @@
 
 		.something
 			max-width: 336px @md 1150px
+			height: 60px @md clamp(30px,4.5vw,60px) @xl 90px
 
 		a:not([class])
 			max-width: @md 1216px
@@ -167,7 +170,6 @@
 	&--sub
 		.something
 			margin: 40px *
-			border-radius: 8px
 
 		^&__title
 			border-top: none
@@ -211,24 +213,6 @@
 		// 	background: #000
 		// 	z-index: 1
 
-	&--upper
-		border-radius: 0 0 8px 8px 
-
-		&:after
-			border-radius: 0 0 8px 8px 
-
-	&--leaderboard
-		border-radius: @md 8px
-
-		&:after
-			border-radius: @md 8px
-
-	&--lowner
-		border-radius: 8px 8px 0 0 
-
-		&:after
-			border-radius: 8px 8px 0 0 
-		
 	&--feed
 		^&__content
 			& > *

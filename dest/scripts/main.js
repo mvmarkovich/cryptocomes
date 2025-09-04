@@ -82,6 +82,71 @@ document.querySelectorAll('[data-copy-url]').forEach(copyButton => {
 })
 
 //
+// Sticky aside
+//
+
+function useLayoutEffect() {
+	let asideMenu = document.querySelector('.aside');
+
+	if (!asideMenu) return;
+
+	let aside = asideMenu,
+		asideHeight = aside.offsetHeight,
+		screenHeight = window.innerHeight,
+		startScroll,
+		endScroll = window.innerHeight - asideHeight,
+		currPos = window.scrollY;
+
+	startScroll = document.querySelector('.something--upper .something') !== null ? 84 : 24;
+	aside.style.top = startScroll + 'px'
+
+	const asideResizeListener = () => {
+		asideHeight = aside.offsetHeight
+		screenHeight = window.innerHeight
+	}
+
+	const asideScrollListener = () => {
+		if (asideHeight <= screenHeight) {
+			aside.style.top = startScroll + 'px'
+			return
+		}
+
+		startScroll = document.querySelector('.something--upper .something') !== null ? 84 : 24;
+		endScroll = document.querySelector('.something--lowner .something') !== null ? window.innerHeight - aside.offsetHeight - 84 : window.innerHeight - aside.offsetHeight - 24;
+
+		let asideTop = parseInt(aside.style.top.replace('px;', ''))
+
+		if (asideHeight > screenHeight) {
+			if (window.scrollY < currPos) {
+				if (asideTop < startScroll) {
+					aside.style.top = (asideTop + currPos - window.scrollY) + 'px'
+				} else if (asideTop >= startScroll && asideTop !== startScroll) {
+					aside.style.top = startScroll + 'px'
+				}
+			} else {
+				if (asideTop > endScroll) {
+					aside.style.top = (asideTop + currPos - window.scrollY) + 'px'
+				} else if (asideTop < (endScroll) && asideTop !== endScroll) {
+					aside.style.top = endScroll + 'px'
+				}
+			}
+		}
+		currPos = window.scrollY
+	}
+
+	window.addEventListener('resize', asideResizeListener)
+	window.addEventListener('scroll', asideScrollListener)
+
+	return () => {
+		window.removeEventListener('resize', asideResizeListener)
+		window.removeEventListener('scroll', asideScrollListener)
+	}
+
+}
+
+useLayoutEffect();
+
+//
 // Header and mobile menu
 //
 

@@ -1,0 +1,63 @@
+.home-featured
+    display: @xl flex
+    margin-bottom: 64px
+
+.home-hotnews
+    width: 100% @xl 57%
+    margin: 0 0 32px @xl 0 32px 0 0
+
+    &__body
+        &:hover
+            ^^&__title
+                color: @lg #5200ff
+
+    &__img
+        position: absolute 0 null null 0
+
+        &--wrap
+            position: relative
+            padding-top: 48%
+            overflow: hidden
+            max-width: 592px
+
+            &:before
+                content: ''
+                size: 100%
+                z-index: 1
+                position: absolute 0 null null 0
+                background: linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 100%)
+
+    &__info
+        position: relative
+        z-index: 2
+        max-width: 592px
+        margin-left: auto
+        margin-top: -52px @md -96px
+
+    &__title
+        text: 32px 1 @md 48px
+        margin: 0
+        transition: .2s
+
+    &__text
+        color: #000
+        text: 400 20px 1.33 @md 24px
+        margin: 32px 0 0
+
+.home-topnews
+    width: 100% @xl 33%
+
+    &__title
+        color: #5200ff
+        text: 32px .69
+        margin-bottom: 24px
+
+    .post-card
+        border-bottom: 1px solid #5200ff
+        padding-bottom: 24px
+        margin-bottom: 24px
+
+        &:last-child
+            border: none
+            padding: 0
+            margin: 0

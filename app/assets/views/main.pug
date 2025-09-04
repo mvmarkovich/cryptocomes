@@ -4,295 +4,501 @@ block title
     title Main | CC
 
 block content
+    //- include blocks/breaking.pug
 
-    include blocks/breaking.pug
+    <!-- START leaderboard banner -->
+    .something--leaderboard
+        .something
+            .something__nav
+                .something__label AD
+                button.btn.btn--light.something__close(aria-label="Close ad")
 
-    .main-container
-        .main-news-block
-            .board
-                a.board__info(href="#!")
-                    h1.board__title LEO, LINK, ATOM Price Predictions — Altcoins Are Not Showing Unity Against the Falling Bitcoin
-                    p.board__desc While the leading crypto is going down, some altcoins are rocketing. Which coins can show growth both in short and long-term scenarios?
+            .something__content
+                .something__content--long 
+                    a(href="#" target="_blank")
+                        img(src="img/something/ad-leaderboard_1150x90.svg" width="1150" height="90" alt="Ad leaderboard desktop")
 
-                a.board__img(href="#!")
-                    img(src="img/content/board/item_1.png" alt="Title IMG")
-                    .promo Sponsored
+                .something__content--square
+                    a(href="#" target="_blank")
+                        img(src="img/something/ad-leaderboard_336x60.svg" width="336" height="60" alt="Ad leaderboard mobile")
+    <!-- END leaderboard banner -->
 
-                .board__footer.short__row
-                    a.short.short--author(href="#!")
-                        img.short--img(src="img/content/avatars/item_2.png" alt="Name author")
-                        span Alex Dovbnya
-                        .short.hide-xl-only 1 hour ago
+    .home-featured
+        .home-hotnews
+            a.home-hotnews__body(href="article.html")
+                .home-hotnews__img--wrap
+                    img.home-hotnews__img(src="img/content/home-hotnews/img.png" width="592" height="333" alt="Name card")
 
-                    a.short.short--bold(href="#!") Price predictions
-                    .short.hide-xl-down 1 hour ago
+                .home-hotnews__info
+                    h1.home-hotnews__title Shiba Inu (SHIB) Price to Add $0 This Test is Failed
+                    .home-hotnews__text Shiba Inu might see volatility surge as price reaches tip of local pattern <br />Social $SHIB extremely close to exiting the symmetrical triangle, but at the same time, volatility might stay neutral
+
+        .home-topnews
+            h2.home-topnews__title Top Stories
+
+            .post-card
+                a.post-card__body(href="article.html")
+                    .post-card__title Cardano Kicks Off New Round of Stake Pool Delegation
+
+                .humble.post-card__date 4 years 7 months ago
+
+            .post-card
+                a.post-card__body(href="article.html")
+                    .post-card__title Blow to Ripple as SEC Gets Access to Company's Missing Slack Messages
+
+                .humble.post-card__date 4 years 7 months ago
+
+            .post-card
+                a.post-card__body(href="article.html")
+                    .post-card__title Anti-Bitcoin Activist Arrested in El Salvador
+
+                .humble.post-card__date 4 years 7 months ago
+
+            .post-card
+                a.post-card__body(href="article.html")
+                    .post-card__title $4 Million Worth Doge Meme NFT to Be Sold for Less Than $1 Per Fraction
+
+                .humble.post-card__date 4 years 7 months ago
+
+            .post-card
+                a.post-card__body(href="article.html")
+                    .post-card__title Blow to Ripple as SEC Gets Access to Company's Missing Slack Messages
+
+                .humble.post-card__date 4 years 7 months ago
+
+    .home-releases
+        h2.home-releases__title Press releases
+        
+        .home-releases__row
+            .home-releases__posts
+                .post-card
+                    a.post-card__body(href="press-article.html")
+                        .post-card__title CryptoGames kick starts its Premium VIP membership for users!
+
+                .post-card
+                    a.post-card__body(href="press-article.html")
+                        .post-card__title PG Connects Digital #4: The Global Games Industry Conference ONLINE
+
+                .post-card
+                    a.post-card__body(href="press-article.html")
+                        .post-card__title Crypto Fest 2.0 Rumble in the Crypto Jungle
+
+                .post-card
+                    a.post-card__body(href="press-article.html")
+                        .post-card__title CryptoGames kick starts its Premium VIP membership for users!
+
+            .home-releases__actions
+                a.btn(href="#") Submit PR
+
+    .main-aside-container
+        .main-block
+            .news-card
+                h2.news-card__title Bitcoin Hates September: Crypto King Enters Its Uber-Bearish Month
+                
+                .news-card__img--wrap
+                    img.news-card__img(src="img/content/news-card/card_0.png" width="800" height="362" alt="Name card")
+
+                .news-card__annonce 
+                    p Historically, the first month of autumn is really painful for the flagship cryptocurrency <br /> According to data on Bitcoin's (BTC) price dynamics registered in the last nine years, cryptocurrency bulls should be more than cautious for the next four weeks.
+
+                .news-card__content
+                    h3 Is Red September coming?
+                    p 
+                        | According to historical data shared by leading cryptocurrency trading and analytics platform Bybt.com, September and March were the two worst months for Bitcoin (BTC) from 2013 to 2021.
+                        <br />
+                        | In these months, the Bitcoin (BTC) price was in the red for six years out of eight. September resulted in painful losses for Bitcoin (BTC) holders five times in a row.
+                        <br />
+                        | In 2014 and 2019, losses for Bitcoiners were in the double digits yet nowhere near as dramatic as the March ones.
+                        <br />
+                        | In March 2020, Bitcoin (BTC) lost almost 25% while, in March 2018, the king coin dropped by 33% in 30 days.
+
+                a.news-card__btn(href="article.html") Go deeper
 
             .something
-                .something__content-long
-                    img(src="img/something/something__title-728.png" alt="Title banner 728x90")
-
-                .something__content.something__content-square
-                    img(src="img/something/something__title-336.png" alt="Title banner 336x280")
-
-        .aside--news
-            .feed.feed--defaults
-                .feed__title Latest news
-
-                .feed__content
-                    a.feed__item.feed__item-row.link-accent(href="#!")
-                        .feed__img-wrapper
-                            img.feed__img(src="img/content/aside/aside-news_1.png" alt="Title latest news")
-
-                        .feed__item-info
-                            p.feed__item-desc Altcoin Market in the Red: Bitcoin Cash, EOS, Bitcoin SV Drop 20 Percent
-                            .short 11:05AM
-
-                    a.feed__item.feed__item-row.link-accent(href="#!")
-                        .feed__img-wrapper
-                            img.feed__img(src="img/content/aside/aside-news_2.png" alt="Title latest news")
-
-                        .feed__item-info
-                            p.feed__item-desc ConsenSys Chief Joe Lubin to Be Taken to Court by Ex-Staffer for $13 Mln
-                            .short 10:30AM
-
-                    a.feed__item.feed__item-row.link-accent(href="#!")
-                        .feed__img-wrapper
-                            img.feed__img(src="img/content/aside/aside-news_3.png" alt="Title latest news")
-
-                        .feed__item-info
-                            p.feed__item-desc Mastercard Starts Creating Its Own Cryptocurrency Team
-                            .short 31 Oct
-
-                    a.feed__item.feed__item-row.link-accent(href="#!")
-                        .feed__img-wrapper
-                            img.feed__img(src="img/content/aside/aside-news_4.png" alt="Title latest news")
-
-                        .feed__item-info
-                            p.feed__item-desc Mike Novogratz Doesn’t Think Bitcoin Price Will Ever Go Back to $5,000
-                            .short 27 Oct
-
-                a.btn.btn--accent.feed__footer(href="#!") See all
-
-    .stories
-        .stories__list
-            a.stories__item(href="#!")
-                .stories__item-img
-                    img(src="img/content/stories/item_1.png" alt="Title IMG")
-
-                .stories__item-headline BTCNEXT Has CEZA License and Launches Its Own BNX Coin!
-                .short 1 hour ago
-
-            a.stories__item(href="#!")
-                .stories__item-img
-                    img(src="img/content/stories/item_2.png" alt="Title IMG")
-
-                .stories__item-headline CoinDeal Is Celebrating It’s Premier League Sponsorship Renewal with a Unique and Highly Anticipated Token Launch
-                .short 2 hour ago
-
-            a.stories__item(href="#!")
-                .stories__item-img
-                    img(src="img/content/stories/item_3.png" alt="Title IMG")
-
-                .stories__item-headline NEXO Token Holders Receive US $2,409,574.87 in Dividends
-                .short 3 hour ago
-
-    .releases
-        .releases__title Press Releases
-
-        .releases__list
-            .releases__item
-                a.releases__item-inner(href="#!")
-                    .releases__item-img
-                        img(src="img/content/releases/item_1.png" alt="Title IMG")
-
-                    .releases__item-title Cryptohopper Introduces Market Making And Exchange Arbitrage
-
-            .releases__item
-                a.releases__item-inner(href="#!")
-                    .releases__item-img
-                        img(src="img/content/releases/item_2.png" alt="Title IMG")
-
-                    .releases__item-title XMR, DASH, NEM Altcoins Price Prediction — Trading Sideways with Slight Fluctuations
-
-            .releases__item
-                a.releases__item-inner(href="#!")
-                    .releases__item-img
-                        img(src="img/content/releases/item_3.png" alt="Title IMG")
-
-                    .releases__item-title BTC, ETH, XRP Price Analysis — Bitcoin Breaks Below $10,000, Pushing Top Coins to
-
-            .releases__item
-                a.releases__item-inner(href="#!")
-                    .releases__item-img
-                        img(src="img/content/releases/item_4.png" alt="Title IMG")
-
-                    .releases__item-title Much-Hyped Crypto Smartphone by Sirin Labs Launches in Singapore
-
-            .releases__item
-                a.releases__item-inner(href="#!")
-                    .releases__item-img
-                        img(src="img/content/releases/item_5.png" alt="Title IMG")
-
-                    .releases__item-title BSV, TRX, ADA, QTUM, BAT, Vechain Price Predictions — Can Altcoins Show
-
-            .releases__item
-                a.releases__item-inner(href="#!")
-                    .releases__item-img
-                        img(src="img/content/releases/item_3.png" alt="Title IMG")
-
-                    .releases__item-title BTC, ETH, XRP Price Analysis — Bitcoin Breaks Below $10,000, Pushing Top Coins to
-
-
-        .btn--block
-            a.btn.btn--accent(href="#!") See all
-            a.btn(href="#!") Submit press release
-
-    .f-container
-        .main-news-block
-            .board
-                a.board__info(href="#!")
-                    h2.board__title WHALE ALERT: Almost $1 Bln Worth of BTC Moved to Unknown Wallets in One Hour
-                    p.board__desc While the whales are flexing their muscles, it’s time to put on our tinfoil hats and figure out what is going on
-
-                a.board__img(href="#!")
-                    img(src="img/content/board/item_2.png" alt="Title IMG")
-
-                .board__footer.short__row
-                    a.short.short--author(href="#!")
-                        img.short--img(src="img/content/avatars/item_1.png" alt="Name author")
-                        span Alex Dovbnya
-                        .short.hide-xl-only 1 hour ago
-
-                    a.short.short--bold(href="#!") Price predictions
-                    .short.hide-xl-down 1 hour ago
-
-            .board
-                a.board__info(href="#!")
-                    h2.board__title WHALE ALERT: Almost $1 Bln Worth of BTC Moved to Unknown Wallets in One Hour
-                    p.board__desc While the whales are flexing their muscles, it’s time to put on our tinfoil hats and figure out what is going on
-
-                a.board__img(href="#!")
-                    img(src="img/content/board/item_3.png" alt="Title IMG")
-
-                .board__footer.short__row
-                    a.short.short--author(href="#!")
-                        img.short--img(src="img/content/avatars/item_2.png" alt="Name author")
-                        span Yuri Molchan
-                        .short.hide-xl-only 2 hour ago
-
-                    a.short.short--bold(href="#!") News
-                    .short.hide-xl-down 2 hour ago
-
-            a.something(href="https://roobet.com/?ref=utoday")
-                .something__content-long
-                    img(src="img/something/roobet-728x90.jpg" alt="Roobet")
-
-                .something__content.something__content-square
-                    img(src="img/something/roobet-336x280.jpg" alt="Roobet")
-
-            .board-line
-                a.board-line__img(href="#!")
-                    img(src="img/content/board-line/item_1.png" alt="Title IMG")
-
-                .board-line__info
-                    a.board-line__title(href="#!") Mike Novogratz Doesn’t Think Bitcoin Price Will Ever Go Back to $5,000
-
-                    .board-line__footer.short__row
-                        a.short.short--author(href="#!")
-                            img.short--img(src="img/content/avatars/item_1.png" alt="Name author")
-                            span Alex Dovbnya
-                            .short.hide-xl-only 10 months ago
-
-                        a.short.short--bold(href="#!") Price predictions
-                        .short.hide-xl-down 1 hour ago
-
-            .board-line
-                a.board-line__img(href="#!")
-                    img(src="img/content/board-line/item_2.png" alt="Title IMG")
-                    .promo Sponsored
-
-                .board-line__info
-                    a.board-line__title(href="#!") Ushering in the future of money with Telegram’s GRAM Wallet
-
-                    .board-line__footer.short__row
-                        a.short.short--author(href="#!")
-                            img.short--img(src="img/content/avatars/item_2.png" alt="Name author")
-                            span Yuri Molchan
-                            .short.hide-xl-only 10 months ago
-
-                        a.short.short--bold(href="#!") News
-                        .short.hide-xl-down 2 hours ago
-
-            .upcoming
-                .upcoming__header
-                    h3.upcoming__title Upcoming events
-
-                    .btn--block
-                        a.btn.btn--light(href="#!See all") See all
-
-                .upcoming__slider
-                    .views-row
-                        .upcoming__item
-                            .upcoming__item-img
-                                img(src="img/content/upcoming/item_1.png" alt="Blockspot Conference Europe 2020")
-
-                            .upcoming__item-info
-                                .short__row
-                                    .short 1 Sep 2020
-
-                                .upcoming__item-title Blockspot Conference Europe 2020
-                                a.upcoming__item-link(href="#!") Read more
-
-                                a.btn.btn--accent.btn--large.btn--event(href="#!") Buy tickets
-
-                                .promocode
-                                    .promocode__title Promocode:
-                                    .promocode__value WWWWWWWWWWWW
-
-                    .views-row
-                        .upcoming__item
-                            .upcoming__item-img
-                                img(src="img/content/upcoming/item_2.png" alt="Sed ut perspiciatis unde accusantium doloremque")
-
-                            .upcoming__item-info
-                                .short__row
-                                    .short.short--label Top Event
-                                    .short 10 Sep 2020
-
-                                .upcoming__item-title Sed ut perspiciatis unde accusantium doloremque
-                                a.upcoming__item-link(href="#!") Read more
-
-                    .views-row
-                        .upcoming__item
-                            .upcoming__item-img
-                                img(src="img/content/upcoming/item_3.png" alt="Lorem ipsum dolor sit amet")
-
-                            .upcoming__item-info
-                                .short__row
-                                    .short 20 Sep 2020
-
-                                .upcoming__item-title Lorem ipsum dolor sit amet
-                                a.upcoming__item-link(href="#!") Read more
-
-                                a.btn.btn--accent.btn--large.btn--event(href="#!") Buy tickets
-
-                    .views-row
-                        .upcoming__item
-                            .upcoming__item-img
-                                img(src="img/content/upcoming/item_1.png" alt="Blockspot Conference Europe 2020")
-
-                            .upcoming__item-info
-                                .short__row
-                                    .short 1 Sep 2020
-
-                                .upcoming__item-title Blockspot Conference Europe 2020
-                                a.upcoming__item-link(href="#!") Read more
-
-                                a.btn.btn--accent.btn--large.btn--event(href="#!") Buy tickets
-
-                                .promocode
-                                    .promocode__title Promocode:
-                                    .promocode__value WWWWWWWWWWWW
+                .something__title Advertisement
+
+                .something__content
+                    .something__content--long
+                        a(href="#" target="_blank")
+                            img(src="img/something/ad-feed_728x90.svg" width="728" height="90" alt="Ad feed desktop")
+
+                    .something__content--square
+                        a(href="#" target="_blank")
+                            img(src="img/something/ad-feed_300x250.svg" width="300" height="250" alt="Ad feed mobile")
+
+            .news-card
+                h2.news-card__title SEC Chair Is Right About DeFi's Centralization, Says Head of Crypto Think Tank
+                
+                .news-card__img--wrap
+                    img.news-card__img(src="img/content/news-card/card_1.png" width="800" height="362" alt="Name card")
+
+                .news-card__annonce 
+                    p The head of the leading cryptocurrency lobbying organization has agreed with Gary Gensler's recent take on DeFi
+                    p Brito applies the term DINO ("decentralized in name only") to DeFi projects in which developers act as middlemen for conducting transactions.
+                    p However, he also stresses that the publication of computer code should not be regulated.
+
+                .news-card__content
+                    h3 The decentralization lie
+                    p Although many projects have succeeded in convincing investors that they are sufficiently decentralized, the incredibly cryptocurrency-savvy SEC boss, who has taught an MIT course on crypto, is not being fooled by them.
+                    p In a recent interview with the Financial Times, Gensler reiterated that decentralized finance platforms were not actually decentralized given that there is "a company in the middle."
+                    p Furthermore, he stressed that DeFi was not a new concept, pointing to the fact that peer-to-peer lending has been a thing for a long time.
+                    p Last month, the SEC announced its first enforcement action against a "DINO."
+
+                a.news-card__btn(href="article.html") Go deeper
+
+            // баннерный слот
+            .something
+                .something__title Advertisement
+
+                .something__content
+                    .something__content--long
+                        a(href="#" target="_blank")
+                            img(src="img/something/ad-feed_728x90.svg" width="728" height="90" alt="Ad feed desktop")
+
+                    .something__content--square
+                        a(href="#" target="_blank")
+                            img(src="img/something/ad-feed_300x250.svg" width="300" height="250" alt="Ad feed mobile")
+
+            .news-card
+                h2.news-card__title Bitcoin Hates September: Crypto King Enters Its Uber-Bearish Month
+                
+                .news-card__img--wrap
+                    img.news-card__img(src="img/content/news-card/card_0.png" width="800" height="362" alt="Name card")
+
+                .news-card__annonce 
+                    p Historically, the first month of autumn is really painful for the flagship cryptocurrency <br /> According to data on Bitcoin's (BTC) price dynamics registered in the last nine years, cryptocurrency bulls should be more than cautious for the next four weeks.
+
+                .news-card__content
+                    h3 Is Red September coming?
+                    p 
+                        | According to historical data shared by leading cryptocurrency trading and analytics platform Bybt.com, September and March were the two worst months for Bitcoin (BTC) from 2013 to 2021.
+                        | In these months, the Bitcoin (BTC) price was in the red for six years out of eight. September resulted in painful losses for Bitcoin (BTC) holders five times in a row.
+                        | In 2014 and 2019, losses for Bitcoiners were in the double digits yet nowhere near as dramatic as the March ones.
+                        | In March 2020, Bitcoin (BTC) lost almost 25% while, in March 2018, the king coin dropped by 33% in 30 days.
+
+                a.news-card__btn(href="article.html") Go deeper
 
         .aside
-            include blocks/aside.pug
+            .aside-card.aside-card--accent
+                h2.aside-card__title Most Popular
+
+                .post-card
+                    a.post-card__body(href="article.html")
+                        .post-card__title Cardano Kicks Off New Round of Stake Pool Delegation
+
+                    .humble.post-card__date 4 years 7 months ago
+
+                .post-card
+                    a.post-card__body(href="article.html")
+                        .post-card__title Blow to Ripple as SEC Gets Access to Company's Missing Slack Messages
+
+                    .humble.post-card__date 4 years 7 months ago
+
+                .post-card
+                    a.post-card__body(href="article.html")
+                        .post-card__title Anti-Bitcoin Activist Arrested in El Salvador
+
+                    .humble.post-card__date 4 years 7 months ago
+
+                .post-card
+                    a.post-card__body(href="article.html")
+                        .post-card__title $4 Million Worth Doge Meme NFT to Be Sold for Less Than $1 Per Fraction
+
+                    .humble.post-card__date 4 years 7 months ago
+
+                .post-card
+                    a.post-card__body(href="article.html")
+                        .post-card__title Blow to Ripple as SEC Gets Access to Company's Missing Slack Messages
+
+                    .humble.post-card__date 4 years 7 months ago
+
+
+    //- .main-container
+    //-     .main-news-block
+    //-         .board
+    //-             a.board__info(href="#!")
+    //-                 h1.board__title LEO, LINK, ATOM Price Predictions — Altcoins Are Not Showing Unity Against the Falling Bitcoin
+    //-                 p.board__desc While the leading crypto is going down, some altcoins are rocketing. Which coins can show growth both in short and long-term scenarios?
+
+    //-             a.board__img(href="#!")
+    //-                 img(src="img/content/board/item_1.png" alt="Title IMG")
+    //-                 .promo Sponsored
+
+    //-             .board__footer.short__row
+    //-                 a.short.short--author(href="#!")
+    //-                     img.short--img(src="img/content/avatars/item_2.png" alt="Name author")
+    //-                     span Alex Dovbnya
+    //-                     .short.hide-xl-only 1 hour ago
+
+    //-                 a.short.short--bold(href="#!") Price predictions
+    //-                 .short.hide-xl-down 1 hour ago
+
+    //-         .something
+    //-             .something__content-long
+    //-                 img(src="img/something/something__title-728.png" alt="Title banner 728x90")
+
+    //-             .something__content.something__content-square
+    //-                 img(src="img/something/something__title-336.png" alt="Title banner 336x280")
+
+    //-     .aside--news
+    //-         .feed.feed--defaults
+    //-             .feed__title Latest news
+
+    //-             .feed__content
+    //-                 a.feed__item.feed__item-row.link-accent(href="#!")
+    //-                     .feed__img-wrapper
+    //-                         img.feed__img(src="img/content/aside/aside-news_1.png" alt="Title latest news")
+
+    //-                     .feed__item-info
+    //-                         p.feed__item-desc Altcoin Market in the Red: Bitcoin Cash, EOS, Bitcoin SV Drop 20 Percent
+    //-                         .short 11:05AM
+
+    //-                 a.feed__item.feed__item-row.link-accent(href="#!")
+    //-                     .feed__img-wrapper
+    //-                         img.feed__img(src="img/content/aside/aside-news_2.png" alt="Title latest news")
+
+    //-                     .feed__item-info
+    //-                         p.feed__item-desc ConsenSys Chief Joe Lubin to Be Taken to Court by Ex-Staffer for $13 Mln
+    //-                         .short 10:30AM
+
+    //-                 a.feed__item.feed__item-row.link-accent(href="#!")
+    //-                     .feed__img-wrapper
+    //-                         img.feed__img(src="img/content/aside/aside-news_3.png" alt="Title latest news")
+
+    //-                     .feed__item-info
+    //-                         p.feed__item-desc Mastercard Starts Creating Its Own Cryptocurrency Team
+    //-                         .short 31 Oct
+
+    //-                 a.feed__item.feed__item-row.link-accent(href="#!")
+    //-                     .feed__img-wrapper
+    //-                         img.feed__img(src="img/content/aside/aside-news_4.png" alt="Title latest news")
+
+    //-                     .feed__item-info
+    //-                         p.feed__item-desc Mike Novogratz Doesn’t Think Bitcoin Price Will Ever Go Back to $5,000
+    //-                         .short 27 Oct
+
+    //-             a.btn.btn--accent.feed__footer(href="#!") See all
+
+    //- .stories
+    //-     .stories__list
+    //-         a.stories__item(href="#!")
+    //-             .stories__item-img
+    //-                 img(src="img/content/stories/item_1.png" alt="Title IMG")
+
+    //-             .stories__item-headline BTCNEXT Has CEZA License and Launches Its Own BNX Coin!
+    //-             .short 1 hour ago
+
+    //-         a.stories__item(href="#!")
+    //-             .stories__item-img
+    //-                 img(src="img/content/stories/item_2.png" alt="Title IMG")
+
+    //-             .stories__item-headline CoinDeal Is Celebrating It’s Premier League Sponsorship Renewal with a Unique and Highly Anticipated Token Launch
+    //-             .short 2 hour ago
+
+    //-         a.stories__item(href="#!")
+    //-             .stories__item-img
+    //-                 img(src="img/content/stories/item_3.png" alt="Title IMG")
+
+    //-             .stories__item-headline NEXO Token Holders Receive US $2,409,574.87 in Dividends
+    //-             .short 3 hour ago
+
+    //- .releases
+    //-     .releases__title Press Releases
+
+    //-     .releases__list
+    //-         .releases__item
+    //-             a.releases__item-inner(href="#!")
+    //-                 .releases__item-img
+    //-                     img(src="img/content/releases/item_1.png" alt="Title IMG")
+
+    //-                 .releases__item-title Cryptohopper Introduces Market Making And Exchange Arbitrage
+
+    //-         .releases__item
+    //-             a.releases__item-inner(href="#!")
+    //-                 .releases__item-img
+    //-                     img(src="img/content/releases/item_2.png" alt="Title IMG")
+
+    //-                 .releases__item-title XMR, DASH, NEM Altcoins Price Prediction — Trading Sideways with Slight Fluctuations
+
+    //-         .releases__item
+    //-             a.releases__item-inner(href="#!")
+    //-                 .releases__item-img
+    //-                     img(src="img/content/releases/item_3.png" alt="Title IMG")
+
+    //-                 .releases__item-title BTC, ETH, XRP Price Analysis — Bitcoin Breaks Below $10,000, Pushing Top Coins to
+
+    //-         .releases__item
+    //-             a.releases__item-inner(href="#!")
+    //-                 .releases__item-img
+    //-                     img(src="img/content/releases/item_4.png" alt="Title IMG")
+
+    //-                 .releases__item-title Much-Hyped Crypto Smartphone by Sirin Labs Launches in Singapore
+
+    //-         .releases__item
+    //-             a.releases__item-inner(href="#!")
+    //-                 .releases__item-img
+    //-                     img(src="img/content/releases/item_5.png" alt="Title IMG")
+
+    //-                 .releases__item-title BSV, TRX, ADA, QTUM, BAT, Vechain Price Predictions — Can Altcoins Show
+
+    //-         .releases__item
+    //-             a.releases__item-inner(href="#!")
+    //-                 .releases__item-img
+    //-                     img(src="img/content/releases/item_3.png" alt="Title IMG")
+
+    //-                 .releases__item-title BTC, ETH, XRP Price Analysis — Bitcoin Breaks Below $10,000, Pushing Top Coins to
+
+
+    //-     .btn--block
+    //-         a.btn.btn--accent(href="#!") See all
+    //-         a.btn(href="#!") Submit press release
+
+    //- .f-container
+    //-     .main-news-block
+    //-         .board
+    //-             a.board__info(href="#!")
+    //-                 h2.board__title WHALE ALERT: Almost $1 Bln Worth of BTC Moved to Unknown Wallets in One Hour
+    //-                 p.board__desc While the whales are flexing their muscles, it’s time to put on our tinfoil hats and figure out what is going on
+
+    //-             a.board__img(href="#!")
+    //-                 img(src="img/content/board/item_2.png" alt="Title IMG")
+
+    //-             .board__footer.short__row
+    //-                 a.short.short--author(href="#!")
+    //-                     img.short--img(src="img/content/avatars/item_1.png" alt="Name author")
+    //-                     span Alex Dovbnya
+    //-                     .short.hide-xl-only 1 hour ago
+
+    //-                 a.short.short--bold(href="#!") Price predictions
+    //-                 .short.hide-xl-down 1 hour ago
+
+    //-         .board
+    //-             a.board__info(href="#!")
+    //-                 h2.board__title WHALE ALERT: Almost $1 Bln Worth of BTC Moved to Unknown Wallets in One Hour
+    //-                 p.board__desc While the whales are flexing their muscles, it’s time to put on our tinfoil hats and figure out what is going on
+
+    //-             a.board__img(href="#!")
+    //-                 img(src="img/content/board/item_3.png" alt="Title IMG")
+
+    //-             .board__footer.short__row
+    //-                 a.short.short--author(href="#!")
+    //-                     img.short--img(src="img/content/avatars/item_2.png" alt="Name author")
+    //-                     span Yuri Molchan
+    //-                     .short.hide-xl-only 2 hour ago
+
+    //-                 a.short.short--bold(href="#!") News
+    //-                 .short.hide-xl-down 2 hour ago
+
+    //-         a.something(href="https://roobet.com/?ref=utoday")
+    //-             .something__content-long
+    //-                 img(src="img/something/roobet-728x90.jpg" alt="Roobet")
+
+    //-             .something__content.something__content-square
+    //-                 img(src="img/something/roobet-336x280.jpg" alt="Roobet")
+
+    //-         .board-line
+    //-             a.board-line__img(href="#!")
+    //-                 img(src="img/content/board-line/item_1.png" alt="Title IMG")
+
+    //-             .board-line__info
+    //-                 a.board-line__title(href="#!") Mike Novogratz Doesn’t Think Bitcoin Price Will Ever Go Back to $5,000
+
+    //-                 .board-line__footer.short__row
+    //-                     a.short.short--author(href="#!")
+    //-                         img.short--img(src="img/content/avatars/item_1.png" alt="Name author")
+    //-                         span Alex Dovbnya
+    //-                         .short.hide-xl-only 10 months ago
+
+    //-                     a.short.short--bold(href="#!") Price predictions
+    //-                     .short.hide-xl-down 1 hour ago
+
+    //-         .board-line
+    //-             a.board-line__img(href="#!")
+    //-                 img(src="img/content/board-line/item_2.png" alt="Title IMG")
+    //-                 .promo Sponsored
+
+    //-             .board-line__info
+    //-                 a.board-line__title(href="#!") Ushering in the future of money with Telegram’s GRAM Wallet
+
+    //-                 .board-line__footer.short__row
+    //-                     a.short.short--author(href="#!")
+    //-                         img.short--img(src="img/content/avatars/item_2.png" alt="Name author")
+    //-                         span Yuri Molchan
+    //-                         .short.hide-xl-only 10 months ago
+
+    //-                     a.short.short--bold(href="#!") News
+    //-                     .short.hide-xl-down 2 hours ago
+
+    //-         .upcoming
+    //-             .upcoming__header
+    //-                 h3.upcoming__title Upcoming events
+
+    //-                 .btn--block
+    //-                     a.btn.btn--light(href="#!See all") See all
+
+    //-             .upcoming__slider
+    //-                 .views-row
+    //-                     .upcoming__item
+    //-                         .upcoming__item-img
+    //-                             img(src="img/content/upcoming/item_1.png" alt="Blockspot Conference Europe 2020")
+
+    //-                         .upcoming__item-info
+    //-                             .short__row
+    //-                                 .short 1 Sep 2020
+
+    //-                             .upcoming__item-title Blockspot Conference Europe 2020
+    //-                             a.upcoming__item-link(href="#!") Read more
+
+    //-                             a.btn.btn--accent.btn--large.btn--event(href="#!") Buy tickets
+
+    //-                             .promocode
+    //-                                 .promocode__title Promocode:
+    //-                                 .promocode__value WWWWWWWWWWWW
+
+    //-                 .views-row
+    //-                     .upcoming__item
+    //-                         .upcoming__item-img
+    //-                             img(src="img/content/upcoming/item_2.png" alt="Sed ut perspiciatis unde accusantium doloremque")
+
+    //-                         .upcoming__item-info
+    //-                             .short__row
+    //-                                 .short.short--label Top Event
+    //-                                 .short 10 Sep 2020
+
+    //-                             .upcoming__item-title Sed ut perspiciatis unde accusantium doloremque
+    //-                             a.upcoming__item-link(href="#!") Read more
+
+    //-                 .views-row
+    //-                     .upcoming__item
+    //-                         .upcoming__item-img
+    //-                             img(src="img/content/upcoming/item_3.png" alt="Lorem ipsum dolor sit amet")
+
+    //-                         .upcoming__item-info
+    //-                             .short__row
+    //-                                 .short 20 Sep 2020
+
+    //-                             .upcoming__item-title Lorem ipsum dolor sit amet
+    //-                             a.upcoming__item-link(href="#!") Read more
+
+    //-                             a.btn.btn--accent.btn--large.btn--event(href="#!") Buy tickets
+
+    //-                 .views-row
+    //-                     .upcoming__item
+    //-                         .upcoming__item-img
+    //-                             img(src="img/content/upcoming/item_1.png" alt="Blockspot Conference Europe 2020")
+
+    //-                         .upcoming__item-info
+    //-                             .short__row
+    //-                                 .short 1 Sep 2020
+
+    //-                             .upcoming__item-title Blockspot Conference Europe 2020
+    //-                             a.upcoming__item-link(href="#!") Read more
+
+    //-                             a.btn.btn--accent.btn--large.btn--event(href="#!") Buy tickets
+
+    //-                             .promocode
+    //-                                 .promocode__title Promocode:
+    //-                                 .promocode__value WWWWWWWWWWWW
+
+    //-     .aside
+    //-         include blocks/aside.pug

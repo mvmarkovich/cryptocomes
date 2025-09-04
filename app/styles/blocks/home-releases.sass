@@ -1,0 +1,38 @@
+.home-releases
+    margin: 64px 0
+
+    &__title
+        color: #5200ff
+        text: 700 32px .69
+        margin-bottom: -8px
+    
+    &__row
+        background: #adffe7
+        padding: 32px 16px 16px
+        display: @xl flex
+
+    &__posts
+        width: 100%
+        display: flex
+        flex-wrap: wrap
+        margin: * -16px
+        margin-bottom: -16px
+
+        .post-card
+            width: 100% @sm 50% @xl 25%
+            padding: 0 16px
+            margin-bottom: 16px
+
+            &__title
+                display: -webkit-box
+                -webkit-line-clamp: 3
+                -webkit-box-orient: vertical
+                overflow: hidden
+
+    &__actions
+        margin: 16px 0 0 @xl 0 0 0 32px
+
+        .btn
+            width: 100%
+
+    

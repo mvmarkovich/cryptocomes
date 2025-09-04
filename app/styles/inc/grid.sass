@@ -1,49 +1,53 @@
 .container
-  max-width: $container-sm-px
-  margin: * auto
-  padding: * 20px
+	max-width: $container-sm-px
+	margin: * auto
+	padding: * 20px
 
 @media $md
-  .container
-    max-width: 62%
+	.container
+		max-width: 62%
 
 @media $xl
-  .container
-    max-width: $container-xl-px
+	.container
+		max-width: $container-xl-px
 
 .page-container
-  margin-top: 24px
+	margin-top: 24px
 
 .f-container, .main-container
-  box: space-between
-  flex-wrap: wrap @md nowrap
-  align-items: flex-start
+	box: space-between
+	flex-wrap: wrap @md nowrap
+	align-items: flex-start
 
 .main-block
-  width: 100% @md 480px @xl 782px
-  position: relative
-  z-index: 99
+	width: 100% @xl 800px
+	position: relative
+	z-index: 99
 
 .main-news-block
-  width: 100% @md 480px @xl 728px
-  position: relative
-  z-index: 99
+	width: 100% @md 480px @xl 728px
+	position: relative
+	z-index: 99
 
-  .something
-    margin: 32px 0 0
+	.something
+		margin: 32px 0 0
 
-.aside, .aside--news
-  max-width: 100% @md 240px @xl 336px
-  margin: 0 0 0 32px
-  width: 100%
-  position: relative
-  z-index: 7
+.aside--news
+	max-width: 100% @md 240px @xl 336px
+	margin: 0 0 0 32px
+	width: 100%
+	position: relative
+	z-index: 7
 
 .aside
-  .aside-fixed
-    position: fixed
-    z-index: 101
+	position: sticky
+	top: 0
+	min-width: 384px
+	max-width: 384px
+	margin-left: 32px
+	display: @xl-down none
 
-  .aside-stop
-    position: relative
-    z-index: 101
+.main-aside-container
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
