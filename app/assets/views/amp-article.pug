@@ -13,13 +13,10 @@ block content
     
     .article
         .article__label Cardano News
+
         h1.article__title Cardano Kicks Off New Round of Stake Pool Delegation
 
         .article__over
-            .article__img--wrap
-                amp-img.article__img(src="img/content/article/main-img.png" layout="intrinsic" width="592" height="368" alt="Title article")
-                .article__caption Cover image via <a href="https://stock.adobe.com/ru" target="_blank">stock.adobe.com</a>
-
             .article__lead
                 p.article__annonce IOG has now made it possible to nominate other stake pool operators
 
@@ -31,13 +28,17 @@ block content
 
                 .share.article__share
                     amp-social-share.share__link(type="facebook" width="48" height="48" layout="responsive" aria-label="Share facebook")
-                        include ../img/icons/share/fb.svg
+                        include ../img/icons/share/fb-light.svg
 
                     amp-social-share.share__link(type="telegram" data-share-endpoint="https://t.me/share/url?url={url}&text={text}" width="48" height="48" layout="responsive" aria-label="Share")
-                        include ../img/icons/share/tg.svg
+                        include ../img/icons/share/tg-light.svg
 
                     amp-social-share.share__link(type="twitter" width="48" height="48" layout="responsive" aria-label="share email")
-                        include ../img/icons/share/x.svg
+                        include ../img/icons/share/x-light.svg
+
+            .article__img--wrap
+                amp-img.article__img(src="img/content/article/main-img.png" layout="intrinsic" width="592" height="368" alt="Title article")
+                .article__caption Cover image via <a href="https://stock.adobe.com/ru" target="_blank">stock.adobe.com</a>
 
         // баннерный слот
         .something

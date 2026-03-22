@@ -1,7 +1,7 @@
 .share
-	padding: 16px
+	padding: 16px 24px
 	display: inline-flex
-	background: #adffe7
+	background: #5200ff
 
 	&__link
 		display: inline-flex
@@ -11,19 +11,31 @@
 		background-repeat: no-repeat
 		background-position: center
 		background-size: contain
-		margin-right: 16px
+		margin-right: 24px
 
 		&:last-child
-			margin: 0
+			margin-right: 0
 
 		&--fb
-			background-image: resolve("icons/share/fb.svg")
+			background-image: resolve("icons/share/fb-light.svg")
+
+			&:hover
+				background-image: @lg svg-load("icons/share/fb-light.svg", fill="#adffe7")
 
 		&--tg
-			background-image: resolve("icons/share/tg.svg")
+			background-image: resolve("icons/share/tg-light.svg")
+
+			&:hover
+				background-image: @lg svg-load("icons/share/tg-light.svg", fill="#adffe7")
 
 		&--x
-			background-image: resolve("icons/share/x.svg")
+			background-image: resolve("icons/share/x-light.svg")
+
+			&:hover
+				background-image: @lg svg-load("icons/share/x-light.svg", fill="#adffe7")
 
 		&--copy
-			background-image: resolve("icons/share/copy.svg")
+			background-image: resolve("icons/share/copy-light.svg")
+
+			&:hover
+				background-image: @lg svg-load("icons/share/copy-light.svg", stroke="#adffe7")

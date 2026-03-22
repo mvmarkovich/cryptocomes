@@ -1,10 +1,11 @@
 .home-featured
     display: @xl flex
-    margin-bottom: 64px
+    gap: @xl 32px
+    margin-bottom: 48px
 
 .home-hotnews
-    width: 100% @xl 57%
-    margin: 0 0 32px @xl 0 32px 0 0
+    width: 100% @xl 59%
+    margin-bottom: 32px @sm 48px @xl 0
 
     &__body
         &:hover
@@ -16,36 +17,36 @@
 
         &--wrap
             position: relative
-            padding-top: 48%
+            padding-top: 56.5%
             overflow: hidden
-            max-width: 592px
 
-            &:before
-                content: ''
-                size: 100%
-                z-index: 1
-                position: absolute 0 null null 0
-                background: linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 100%)
+            // &:before
+            //     content: ''
+            //     size: 100%
+            //     z-index: 1
+            //     position: absolute 0 null null 0
+            //     background: linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 100%)
 
     &__info
         position: relative
         z-index: 2
-        max-width: 592px
-        margin-left: auto
-        margin-top: -52px @md -96px
+        margin-top: -40px @sm -52px @md -96px
+        background: #fff
+        padding: 16px
+        margin-left: 24px @sm 40px @xl 56px
 
     &__title
-        text: 32px 1 @md 48px
+        text: 700 32px 1
         margin: 0
         transition: .2s
 
     &__text
         color: #000
-        text: 400 20px 1.33 @md 24px
-        margin: 32px 0 0
+        text: 400 20px 1.33
+        margin: 16px 0 0
 
 .home-topnews
-    width: 100% @xl 33%
+    width: 100% @xl 41%
 
     &__title
         color: #5200ff
@@ -56,6 +57,17 @@
         border-bottom: 1px solid #5200ff
         padding-bottom: 24px
         margin-bottom: 24px
+
+        &__body
+            &:hover
+                .post-card__title
+                    color: @lg #5200ff
+
+        &__title
+            color: #000
+
+        &__date
+            color: #000
 
         &:last-child
             border: none
