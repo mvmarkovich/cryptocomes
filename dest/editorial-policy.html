@@ -34,15 +34,24 @@
     <header class="header">
       <div class="container header__container">
         <div class="header__row"><a class="header__logo" href="main.html" title="CryptoComes"><img class="header__logo-img" src="img/icons/logo.svg" alt="CryptoComes"></a>
-          <nav class="header__nav" aria-label="Main navigation">
-            <ul class="header__nav-list">
-              <li class="header__nav-item"><a class="header__nav-link" href="category.html">News</a></li>
-              <li class="header__nav-item"><a class="header__nav-link" href="category.html">Price Predictions</a></li>
-              <li class="header__nav-item"><a class="header__nav-link" href="category.html">WikiCoin</a></li>
-              <li class="header__nav-item"><a class="header__nav-link" href="about-us.html">About Us</a></li>
-            </ul>
-          </nav>
-          <button class="btn btn--light btn--burger header__burger" aria-label="open menu"></button>
+          <div class="header__menu">
+            <button class="btn btn--light header__menu-close" aria-label="Close menu">Close</button>
+            <div class="header__search">
+              <form class="header__search-form" action="#" method="get">
+                <input class="input__elem header__search-input" type="text" placeholder="Search" name="search">
+                <button class="btn btn--light btn--search header__search-submit" type="submit" aria-label="Send form"></button>
+              </form>
+            </div>
+            <nav class="header__nav" aria-label="Main navigation">
+              <ul class="header__nav-list">
+                <li class="header__nav-item"><a class="header__nav-link" href="category.html">News</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="category.html">Price Predictions</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="category.html">WikiCoin</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="about-us.html">About Us</a></li>
+              </ul>
+            </nav>
+          </div>
+          <button class="btn btn--light btn--burger header__burger" aria-label="Open menu"></button>
         </div>
       </div>
     </header>

@@ -18,8 +18,8 @@
 	-webkit-tap-highlight-color: transparent
 
 	&:hover
-		border-color: #000
-		text: #000
+		border-color: @lg #000
+		text: @lg #000
 
 	&--wide
 		padding: * 36px
@@ -33,8 +33,8 @@
 		font-weight: 400
 
 		&:hover
-			border-color: #adffe7
-			text: #5200FF
+			border-color: @lg #adffe7
+			text: @lg #5200FF
 
 	&--light
 		margin: 0
@@ -98,9 +98,9 @@
 		color: #fff
 
 		&:hover
-			background: #adffe7
-			border-color: #adffe7
-			color: #000
+			background: @lg #adffe7
+			border-color: @lg #adffe7
+			color: @lg #000
 
 	&-aside-space
 		margin: 32px 16px
@@ -111,17 +111,17 @@
 		text: #fff
 
 		&:hover
-			background: #adffe7
-			border-color: #adffe7
-			text: #000
+			background: @lg #adffe7
+			border-color: @lg #adffe7
+			text: @lg #000
 
 	&--accent-2
 		background: $accent-2-medium
 		text: #fff
 
 		&:hover
-			background: $accent-2-medium
-			text: #fff
+			background: @lg $accent-2-medium
+			text: @lg #fff
 
 	&--bright
 		background: #adffe7
@@ -129,9 +129,9 @@
 		text: #000
 
 		&:hover
-			background: #5200FF
-			border-color: #5200FF
-			text: #fff
+			background: @lg #5200FF
+			border-color: @lg #5200FF
+			text: @lg #fff
 
 	&--black
 		background: #000
@@ -139,8 +139,8 @@
 		border: none
 
 		&:hover
-			background: #5200FF
-			text: $neutral
+			background: @lg #5200FF
+			text: @lg $neutral
 
 	&--border-light
 		color: #fff
@@ -148,25 +148,22 @@
 		background: transparent
 
 		&:hover
-			color: rgba(255, 255, 255, .7)
-			border-color: rgba(255, 255, 255, .7)
-			background: transparent
+			color: @lg rgba(255, 255, 255, .7)
+			border-color: @lg rgba(255, 255, 255, .7)
+			background: @lg transparent
 
 	&--search
-		height: 48px
-		min-width: 48px
-		width: 48px @md unset
-		overflow: hidden
-		padding: 12px @md 0
-		justify-content: flex-start
-
 		&:before
 			content: ''
 			size: 24px
 			min-width: 24px
-			margin: 0 20px 0 0 @md 0 8px 0 0
-			background-position: center
 			background-repeat: no-repeat
+			background-position: center
+			background-size: contain
+
+	&--search
+		&:before
+			background-image: resolve("icons/search.svg")
 
 	&--cross,
 	&--cross-white,
@@ -177,18 +174,6 @@
 
 	&--burger
 		background-image: resolve("icons/burger.svg")
-
-	&--search
-		color: $neutral
-
-		&:before
-			background-image: resolve("icons/search.svg")
-
-		&:hover
-			text: #adffe7
-
-		&:before
-			background-image: svg-load("icons/search.svg" fill: #adffe7)
 
 	&--cross
 		background-image: resolve("icons/cross.svg")
